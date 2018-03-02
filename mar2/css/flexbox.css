@@ -1,0 +1,27 @@
+html {
+  background-color: purple;
+}
+
+section {
+  height: 600px;
+  background-color: magenta;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+div {
+  flex: 1;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 5px;
+}
+
+div:nth-child(4) {
+  background-color: darkcyan;
+  align-self: flex-start;
+}
+/*# sourceMappingURL=flexbox.css.map */
