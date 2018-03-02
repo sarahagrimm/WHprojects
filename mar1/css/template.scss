@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    background-color: #fff;
+    //find background color!!!
+    //background-color: #666666;
     font-family: "Taviraj", serif;
     font-size: 1rem;
 }
@@ -89,4 +90,14 @@ hr {
     width: 80vw;
     display: flex;
     
+}
+
+.sectionone {
+    background-color: #fff;
+
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+
 }
