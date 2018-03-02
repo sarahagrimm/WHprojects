@@ -1,0 +1,92 @@
+html {
+    background-image: url(#);
+}
+
+body {
+    background-color: #fff;
+    font-family: "Taviraj", serif;
+    font-size: 1rem;
+}
+
+ul {
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    //text-decoration: none;
+
+    padding: 25px;
+    margin:0;
+}
+
+header {
+    height: 600px;
+    background-size: cover;
+    background-image: url('images/banner.jpg');
+    display:flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+}
+
+p {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+img {
+    height: 20vw;
+    width: 70vw;
+
+    margin: auto;
+    padding: 100px 50px 50px 100px;
+    display: flex;
+    align-content: center;
+
+}
+
+h2 {
+    display:flex;
+    justify-content: center;
+}
+
+#getstarted {
+    display: flex;
+    justify-content: center;
+
+    background-color: #0084ff;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+
+    
+}
+
+hr {
+    width: 75vw;
+}
+
+#paragraph {
+    color: gray;
+    width: 80vw;
+    display: flex;
+    
+}
