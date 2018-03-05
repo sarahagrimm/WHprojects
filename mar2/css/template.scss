@@ -1,16 +1,19 @@
 $keycolor: hsl(181, 100%, 41%);
 $white: hsl(0, 0%, 96%);
-$black: hsl(0, 0%, 8%);
+$black: hsl(0, 0%, 50%);
+$hoverbutton: hsl(0,0%,8%);
 
 body {
     font-family: sans-serif;
     text-transform: uppercase;
+    font-family: "raleway";
 }
-header{
-    padding: 10vw 2vw;
+.typify {
+    padding: 5vw 2vw;
     background-color: $keycolor;
     text-align: center;
     color: $white;
+    margin: 0 auto;
 }
 
 //pseudo class link
@@ -33,12 +36,8 @@ a:active {
     color: purple;
 }
 
-a {
-    color: inherit;
-}
-
 a.btn {
-    background-color: transparentize($black, .75);
+    background-color: transparentize($hoverbutton, .75);
     color: white;
     padding: 15px 20px;
     text-decoration: none;
@@ -49,18 +48,18 @@ a.btn {
 a.btn:hover {
     background-color: transparentize($black, .90);
     transition: background-color 200ms;
-    font-size: 32px;
 }
 
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    color: $black;
 }
 
 h1 {
     font-size: 40px;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 h2 {
@@ -85,23 +84,108 @@ header div {
 }
 
 #features ul {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: $black;
+    margin: 0 auto;
+    padding: 30px 200px;
     li {
         width: 25%;
-        padding: 40px;
-        border: 1px solid $black;
+        height:15%;
+        padding: 1vw;
+        border: 1px solid rgb(231, 225, 225);
         margin-left: -1px;
         margin-top: -1px;
         //text-align: center;
     }
     i {
-        font-size: 300%;
+        font-size: 250%;
         color: $keycolor;
     }
 }
 
 #features {
     text-align: center;
+    color: $black;
+}
+
+    #messagebox {
+    text-align: center;
+    margin: o auto;
+    height: 500px;
+    }
+    
+
+    .messageboxheader h2{
+        border-bottom: 3px double $black;
+        display: flex;
+        justify-content: center;
+        width: 15vw;
+        margin: 0 auto;
+        padding: 5vw 0 0 0;
+        font-size: 25px;
+        font-weight: 100;
+        color: $black;
+    }
+
+footer {
+    text-align: center;
+    color: hsl(0, 0, 80%);
+    padding: 5vw;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    font-weight: 50;
+    color: hsl(0, 0%, 50%); 
+    padding: 1vw;   
+}
+
+input:focus, textarea:focus {
+    border-color: $keycolor;
+  }
+
+  textarea.form-control-narrow {
+      border-color: $black;
+  }
+
+input, textarea {
+    width: 20vw ;
+    font-family: "raleway";
+}
+
+.form-control {
+    text-align: center;
+    //padding: 10px;
+}
+
+input {
+    width: 300px;
+}
+
+.actions {
+    padding: 1vw;
+}
+
+a.btn2 {
+    background-color: #555;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+a.btn2:hover {
+    color: white;
+}
+
+hr {
+    width: 50vw;
+    border: 1px solid hsl(0, 0%, 92%);
+}
+
+.graybackground {
+    background-color: #f7f7f7;
 }

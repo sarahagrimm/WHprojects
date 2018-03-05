@@ -1,13 +1,15 @@
 body {
   font-family: sans-serif;
   text-transform: uppercase;
+  font-family: "raleway";
 }
 
-header {
-  padding: 10vw 2vw;
+.typify {
+  padding: 5vw 2vw;
   background-color: darkturquoise;
   text-align: center;
   color: whitesmoke;
+  margin: 0 auto;
 }
 
 a:link {
@@ -26,10 +28,6 @@ a:active {
   color: purple;
 }
 
-a {
-  color: inherit;
-}
-
 a.btn {
   background-color: rgba(20, 20, 20, 0.25);
   color: white;
@@ -39,20 +37,20 @@ a.btn {
 }
 
 a.btn:hover {
-  background-color: rgba(20, 20, 20, 0.1);
+  background-color: rgba(128, 128, 128, 0.1);
   transition: background-color 200ms;
-  font-size: 32px;
 }
 
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
+  color: gray;
 }
 
 h1 {
   font-size: 40px;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 h2 {
@@ -71,7 +69,7 @@ header div {
 }
 
 #features h2 {
-  border-bottom: 3px double #141414;
+  border-bottom: 3px double gray;
   display: inline-block;
 }
 
@@ -79,22 +77,104 @@ header div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: gray;
+  margin: 0 auto;
+  padding: 30px 200px;
 }
 
 #features ul li {
   width: 25%;
-  padding: 40px;
-  border: 1px solid #141414;
+  height: 15%;
+  padding: 1vw;
+  border: 1px solid #e7e1e1;
   margin-left: -1px;
   margin-top: -1px;
 }
 
 #features ul i {
-  font-size: 300%;
+  font-size: 250%;
   color: darkturquoise;
 }
 
 #features {
   text-align: center;
+  color: gray;
+}
+
+#messagebox {
+  text-align: center;
+  margin: o auto;
+  height: 500px;
+}
+
+.messageboxheader h2 {
+  border-bottom: 3px double gray;
+  display: flex;
+  justify-content: center;
+  width: 15vw;
+  margin: 0 auto;
+  padding: 5vw 0 0 0;
+  font-size: 25px;
+  font-weight: 100;
+  color: gray;
+}
+
+footer {
+  text-align: center;
+  color: #cccccc;
+  padding: 5vw;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+  font-weight: 50;
+  color: gray;
+  padding: 1vw;
+}
+
+input:focus, textarea:focus {
+  border-color: darkturquoise;
+}
+
+textarea.form-control-narrow {
+  border-color: gray;
+}
+
+input, textarea {
+  width: 20vw;
+  font-family: "raleway";
+}
+
+.form-control {
+  text-align: center;
+}
+
+input {
+  width: 300px;
+}
+
+.actions {
+  padding: 1vw;
+}
+
+a.btn2 {
+  background-color: #555;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+a.btn2:hover {
+  color: white;
+}
+
+hr {
+  width: 50vw;
+  border: 1px solid #ebebeb;
+}
+
+.graybackground {
+  background-color: #f7f7f7;
 }
 /*# sourceMappingURL=template.css.map */
