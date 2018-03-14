@@ -23,7 +23,7 @@ html {
 div.main {
     padding: 0 100px 0 100px;
     margin: 0 auto;
-    padding-top: 75px;
+    padding-top: 90px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
     
 
@@ -49,70 +49,58 @@ div.main {
         height: 80%;
     }
 
-    ul {
-        list-style: none;
-    }
+    // ul {
+    //     list-style: none;
+    // }
 
-    .about {
-        position: relative;
-    }
+    // .about {
+    //     position: relative;
+    // }
     
-    .languages {
+    // .languages {
     
-        i#html {
-            font-size: 100px;
-            padding: 30px;
-            color: hsl(12, 79%, 52%);
-        }
+    //     i#html {
+    //         font-size: 100px;
+    //         padding: 30px;
+    //         color: hsl(12, 79%, 52%);
+    //     }
 
-        i#css {
-            font-size: 100px;
-            padding: 30px; 
-            color: hsl(202, 100%, 39%);
-        }
+    //     i#css {
+    //         font-size: 100px;
+    //         padding: 30px; 
+    //         color: hsl(202, 100%, 39%);
+    //     }
 
-        li {
-            text-align: center;
-            margin: 0 auto;
-            display: inline;
-        }
-    }
+    //     li {
+    //         text-align: center;
+    //         margin: 0 auto;
+    //         display: inline;
+    //     }
+    // }
 
-    .contact {
-        i {
-            font-size: 25px;
-            padding: 10px;
-            color: $black;
-        }
-        i:hover {
-            color: indigo;
-        }
-        p {
-            display: inline;
-            text-decoration: none;
-            color: $black;
-            font-family: 'Fairplay Display', serif;
-            font-size: 80%;
-            padding-left: 0;
-        }
-        .social {
-            display: inline;
-        }
-    }
+    // .contact {
+    //     i {
+    //         font-size: 25px;
+    //         padding: 10px;
+    //         color: $black;
+    //     }
+    //     i:hover {
+    //         color: indigo;
+    //     }
+    //     p {
+    //         display: inline;
+    //         text-decoration: none;
+    //         color: $black;
+    //         font-family: 'Fairplay Display', serif;
+    //         font-size: 80%;
+    //         padding-left: 0;
+    //     }
+    //     .social {
+    //         display: inline;
+    //     }
+    // }
 }
 
-div.banner {
-    background-image:url('/img/computer.jpg');
-    background-size: 100% 800px;
-    background-repeat: no-repeat;
-    padding: 300px;
-
-    h3 {
-        color: $white;
-        text-shadow: 2px 2px $black;
-        letter-spacing: 2.5px;
-    }
-}
 
 span.name {
         color: $black;
@@ -179,7 +167,7 @@ footer {
     display: block;
     padding: 0 100px 0 20px;
     margin: 0;
-    height: 50px;
+    height: 25px;
     box-shadow: 15px $black;
     
 }

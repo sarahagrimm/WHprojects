@@ -19,7 +19,7 @@ html ul {
 div.main {
   padding: 0 100px 0 100px;
   margin: 0 auto;
-  padding-top: 75px;
+  padding-top: 90px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -44,68 +44,6 @@ div.main div {
   flex-direction: column;
   background-color: #f2f2f2;
   height: 80%;
-}
-
-div.main ul {
-  list-style: none;
-}
-
-div.main .about {
-  position: relative;
-}
-
-div.main .languages i#html {
-  font-size: 100px;
-  padding: 30px;
-  color: #e54b24;
-}
-
-div.main .languages i#css {
-  font-size: 100px;
-  padding: 30px;
-  color: #007ec7;
-}
-
-div.main .languages li {
-  text-align: center;
-  margin: 0 auto;
-  display: inline;
-}
-
-div.main .contact i {
-  font-size: 25px;
-  padding: 10px;
-  color: #292929;
-}
-
-div.main .contact i:hover {
-  color: indigo;
-}
-
-div.main .contact p {
-  display: inline;
-  text-decoration: none;
-  color: #292929;
-  font-family: 'Fairplay Display', serif;
-  font-size: 80%;
-  padding-left: 0;
-}
-
-div.main .contact .social {
-  display: inline;
-}
-
-div.banner {
-  background-image: url("/img/computer.jpg");
-  background-size: 100% 800px;
-  background-repeat: no-repeat;
-  padding: 300px;
-}
-
-div.banner h3 {
-  color: #f2f2f2;
-  text-shadow: 2px 2px #292929;
-  letter-spacing: 2.5px;
 }
 
 span.name {
@@ -164,7 +102,7 @@ footer h2 {
   display: block;
   padding: 0 100px 0 20px;
   margin: 0;
-  height: 50px;
+  height: 25px;
   box-shadow: 15px #292929;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=about.css.map */
