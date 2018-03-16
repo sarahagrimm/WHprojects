@@ -17,26 +17,9 @@ html ul {
 }
 
 div.main {
-  padding: 0 100px 0 100px;
+  padding: 0 150px 0 150px;
   margin: 0 auto;
-  padding-top: 75px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-div.main h2 {
-  background-color: #292929;
-  font-family: 'Playfair Display', serif;
-  color: #f2f2f2;
-  display: block;
-  padding: 0 100px 0 20px;
-  margin: 0;
-  height: 50px;
-  box-shadow: 15px #292929;
-}
-
-div.main p {
-  padding: 50px;
-  font-family: 'Playfair Display', serif;
+  padding-top: 60px;
 }
 
 div.main div {
@@ -46,70 +29,22 @@ div.main div {
   height: 80%;
 }
 
-div.main ul {
-  list-style: none;
-}
-
-div.main .about {
-  position: relative;
-}
-
-div.main .languages i#html {
-  font-size: 100px;
-  padding: 30px;
-  color: #e54b24;
-}
-
-div.main .languages i#css {
-  font-size: 100px;
-  padding: 30px;
-  color: #007ec7;
-}
-
-div.main .languages li {
-  text-align: center;
-  margin: 0 auto;
-  display: inline;
-}
-
-div.main .contact i {
-  font-size: 25px;
-  padding: 10px;
-  color: #292929;
-}
-
-div.main .contact i:hover {
-  color: indigo;
-}
-
-div.main .contact p {
-  display: inline;
-  text-decoration: none;
-  color: #292929;
-  font-family: 'Fairplay Display', serif;
-  font-size: 80%;
-  padding-left: 0;
-}
-
-div.main .contact .social {
-  display: inline;
-}
-
 div.banner {
   background-image: url("/img/computer.jpg");
-  background-size: 100% 800px;
+  background-size: 100% 650px;
   background-repeat: no-repeat;
-  padding: 300px;
+  padding: 285px;
+  margin: 0px 20px 0 0;
 }
 
 div.banner h3 {
   color: #f2f2f2;
-  text-shadow: 2px 2px #292929;
-  letter-spacing: 2.5px;
+  text-shadow: 2px 2px #121212;
+  letter-spacing: 5px;
 }
 
 span.name {
-  color: #292929;
+  color: #121212;
   background-color: #f2f2f2;
   width: 100%;
   position: fixed;
@@ -120,7 +55,7 @@ span.name {
 }
 
 span.name h1 {
-  color: #292929;
+  color: #121212;
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 200%;
@@ -149,22 +84,23 @@ nav#menu li.links {
 
 nav#menu li.links a {
   text-decoration: none;
-  color: #292929;
+  color: #121212;
 }
 
 nav#menu li.links a:hover {
   color: indigo;
 }
 
-footer h2 {
-  text-align: center;
-  background-color: #292929;
+footer h5 {
+  background-color: #121212;
   font-family: 'Playfair Display', sans-serif;
   color: #f2f2f2;
   display: block;
-  padding: 0 100px 0 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 70%;
+  height: 30px;
   margin: 0;
-  height: 50px;
-  box-shadow: 15px #292929;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=style.css.map */

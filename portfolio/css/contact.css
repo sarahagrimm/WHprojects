@@ -93,19 +93,41 @@ div.main .contact p {
 
 div.main .contact .social {
   display: inline;
+  text-align: center;
 }
 
-div.banner {
-  background-image: url("/img/computer.jpg");
-  background-size: 100% 800px;
-  background-repeat: no-repeat;
-  padding: 300px;
+div.main .contact .phone-email li {
+  display: inline;
 }
 
-div.banner h3 {
-  color: #f2f2f2;
-  text-shadow: 2px 2px #292929;
-  letter-spacing: 2.5px;
+div.main .contact h1 {
+  color: #292929;
+  margin-left: 30px;
+  padding-top: 20px;
+}
+
+div.main .contact button {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+div.main .contact form {
+  margin-left: 30px;
+}
+
+div.main .contact form h4 {
+  padding: 0;
+  margin: 10px 0;
+  font-family: 'Fairplay Display', serif;
+}
+
+div.main .contact form input[type=text]:focus, div.main .contact form textarea:focus, div.main .contact form input[type=email]:focus {
+  box-shadow: 0 0 5px #490679;
+  border: 1px solid #4a0080;
+}
+
+div.socialmedia h1 {
+  color: #292929;
 }
 
 span.name {
@@ -120,7 +142,7 @@ span.name {
 }
 
 span.name h1 {
-  color: #292929;
+  color: black;
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 200%;
@@ -156,15 +178,16 @@ nav#menu li.links a:hover {
   color: indigo;
 }
 
-footer h2 {
-  text-align: center;
+footer h5 {
   background-color: #292929;
   font-family: 'Playfair Display', sans-serif;
   color: #f2f2f2;
   display: block;
-  padding: 0 100px 0 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 70%;
+  height: 30px;
   margin: 0;
-  height: 50px;
-  box-shadow: 15px #292929;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=contact.css.map */

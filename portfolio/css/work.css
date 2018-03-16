@@ -19,8 +19,13 @@ html ul {
 div.main {
   padding: 0 100px 0 100px;
   margin: 0 auto;
-  padding-top: 75px;
+  padding-top: 91px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+div.main h1 {
+  color: #292929;
+  margin-left: 40px;
 }
 
 div.main h2 {
@@ -28,10 +33,10 @@ div.main h2 {
   font-family: 'Playfair Display', serif;
   color: #f2f2f2;
   display: block;
-  padding: 0 100px 0 20px;
+  padding: 0 150px 0 20px;
   margin: 0;
   height: 50px;
-  box-shadow: 15px #292929;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 div.main p {
@@ -50,8 +55,8 @@ div.main ul {
   list-style: none;
 }
 
-div.main .about {
-  position: relative;
+div.main .languages h2 {
+  margin: 0;
 }
 
 div.main .languages i#html {
@@ -72,30 +77,12 @@ div.main .languages li {
   display: inline;
 }
 
-div.main .contact i {
-  font-size: 25px;
-  padding: 10px;
-  color: #292929;
+div.main .languages ul {
+  border-top: 1px solid #292929;
+  border-bottom: 1px solid #292929;
 }
 
-div.main .contact i:hover {
-  color: indigo;
-}
-
-div.main .contact p {
-  display: inline;
-  text-decoration: none;
-  color: #292929;
-  font-family: 'Fairplay Display', serif;
-  font-size: 80%;
-  padding-left: 0;
-}
-
-div.main .contact .social {
-  display: inline;
-}
-
-span.name {
+div.main span.name {
   color: #292929;
   background-color: #f2f2f2;
   width: 100%;
@@ -106,52 +93,53 @@ span.name {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-span.name h1 {
-  color: #292929;
+div.main span.name h1 {
+  color: black;
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 200%;
   display: inline;
 }
 
-span.name img {
+div.main span.name img {
   width: 5%;
   padding: 0 5px 0 5px;
 }
 
-span.name li.nametag {
+div.main span.name li.nametag {
   display: inline;
 }
 
-nav#menu {
+div.main nav#menu {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
 }
 
-nav#menu li.links {
+div.main nav#menu li.links {
   display: inline;
   padding: 10px;
 }
 
-nav#menu li.links a {
+div.main nav#menu li.links a {
   text-decoration: none;
   color: #292929;
 }
 
-nav#menu li.links a:hover {
+div.main nav#menu li.links a:hover {
   color: indigo;
 }
 
-footer h2 {
-  text-align: center;
+div.main footer h5 {
   background-color: #292929;
   font-family: 'Playfair Display', sans-serif;
   color: #f2f2f2;
   display: block;
-  padding: 0 100px 0 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 70%;
+  height: 30px;
   margin: 0;
-  height: 50px;
-  box-shadow: 15px #292929;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=work.css.map */

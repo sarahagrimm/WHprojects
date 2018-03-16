@@ -16,36 +16,6 @@ html ul {
   list-style: none;
 }
 
-div.main {
-  padding: 0 100px 0 100px;
-  margin: 0 auto;
-  padding-top: 90px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-div.main h2 {
-  background-color: #292929;
-  font-family: 'Playfair Display', serif;
-  color: #f2f2f2;
-  display: block;
-  padding: 0 100px 0 20px;
-  margin: 0;
-  height: 50px;
-  box-shadow: 15px #292929;
-}
-
-div.main p {
-  padding: 50px;
-  font-family: 'Playfair Display', serif;
-}
-
-div.main div {
-  display: flex;
-  flex-direction: column;
-  background-color: #f2f2f2;
-  height: 80%;
-}
-
 span.name {
   color: #292929;
   background-color: #f2f2f2;
@@ -74,35 +44,70 @@ span.name li.nametag {
   display: inline;
 }
 
-nav#menu {
+div.main {
+  padding: 0 100px 0 100px;
+  margin: 0 auto;
+  padding-top: 90px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+div.main h1 {
+  color: black;
+}
+
+div.main h2 {
+  background-color: #292929;
+  font-family: 'Playfair Display', serif;
+  color: #f2f2f2;
+  display: block;
+  padding: 0 100px 0 20px;
+  margin: 0;
+  height: 50px;
+  box-shadow: 15px #292929;
+}
+
+div.main p {
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+div.main div {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  height: 80%;
+}
+
+div.main nav#menu {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
 }
 
-nav#menu li.links {
+div.main nav#menu li.links {
   display: inline;
   padding: 10px;
 }
 
-nav#menu li.links a {
+div.main nav#menu li.links a {
   text-decoration: none;
   color: #292929;
 }
 
-nav#menu li.links a:hover {
+div.main nav#menu li.links a:hover {
   color: indigo;
 }
 
-footer h2 {
-  text-align: center;
+div.main footer h5 {
   background-color: #292929;
   font-family: 'Playfair Display', sans-serif;
   color: #f2f2f2;
   display: block;
-  padding: 0 100px 0 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 70%;
+  height: 30px;
   margin: 0;
-  height: 25px;
-  box-shadow: 15px #292929;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=about.css.map */
