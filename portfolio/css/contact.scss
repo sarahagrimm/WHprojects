@@ -19,12 +19,30 @@ html {
     }
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $white; 
+    border-radius: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: indigo; 
+}
 
 div.main {
     padding: 0 100px 0 100px;
     margin: 0 auto;
     padding-top: 75px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
     
 
 
@@ -79,6 +97,39 @@ div.main {
     }
 
     .contact {
+        text-align: center;
+        input {
+            width: 300px;
+            font-family: 'Playfair Display', serif;
+            border: 1px solid indigo;
+            box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px;
+            background-color: $black;
+        }
+        textarea {
+            width: 500px;
+            height: 150px;
+            font-family: 'Playfair Display', serif;
+            border: 1px solid indigo;
+            box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px;
+            background-color: $black;
+        }
+
+        b {
+            color: hsl(0, 100%, 40%);
+        }
+        .submit {
+            background: linear-gradient(indigo, black);
+            border: 1px solid $black;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            color: $white;
+            text-transform: uppercase;
+            font-family: 'Fjalla One', serif;
+            letter-spacing: 10px;
+        }
         i {
             font-size: 25px;
             padding: 10px;
@@ -91,7 +142,7 @@ div.main {
             display: inline;
             text-decoration: none;
             color: $black;
-            font-family: 'Fairplay Display', serif;
+            font-family: 'Playfair Display', serif;
             font-size: 80%;
             padding-left: 0;
         }
@@ -109,6 +160,7 @@ div.main {
             color: $black;
             margin-left: 30px;
             padding-top: 20px;
+            letter-spacing: 20px;
         }
         button {
             margin-left: 40px;
@@ -120,7 +172,8 @@ div.main {
                 padding: 0;
                 margin: 10px 0;
                 //font-weight: 100;
-                font-family: 'Fairplay Display', serif;
+                font-family: 'Playfair Display', serif;
+                
             }
             input[type=text]:focus, textarea:focus, input[type=email]:focus {
                 box-shadow: 0 0 5px hsl(275, 90%, 25%);
@@ -133,22 +186,26 @@ div.main {
 }
 
     div.socialmedia {
-        //float: left;
+
         h1 {
             color: $black;
-
+            letter-spacing: 20px;
+        }
+        i {
+            font-size: 50px;
+            padding: 20px;
+            color: $black;
         }
     }
 
 span.name {
-        color: $black;
+        color: black;
         background-color: $white;
         width: 100%;
         position: fixed;  
         z-index: 9999;
         top: 0;
         left:0;
-        //font-size: 120%;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 
@@ -156,9 +213,7 @@ span.name {
                 color: black;
                 margin: 0 auto;
                 text-transform: uppercase;
-                //font-family: 'Playfair Display', serif;
                 font-size: 200%;
-                //letter-spacing: 2.5px;
                 display: inline;
                 
         }
@@ -176,9 +231,7 @@ nav#menu{
         display: flex;
         justify-content: space-around;
         padding-top: 10px;
-    // ul.linksul {
-        
-    // }
+
     li.links {
         display: inline;
         padding: 10px;
@@ -200,7 +253,6 @@ footer {
     font-family: 'Playfair Display', sans-serif;
     color: $white;
     display: block;
-    padding-left: 10px;
     padding-top: 10px;
     font-size: 70%;
     height: 30px;

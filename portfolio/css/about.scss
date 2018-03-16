@@ -21,11 +21,26 @@ html {
 
 
 
+.headshot {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 200px;
+    height: 200px;
+}
 
+// .birth {
+//     text-align: left;
+//     display: inline;
+// }
+// .life {
+//     padding-top: 0;
+//     text-align: right;
+//     display: inline;
+// }
 
 
 span.name {
-        color: $black;
+        color: black;
         background-color: $white;
         width: 100%;
         position: fixed;  
@@ -57,9 +72,8 @@ div.main {
     margin: 0 auto;
     padding-top: 90px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
-    
     h1 {
-        color: black;    
+        color: black;
     }
 
     h2 {
@@ -83,16 +97,27 @@ div.main {
         height: 80%;
     }
 
-
+.about {
+    h1 {
+        text-align: center;
+        letter-spacing: 30px;
+    }
+    h3 {
+    i {
+        font-size: 50px;
+        color: indigo;
+        margin: 20px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    }
+    
+}
     
 
 nav#menu{
         display: flex;
         justify-content: space-around;
         padding-top: 10px;
-    // ul.linksul {
-        
-    // }
     li.links {
         display: inline;
         padding: 10px;

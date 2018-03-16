@@ -34,7 +34,6 @@ div.banner {
   background-size: 100% 650px;
   background-repeat: no-repeat;
   padding: 285px;
-  margin: 0px 20px 0 0;
 }
 
 div.banner h3 {
@@ -44,7 +43,7 @@ div.banner h3 {
 }
 
 span.name {
-  color: #121212;
+  color: black;
   background-color: #f2f2f2;
   width: 100%;
   position: fixed;

@@ -39,7 +39,6 @@ div.banner {
     background-size: 100% 650px;
     background-repeat: no-repeat;
     padding: 285px;
-    margin: 0px 20px 0 0;
     h3 {
         color: $white;
         text-shadow: 2px 2px $black;
@@ -48,7 +47,7 @@ div.banner {
 }
 
 span.name {
-        color: $black;
+        color: black;
         background-color: $white;
         width: 100%;
         position: fixed;  

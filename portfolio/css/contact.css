@@ -16,11 +16,30 @@ html ul {
   list-style: none;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f2f2f2;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #292929;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: indigo;
+}
+
 div.main {
   padding: 0 100px 0 100px;
   margin: 0 auto;
   padding-top: 75px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 div.main h2 {
@@ -72,6 +91,45 @@ div.main .languages li {
   display: inline;
 }
 
+div.main .contact {
+  text-align: center;
+}
+
+div.main .contact input {
+  width: 300px;
+  font-family: 'Playfair Display', serif;
+  border: 1px solid indigo;
+  box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #292929;
+}
+
+div.main .contact textarea {
+  width: 500px;
+  height: 150px;
+  font-family: 'Playfair Display', serif;
+  border: 1px solid indigo;
+  box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #292929;
+}
+
+div.main .contact b {
+  color: #cc0000;
+}
+
+div.main .contact .submit {
+  background: linear-gradient(indigo, black);
+  border: 1px solid #292929;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', serif;
+  letter-spacing: 10px;
+}
+
 div.main .contact i {
   font-size: 25px;
   padding: 10px;
@@ -86,7 +144,7 @@ div.main .contact p {
   display: inline;
   text-decoration: none;
   color: #292929;
-  font-family: 'Fairplay Display', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 80%;
   padding-left: 0;
 }
@@ -104,6 +162,7 @@ div.main .contact h1 {
   color: #292929;
   margin-left: 30px;
   padding-top: 20px;
+  letter-spacing: 20px;
 }
 
 div.main .contact button {
@@ -118,7 +177,7 @@ div.main .contact form {
 div.main .contact form h4 {
   padding: 0;
   margin: 10px 0;
-  font-family: 'Fairplay Display', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 div.main .contact form input[type=text]:focus, div.main .contact form textarea:focus, div.main .contact form input[type=email]:focus {
@@ -128,10 +187,17 @@ div.main .contact form input[type=text]:focus, div.main .contact form textarea:f
 
 div.socialmedia h1 {
   color: #292929;
+  letter-spacing: 20px;
+}
+
+div.socialmedia i {
+  font-size: 50px;
+  padding: 20px;
+  color: #292929;
 }
 
 span.name {
-  color: #292929;
+  color: black;
   background-color: #f2f2f2;
   width: 100%;
   position: fixed;
@@ -183,7 +249,6 @@ footer h5 {
   font-family: 'Playfair Display', sans-serif;
   color: #f2f2f2;
   display: block;
-  padding-left: 10px;
   padding-top: 10px;
   font-size: 70%;
   height: 30px;

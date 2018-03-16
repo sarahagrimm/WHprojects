@@ -16,6 +16,26 @@ html ul {
   list-style: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f2f2f2;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #292929;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: indigo;
+}
+
 div.main {
   padding: 0 100px 0 100px;
   margin: 0 auto;
@@ -25,7 +45,6 @@ div.main {
 
 div.main h1 {
   color: #292929;
-  margin-left: 40px;
 }
 
 div.main h2 {
@@ -55,6 +74,10 @@ div.main ul {
   list-style: none;
 }
 
+div.main .languages {
+  box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 div.main .languages h2 {
   margin: 0;
 }
@@ -63,12 +86,21 @@ div.main .languages i#html {
   font-size: 100px;
   padding: 30px;
   color: #e54b24;
+  text-shadow: 2px 2px #292929;
 }
 
 div.main .languages i#css {
   font-size: 100px;
   padding: 30px;
   color: #007ec7;
+  text-shadow: 2px 2px #292929;
+}
+
+div.main .languages i#photo {
+  font-size: 100px;
+  padding: 30px;
+  color: indigo;
+  text-shadow: 2px 2px #292929;
 }
 
 div.main .languages li {
@@ -77,13 +109,42 @@ div.main .languages li {
   display: inline;
 }
 
-div.main .languages ul {
-  border-top: 1px solid #292929;
-  border-bottom: 1px solid #292929;
+div.main .work {
+  overflow: hidden;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-div.main span.name {
-  color: #292929;
+div.main .work h1 {
+  text-align: center;
+  letter-spacing: 20px;
+}
+
+div.main .work img {
+  width: 400px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+div.main .work img:hover {
+  opacity: 1;
+}
+
+div.main .work ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+div.main .work li {
+  display: inline;
+}
+
+span.name {
+  color: black;
   background-color: #f2f2f2;
   width: 100%;
   position: fixed;
@@ -93,7 +154,7 @@ div.main span.name {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-div.main span.name h1 {
+span.name h1 {
   color: black;
   margin: 0 auto;
   text-transform: uppercase;
@@ -101,36 +162,40 @@ div.main span.name h1 {
   display: inline;
 }
 
-div.main span.name img {
+span.name img {
   width: 5%;
   padding: 0 5px 0 5px;
 }
 
-div.main span.name li.nametag {
+span.name li.nametag {
   display: inline;
 }
 
-div.main nav#menu {
+nav#menu {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
 }
 
-div.main nav#menu li.links {
+nav#menu li.links {
   display: inline;
   padding: 10px;
 }
 
-div.main nav#menu li.links a {
+nav#menu li.links a {
   text-decoration: none;
   color: #292929;
 }
 
-div.main nav#menu li.links a:hover {
+nav#menu li.links a:hover {
   color: indigo;
 }
 
-div.main footer h5 {
+footer {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer h5 {
   background-color: #292929;
   font-family: 'Playfair Display', sans-serif;
   color: #f2f2f2;
