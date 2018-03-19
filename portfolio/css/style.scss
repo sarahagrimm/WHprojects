@@ -19,11 +19,31 @@ html {
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $white; 
+    border-radius: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: indigo; 
+}
 
 div.main {
     padding: 0 150px 0 150px;
     margin: 0 auto;
     padding-top: 60px;
+    width: 1200px;
     
     div {
         display: flex;
@@ -35,14 +55,20 @@ div.main {
 }
 
 div.banner {
-    background-image:url('/img/computer.jpg');
-    background-size: 100% 650px;
+    background-image:url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1050&q=80');
+    background-size: 100% 700px;
     background-repeat: no-repeat;
-    padding: 285px;
+    padding: 250px;
     h3 {
         color: $white;
-        text-shadow: 2px 2px $black;
+        font-size: 50px;
+        text-shadow: 3px 3px $black;
         letter-spacing: 5px;
+        margin: 0 auto;
+    }
+    .icons {
+        margin: 0 auto;
+        letter-spacing: 100px;
     }
 }
 

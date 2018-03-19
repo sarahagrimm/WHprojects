@@ -40,6 +40,7 @@ div.main {
   padding: 0 100px 0 100px;
   margin: 0 auto;
   padding-top: 75px;
+  width: 1200px;
 }
 
 div.main h2 {
@@ -69,10 +70,6 @@ div.main ul {
   list-style: none;
 }
 
-div.main .about {
-  position: relative;
-}
-
 div.main .languages i#html {
   font-size: 100px;
   padding: 30px;
@@ -87,8 +84,6 @@ div.main .languages i#css {
 
 div.main .languages li {
   text-align: center;
-  margin: 0 auto;
-  display: inline;
 }
 
 div.main .contact {
@@ -185,15 +180,45 @@ div.main .contact form input[type=text]:focus, div.main .contact form textarea:f
   border: 1px solid #4a0080;
 }
 
+div.socialmedia li {
+  display: inline;
+  letter-spacing: 100px;
+}
+
 div.socialmedia h1 {
   color: #292929;
   letter-spacing: 20px;
+  text-align: center;
 }
 
 div.socialmedia i {
   font-size: 50px;
   padding: 20px;
   color: #292929;
+}
+
+div.socialmedia a {
+  text-decoration: none;
+}
+
+div.socialmedia #facebook {
+  color: #4368b1;
+  text-shadow: 2px 2px #292929;
+}
+
+div.socialmedia #insta {
+  color: #e52a43;
+  text-shadow: 2px 2px #292929;
+}
+
+div.socialmedia #github {
+  color: #6b2c81;
+  text-shadow: 2px 2px #292929;
+}
+
+div.socialmedia #linkedin {
+  color: #0676b2;
+  text-shadow: 2px 2px #292929;
 }
 
 span.name {

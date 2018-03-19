@@ -43,7 +43,7 @@ div.main {
     padding: 0 100px 0 100px;
     margin: 0 auto;
     padding-top: 75px;
-    
+    width: 1200px;
 
 
     h2 {
@@ -70,10 +70,6 @@ div.main {
     ul {
         list-style: none;
     }
-
-    .about {
-        position: relative;
-    }
     
     .languages {
     
@@ -91,8 +87,8 @@ div.main {
 
         li {
             text-align: center;
-            margin: 0 auto;
-            display: inline;
+            //margin: 0 auto;
+            //display: inline;
         }
     }
 
@@ -177,8 +173,6 @@ div.main {
             }
             input[type=text]:focus, textarea:focus, input[type=email]:focus {
                 box-shadow: 0 0 5px hsl(275, 90%, 25%);
-                //padding: 3px 0px 3px 3px;
-                //margin: 5px 1px 3px 0px;
                 border: 1px solid hsl(275, 100%, 25%);
               }
         }
@@ -186,16 +180,43 @@ div.main {
 }
 
     div.socialmedia {
+        
+        li {
+            display: inline;
+            letter-spacing: 100px;
+        }
 
         h1 {
             color: $black;
             letter-spacing: 20px;
+            text-align: center;
         }
         i {
             font-size: 50px;
             padding: 20px;
             color: $black;
         }
+        a {
+            text-decoration: none;
+        }
+
+        #facebook {
+            color: hsl(220, 45%, 48%);
+            text-shadow: 2px 2px $black;
+        }
+        #insta {
+            color: hsl(352, 78%, 53%);
+            text-shadow: 2px 2px $black;
+        }
+        #github {
+            color: hsl(284, 49%, 34%);
+            text-shadow: 2px 2px $black;
+        }
+        #linkedin {
+            color: hsl(201, 94%, 36%);
+            text-shadow: 2px 2px $black;
+        }
+
     }
 
 span.name {
