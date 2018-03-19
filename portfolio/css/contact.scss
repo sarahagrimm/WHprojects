@@ -20,7 +20,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
 /* Track */
@@ -180,10 +180,13 @@ div.main {
 }
 
     div.socialmedia {
-        
+            ul {
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
+            }
         li {
             display: inline;
-            letter-spacing: 100px;
         }
 
         h1 {
@@ -192,12 +195,14 @@ div.main {
             text-align: center;
         }
         i {
-            font-size: 50px;
+            font-size: 100px;
             padding: 20px;
             color: $black;
+
         }
         a {
             text-decoration: none;
+            //letter-spacing: 100px;
         }
 
         #facebook {

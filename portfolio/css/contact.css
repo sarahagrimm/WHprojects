@@ -17,7 +17,7 @@ html ul {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 /* Track */
@@ -180,9 +180,14 @@ div.main .contact form input[type=text]:focus, div.main .contact form textarea:f
   border: 1px solid #4a0080;
 }
 
+div.socialmedia ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
 div.socialmedia li {
   display: inline;
-  letter-spacing: 100px;
 }
 
 div.socialmedia h1 {
@@ -192,7 +197,7 @@ div.socialmedia h1 {
 }
 
 div.socialmedia i {
-  font-size: 50px;
+  font-size: 100px;
   padding: 20px;
   color: #292929;
 }

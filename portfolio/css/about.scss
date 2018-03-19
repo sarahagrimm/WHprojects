@@ -19,13 +19,38 @@ html {
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $white; 
+    border-radius: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: indigo; 
+}
 
 .headshot {
     width: 200px;
     margin: 0 auto;
-    border-radius: 200px;
-    height: 200px;
+    height: 300px;
+}
+
+#btn {
+    width: 100px;
+    margin: 0 auto;
+    background-color: indigo;
+    border-radius: 10px;
+
 }
 
 // .birth {
@@ -101,7 +126,7 @@ div.main {
 .about {
     h1 {
         text-align: center;
-        letter-spacing: 30px;
+        letter-spacing: 20px;
     }
     h3 {
     i {
