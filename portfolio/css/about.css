@@ -46,7 +46,6 @@ html ul {
   width: 100px;
   margin: 0 auto;
   background-color: indigo;
-  border-radius: 10px;
 }
 
 span.name {
@@ -117,11 +116,44 @@ div.main .about h1 {
   letter-spacing: 20px;
 }
 
-div.main .about h3 i {
+div.main .about h3 {
   font-size: 50px;
   color: indigo;
   margin: 20px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+div.main .about img {
+  height: 620px;
+  width: 49%;
+  margin-left: -20px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+div.main .about li {
+  display: inline;
+}
+
+div.main .about ul {
+  display: block;
+}
+
+div.main .about .arrows {
+  position: relative;
+  z-index: 1;
+  font-size: 75px;
+}
+
+div.main .about .arrows i.fa-angle-double-left {
+  left: 0;
+  position: absolute;
+  margin-top: 300px;
+}
+
+div.main .about .arrows i.fa-angle-double-right {
+  right: 0;
+  position: absolute;
+  margin-top: 300px;
 }
 
 div.main nav#menu {

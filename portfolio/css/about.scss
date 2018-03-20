@@ -49,7 +49,6 @@ html {
     width: 100px;
     margin: 0 auto;
     background-color: indigo;
-    border-radius: 10px;
 
 }
 
@@ -129,15 +128,50 @@ div.main {
         letter-spacing: 20px;
     }
     h3 {
-    i {
         font-size: 50px;
         color: indigo;
         margin: 20px;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
+    img {
+        height: 620px;
+        width: 49%;
+        margin-left: -20px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    li {
+        display:inline;
+    }
+
+    ul {
+        display: block;
+    }
+
+
+
+    .arrows {
+        position: relative;
+        z-index: 1;
+        font-size: 75px;
+        
+
+        i.fa-angle-double-left {
+            left: 0;
+            position: absolute;
+            margin-top: 300px;
+        }
+
+        i.fa-angle-double-right {
+            right: 0;
+            position: absolute;
+            margin-top: 300px;
+        }
     }
     
 }
+
+
     
 
 nav#menu{
