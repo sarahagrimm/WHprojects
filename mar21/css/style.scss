@@ -1,0 +1,35 @@
+$black: hsla(0, 0%, 19%, 1);
+
+body {
+    margin: 0;
+    transition: background-color color 500ms;
+    background-color: gold;
+
+}
+
+body.img {
+    background-color: indigo;
+    color: white;
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+button {
+    border: 1px solid darken($black, 10);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: inherit;
+    &:hover {
+        background-color: lighten($black, 65);
+        cursor: pointer;
+    }
+}
+nav {
+    padding: 10px;
+    background-color: $black;
+    display: flex;
+    justify-content: flex-end;
+}
+

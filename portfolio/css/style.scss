@@ -98,7 +98,11 @@ span.name {
             display: inline;
         }
 
+
+
+
 }
+
 
 nav#menu{
         display: flex;
@@ -117,7 +121,13 @@ nav#menu{
         a:hover {
             color: indigo;
         }
+            //trying to push labels down when hovered
+            // li:hover a {
+            //     text-indent: 50px;
+            // }
+            
     }
+
 }
 
 footer {

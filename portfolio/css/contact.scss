@@ -275,14 +275,15 @@ nav#menu{
 
 footer {
     h5 { 
-    background-color: $black;
-    font-family: 'Playfair Display', sans-serif;
-    color: $white;
-    display: block;
-    padding-top: 10px;
-    font-size: 70%;
-    height: 30px;
-    margin: 0;
-    letter-spacing: 1px; 
+        background-color: $black;
+        font-family: 'Playfair Display', sans-serif;
+        color: $white;
+        display: block;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 70%;
+        height: 30px;
+        margin: 0;
+        letter-spacing: 1px; 
     }
 }
