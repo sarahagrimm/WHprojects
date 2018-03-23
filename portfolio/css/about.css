@@ -49,7 +49,7 @@ html ul {
 }
 
 span.name {
-  color: black;
+  color: #292929;
   background-color: #f2f2f2;
   width: 100%;
   position: fixed;
@@ -60,7 +60,6 @@ span.name {
 }
 
 span.name h1 {
-  color: #292929;
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 200%;
@@ -74,6 +73,7 @@ span.name img {
 
 span.name li.nametag {
   display: inline;
+  text-shadow: 2px 1px 2px indigo;
 }
 
 div.main {
@@ -82,16 +82,17 @@ div.main {
   padding-top: 90px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   width: 1200px;
+  color: #292929;
 }
 
 div.main h1 {
-  color: black;
+  color: #292929;
 }
 
 div.main h2 {
   background-color: #292929;
   font-family: 'Playfair Display', serif;
-  color: #f2f2f2;
+  color: #292929;
   display: block;
   padding: 0 100px 0 20px;
   margin: 0;
@@ -111,72 +112,79 @@ div.main div {
   height: 80%;
 }
 
-div.main .about h1 {
+div.main .about
+h1 {
   text-align: center;
   letter-spacing: 20px;
+  text-shadow: 2px 1px 2px indigo;
 }
 
-div.main .about h3 {
+div.main h3 {
   font-size: 50px;
   color: indigo;
   margin: 20px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-div.main .about img {
-  height: 620px;
-  width: 49%;
-  margin-left: -20px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-div.main .about li {
+div.main li {
   display: inline;
 }
 
-div.main .about ul {
+div.main ul {
   display: block;
 }
 
-div.main .about .arrows {
-  position: relative;
-  z-index: 1;
-  font-size: 75px;
+div.main .left {
+  width: 30%;
 }
 
-div.main .about .arrows i.fa-angle-double-left {
-  left: 0;
-  position: absolute;
-  margin-top: 300px;
+.photo {
+  text-align: left;
+  width: 45%;
 }
 
-div.main .about .arrows i.fa-angle-double-right {
+.photo li.imgme {
+  width: 100%;
   right: 0;
-  position: absolute;
-  margin-top: 300px;
+  padding: 0;
 }
 
-div.main nav#menu {
+.photo ul {
+  width: 100%;
+  padding: 0;
+}
+
+.photo li.text {
+  width: 100%;
+}
+
+.photo li.text img {
+  width: 100%;
+  right: 0;
+  padding: 0;
+}
+
+nav#menu {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
 }
 
-div.main nav#menu li.links {
+nav#menu li.links {
   display: inline;
   padding: 10px;
 }
 
-div.main nav#menu li.links a {
+nav#menu li.links a {
   text-decoration: none;
   color: #292929;
 }
 
-div.main nav#menu li.links a:hover {
+nav#menu li.links a:hover {
   color: indigo;
 }
 
-div.main footer h5 {
+footer h5 {
   background-color: #292929;
   font-family: 'Playfair Display', sans-serif;
   color: #f2f2f2;

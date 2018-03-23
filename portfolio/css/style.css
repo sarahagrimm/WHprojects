@@ -46,7 +46,7 @@ div.main {
 div.main div {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: black;
   height: 80%;
 }
 
