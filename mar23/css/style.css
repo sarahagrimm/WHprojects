@@ -1,0 +1,77 @@
+@import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
+body {
+  background-color: #0d0d0d;
+  color: white;
+}
+
+#text a {
+  text-decoration: none;
+  color: darkmagenta;
+}
+
+#topnav {
+  background-color: white;
+  color: black;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 5px 2px 2px black;
+  z-index: 9999;
+}
+
+#topnav ul {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#topnav li {
+  display: inline;
+}
+
+#topnav li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  color: black;
+}
+
+#welcome {
+  color: black;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  padding-top: 50px;
+  width: 100%;
+  background-color: indigo;
+}
+
+#btns {
+  padding: 20px;
+}
+
+#btns li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+
+#btns li button {
+  background-color: indigo;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+#btns li button:hover {
+  cursor: pointer;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
