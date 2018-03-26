@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Londrina+Solid|Rozha+One');
+@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|IBM+Plex+Serif');
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
 
 $black: hsl(0, 0%, 16%);
 $white: hsl(0, 0%, 95%);
@@ -19,52 +18,69 @@ html {
     }
 }
 
-::-webkit-scrollbar {
-    width: 10px;
+//Navigation
+span#topNavBar {
+    color: black;
+    background-color: $white;
+    width: 100%;
+    position: fixed;  
+    z-index: 9999;
+    top: 0;
+    left:0;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    // border-bottom: 2px dashed $black;
+
+        h1 {
+            color: black;
+            margin: 0 auto;
+            text-transform: uppercase;
+            font-size: 200%;
+            display: inline;
+            
+    }
+    li.nametag {
+        display: inline;
+    }
+
+    nav#menu{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+
+        img#ember {
+            width: 5%;
+            margin: -10px 5px 0 5px;
+        }
+
+        .linksul {
+            padding-top: 7px;
+        }
+
+    li.links {
+        display: inline;
+        padding: 10px;
+        
+        a {
+            text-decoration: none;
+            color: $black;
+
+        }
+        a:hover {
+            color: indigo;
+        }
+    }
+}
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px $white; 
-    border-radius: 3px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: $black;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: indigo; 
-}
-
-
+//Middle
 div.main {
-    padding: 0 100px 0 100px;
-    margin: 0 auto;
-    padding-top: 91px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+    margin: 0 150px 0 150px;
+    padding-top: 80px;
     width: 1200px;
 
     h1 {
     color: $black;
 }
-
-    h2 {
-        background-color: $black;
-        font-family: 'Playfair Display', serif;
-        color: $white;
-        display: block;
-        padding: 0 150px 0 20px;
-        margin: 0;
-        height: 50px;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
-    }
-    p {
-        padding: 50px;
-        font-family: 'Playfair Display', serif;
-    }
     div {
         display: flex;
         flex-direction: column;
@@ -76,42 +92,33 @@ div.main {
         list-style: none;
     }
     
-    .languages {
-        box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, 0.2);
-        h2 {
-            margin: 0;
-        }
-    
-        i#html {
-            font-size: 100px;
-            padding: 30px;
-            color: hsl(12, 79%, 52%);
-            text-shadow: 2px 2px $black;
+    #skills {
+        // overflow: hidden;
 
+        h1 {
+            text-align: center;
+            letter-spacing: 20px;
         }
 
-        i#css {
-            font-size: 100px;
-            padding: 30px; 
-            color: hsl(202, 100%, 39%);
-            text-shadow: 2px 2px $black;
-        }
-
-        i#photo {
-            font-size: 100px;
-            padding: 30px;
-            color: indigo;
-            text-shadow: 2px 2px $black;
-        }
+        ul {
+        padding: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
 
         li {
             text-align: center;
             margin: 0 auto;
             display: inline;
+
+            i {
+                font-size: 130px;
+                padding: 10px 10px 10px 0;
+            }
         }
 
     }
-
+}
     .work {
            overflow: hidden; 
            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
@@ -146,69 +153,41 @@ div.main {
 
     }
 
-
-span.name {
-        color: black;
-        background-color: $white;
-        width: 100%;
-        position: fixed;  
-        z-index: 9999;
-        top: 0;
-        left:0;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
-
-            h1 {
-                color: black;
-                margin: 0 auto;
-                text-transform: uppercase;
-                font-size: 200%;
-                display: inline;
-                
-        }
-        img {
-            width: 5%;
-            padding: 0 5px 0 5px;
-        }
-        li.nametag {
-            display: inline;
-        }
-
-}
-
-
-nav#menu{
-        display: flex;
-        justify-content: space-around;
+    // Footer
+    footer {
+        h5 { 
+        background-color: $black;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: 100;
+        color: $white;
+        display: block;
+        padding-left: 10px;
         padding-top: 10px;
-
-    li.links {
-        display: inline;
-        padding: 10px;
-        
-        a {
-            text-decoration: none;
-            color: $black;
-
-        }
-        a:hover {
-            color: indigo;
+        font-size: 70%;
+        height: 20px;
+        margin: 0;
+        letter-spacing: 1px; 
         }
     }
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-footer {
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    h5 { 
-    background-color: $black;
-    font-family: 'Playfair Display', sans-serif;
-    color: $white;
-    display: block;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 70%;
-    height: 30px;
-    margin: 0;
-    letter-spacing: 1px; 
-    }
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $white; 
+    border-radius: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: indigo; 
 }

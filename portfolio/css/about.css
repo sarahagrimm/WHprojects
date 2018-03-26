@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Londrina+Solid|Rozha+One");
+@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|IBM+Plex+Serif");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+@import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 html {
   font-family: 'Fjalla One', serif;
   background-image: url("https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a82c3751ed73cbbd31bbaef3d7233a83&auto=format&fit=crop&w=1050&q=80");
@@ -16,24 +15,56 @@ html ul {
   list-style: none;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
+span#topNavBar {
+  color: black;
+  background-color: #f2f2f2;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #f2f2f2;
-  border-radius: 3px;
+span#topNavBar h1 {
+  color: black;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 200%;
+  display: inline;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #292929;
+span#topNavBar li.nametag {
+  display: inline;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: indigo;
+span#topNavBar nav#menu {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+span#topNavBar nav#menu img#ember {
+  width: 5%;
+  margin: -10px 5px 0 5px;
+}
+
+span#topNavBar nav#menu .linksul {
+  padding-top: 7px;
+}
+
+span#topNavBar nav#menu li.links {
+  display: inline;
+  padding: 10px;
+}
+
+span#topNavBar nav#menu li.links a {
+  text-decoration: none;
+  color: #292929;
+}
+
+span#topNavBar nav#menu li.links a:hover {
+  color: indigo;
 }
 
 .headshot {
@@ -48,56 +79,14 @@ html ul {
   background-color: indigo;
 }
 
-span.name {
-  color: #292929;
-  background-color: #f2f2f2;
-  width: 100%;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-span.name h1 {
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-size: 200%;
-  display: inline;
-}
-
-span.name img {
-  width: 5%;
-  padding: 0 5px 0 5px;
-}
-
-span.name li.nametag {
-  display: inline;
-  text-shadow: 2px 1px 2px indigo;
-}
-
 div.main {
-  padding: 0 100px 0 100px;
-  margin: 0 auto;
-  padding-top: 90px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 0 150px 0 150px;
+  padding-top: 70px;
   width: 1200px;
-  color: #292929;
 }
 
 div.main h1 {
   color: #292929;
-}
-
-div.main h2 {
-  background-color: #292929;
-  font-family: 'Playfair Display', serif;
-  color: #292929;
-  display: block;
-  padding: 0 100px 0 20px;
-  margin: 0;
-  height: 50px;
-  box-shadow: 15px #292929;
 }
 
 div.main p {
@@ -164,36 +153,38 @@ div.main .left {
   padding: 0;
 }
 
-nav#menu {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 10px;
-}
-
-nav#menu li.links {
-  display: inline;
-  padding: 10px;
-}
-
-nav#menu li.links a {
-  text-decoration: none;
-  color: #292929;
-}
-
-nav#menu li.links a:hover {
-  color: indigo;
-}
-
 footer h5 {
   background-color: #292929;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 100;
   color: #f2f2f2;
   display: block;
   padding-left: 10px;
   padding-top: 10px;
   font-size: 70%;
-  height: 30px;
+  height: 20px;
   margin: 0;
   letter-spacing: 1px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f2f2f2;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #292929;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: indigo;
 }
 /*# sourceMappingURL=about.css.map */
