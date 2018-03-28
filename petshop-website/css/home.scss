@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One|Anton|Oswald|IBM+Plex+Serif|Coda:800|Erica+One|Titan+One");
+@import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
+
+body {
+    // background-image: url('https://images.unsplash.com/photo-1463428537233-c84b754b2c84?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7052428fb997201fc51fcb47f494259e&auto=format&fit=crop&w=634&q=80');
+    // background-size: 800px;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+// Navigation
+header {
+    background-color: hsl(275, 100%, 25%);
+    top: 0;
+    left: 0;
+    height: 70px;
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+
+    h1#shopName {
+        margin: 5px 0px 1px 30px;
+        display: inline;
+        a{
+        text-decoration: none;
+        font-family: 'Bowlby One', cursive;
+        letter-spacing: 3px;
+        font-size: 40px;
+        color: white;
+        text-shadow: 5px 3px 4px black;
+        text-transform: Capitalize !important;
+        cursor: pointer;
+        }
+    }
+
+    input#searchbar {
+        height: 30px;
+        width: 300px;
+        border-radius: 5px;
+        text-shadow: invert 5px 5px 5px black;
+        margin-top: 25px;
+        font-family: 'Anton', serif;
+        letter-spacing: 2px;
+    }
+    nav {
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 70px;
+        height: 80px;
+        ul {
+            top: 0;
+            margin: 0;
+            padding-top: 15px;
+            li { 
+                list-style: none;
+                display: inline;
+                padding: 10px;
+                font-size: 25px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'Anton', serif;
+                    text-transform: lowercase;
+                }
+                a:hover {
+                    color: darkmagenta;
+                    padding: 15px 0;
+                    border-bottom: 3px solid hsl(0, 0%, 10%);
+                    // text-transform: lowercase;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    color: white;
+    height: 20px;
+    font-size: 70%;
+    padding-left: 10px;
+}
+
+// Slideshow
+
+.slideshowContainer {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    img {
+        width: 100%;
+        height: 690px;
+    }
+    h1.text {
+        position: absolute;
+        color: white;
+        text-shadow: 7px 0px 10px black;
+        font-size: 80px;
+        padding: 550px 0 50px 900px;
+        font-family: 'titan one', cursive;
+    }
+
+}
+
+.slides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+// Slideshow End
+
+
