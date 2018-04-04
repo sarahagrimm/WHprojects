@@ -109,6 +109,7 @@ div.main #skills ul li {
 div.main #skills ul li i {
   font-size: 120px;
   padding: 10px 10px 10px 0;
+  cursor: pointer;
 }
 
 div.main .work {
@@ -128,6 +129,7 @@ div.main .work img {
   margin: 0;
   opacity: 0.5;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 div.main .work img:hover {

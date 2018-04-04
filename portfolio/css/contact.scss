@@ -89,11 +89,13 @@ div.main {
     }
 
     .contact {
-        text-align: center;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        background-color: $white;
 
-        p {
-            page-break-after: always;
-        }
         input {
             width: 300px;
             font-family: 'Playfair Display', serif;
@@ -104,7 +106,7 @@ div.main {
             background-color: $black;
         }
         textarea {
-            width: 500px;
+            width: 300px;
             height: 150px;
             font-family: 'Playfair Display', serif;
             border: 1px solid indigo;
@@ -125,6 +127,8 @@ div.main {
             text-transform: uppercase;
             font-family: 'Fjalla One', serif;
             letter-spacing: 10px;
+            width: 300px;
+            cursor: pointer;
         }
         i {
             font-size: 25px;
@@ -156,11 +160,8 @@ div.main {
             color: $black;
             margin-left: 30px;
             padding-top: 20px;
-            letter-spacing: 20px;
-        }
-        button {
-            margin-left: 40px;
-            margin-top: 20px;
+            letter-spacing: 10px;
+            font-size: 99%;
         }
         form {
             margin-left: 30px;
@@ -172,7 +173,7 @@ div.main {
                 
             }
             input[type=text]:focus, textarea:focus, input[type=email]:focus {
-                box-shadow: 0 0 5px hsl(275, 90%, 25%);
+                box-shadow: inset 0 0 5px hsl(275, 90%, 25%);
                 border: 1px solid hsl(275, 100%, 25%);
               }
         }
@@ -180,18 +181,20 @@ div.main {
 }
 
     div.socialmedia {
-            ul {
-                display: flex;
-                justify-content: space-around;
-            }
-        li {
-            display: inline;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        width: 40%;
+        // li {
+        //     display: inline;
+        // }
 
         h1 {
             color: $black;
             letter-spacing: 20px;
             text-align: center;
+            font-size: 99%;
         }
         i {
             font-size: 100px;
@@ -201,7 +204,6 @@ div.main {
         }
         a {
             text-decoration: none;
-            //letter-spacing: 100px;
         }
 
         #insta {

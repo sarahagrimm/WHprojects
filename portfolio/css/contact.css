@@ -82,11 +82,12 @@ div.main ul {
 }
 
 div.main .contact {
-  text-align: center;
-}
-
-div.main .contact p {
-  page-break-after: always;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background-color: #f2f2f2;
 }
 
 div.main .contact input {
@@ -100,7 +101,7 @@ div.main .contact input {
 }
 
 div.main .contact textarea {
-  width: 500px;
+  width: 300px;
   height: 150px;
   font-family: 'Playfair Display', serif;
   border: 1px solid indigo;
@@ -122,6 +123,8 @@ div.main .contact .submit {
   text-transform: uppercase;
   font-family: 'Fjalla One', serif;
   letter-spacing: 10px;
+  width: 300px;
+  cursor: pointer;
 }
 
 div.main .contact i {
@@ -156,12 +159,8 @@ div.main .contact h1 {
   color: #292929;
   margin-left: 30px;
   padding-top: 20px;
-  letter-spacing: 20px;
-}
-
-div.main .contact button {
-  margin-left: 40px;
-  margin-top: 20px;
+  letter-spacing: 10px;
+  font-size: 99%;
 }
 
 div.main .contact form {
@@ -175,23 +174,23 @@ div.main .contact form h4 {
 }
 
 div.main .contact form input[type=text]:focus, div.main .contact form textarea:focus, div.main .contact form input[type=email]:focus {
-  box-shadow: 0 0 5px #490679;
+  box-shadow: inset 0 0 5px #490679;
   border: 1px solid #4a0080;
 }
 
-div.socialmedia ul {
+div.socialmedia {
   display: flex;
-  justify-content: space-around;
-}
-
-div.socialmedia li {
-  display: inline;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 40%;
 }
 
 div.socialmedia h1 {
   color: #292929;
   letter-spacing: 20px;
   text-align: center;
+  font-size: 99%;
 }
 
 div.socialmedia i {
