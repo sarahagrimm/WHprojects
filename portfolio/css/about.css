@@ -112,6 +112,7 @@ div.main .about img.headshot {
 }
 
 div.main .about div#textBox {
+  background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
   align-content: center;

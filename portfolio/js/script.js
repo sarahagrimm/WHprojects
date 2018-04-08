@@ -1,6 +1,11 @@
-function invert(){
-    document.body.style.color = "indigo";
-    document.body.style.backgroundColor = "black";
-    document.body.style.fontSize = "50px";
-}
+// document.addEventListener('scroll', function (e) {
+//     var nav = document.getElementById('topNavBar');
+//     if (document.documentElement.scrollTop || document.documentElement.onload) {
+//             nav.classList.add('nav-colored');
+//             nav.classList.remove('nav-transparent');
+//         } else {
+//             nav.classList.add('nav-transparent');
+//             nav.classList.remove('nav-colored');
+//         }
+// });
 
