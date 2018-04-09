@@ -146,30 +146,49 @@
  // loops
  // arrays
 
+var storyOne;
+var storyTwo;
 
- var name;
- var job;
- var gender;
- var loc;
+function storyPrompt() {
+    var start = prompt('Hit the town?', "Yes or No");
+    if (start === 'No'){
+        storyOne = prompt('Watch tv or listen to music?');
+    }
+    else if (start === 'Yes'){
+        storyTwo = prompt('Shopping or Go to the park?', "Shop or Park");
+        //SHOPPING
+        if (storyTwo === 'Shopping'){
+        var shopping = prompt('Shop for yourself or shop for your dog?', "Enter: Me or Dog");
+        if (shopping === 'Me'){
+        var me = prompt('No... you definitely wanna shop for your dog', "Enter 'Doggo' to continue");
+        if (me === 'Doggo'){
+        var doggo = prompt ('What will you buy for your dog?', "Collar, Leash, Bed, or Clothes");
+        var doggoDone = prompt('Good choice! Your doggo is happy!');
+        }
 
-function chooseCharacter() {
-    name = prompt('What is your name?', 'name');
-    job = prompt('What is your profession?', 'programmer or chef');
-    gender = prompt('What is your gender?');
-    loc = prompt('Where do you live?');
+        //SHOPPING END
 
-    outputCharacter();
+        //PARK
+        if (storyTwo === 'Park'){
+            var park = prompt('Will you bring your doggo?', "Yes or No");
+                // if (park === 'Yes'){
+                //     var parkYes = prompt('Good choice! Your doggo is happy!');
+                // }
+            }
+        }
+        }
+    }
+
+    var one = prompt()
+
+    outputStory();
 }
 
-function outputCharacter() {
-    document.getElementById('name').innerHTML = name;
-    document.getElementById('job').innerHTML = job;
-    document.getElementById('gender').innerHTML = gender;
-    document.getElementById('loc').innerHTML = loc;
+function outputStory() {
+    document.getElementById('start').innerHTML = start;
 
-    if(
 }
-chooseCharacter();
+storyPrompt();
 
 
  

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|IBM+Plex+Serif|Bangers|Ribeye|Henny+Penny');
+@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|IBM+Plex+Serif|Bangers|Ribeye|Henny+Penny|Glass+Antiqua');
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
 
@@ -33,14 +33,16 @@ span#topNavBar {
 
         h1 {
             text-transform: uppercase;
-            font-size: 40px;
+            font-size: 5vw;
             display: inline;
             text-shadow: 3px 3px $black;
+
 
             
     }
     li.nametag {
         display: inline;
+        background-image: url('img/name.png');
     }
 
     nav#menu{
@@ -48,7 +50,7 @@ span#topNavBar {
         justify-content: space-around;
 
         img#ember {
-            width: 50px;
+            width: 5vw;
             margin: -10px 10px -4px -115px;
         }
 
@@ -58,13 +60,12 @@ span#topNavBar {
 
     li.links {
         display: inline;
-        padding: 10px;
         
         a {
             text-decoration: none;
             color: $white;
-            padding: 2px 0 2px 0;
-            font-size: 30px;
+            padding: .5vw;
+            font-size: 2vw;
             text-shadow: 1px 2px $black;
             // font-family: 'Ribeye';
 
@@ -78,6 +79,10 @@ span#topNavBar {
         }
     }
 }
+}
+
+#name {
+    background-image: url('img/name.png');
 }
 
 // .nav-transparent{
@@ -126,11 +131,11 @@ div.banner {
         width: 100%;
     }
     h3 {
-        padding-top: 400px;
-        padding-left: 200px;
+        padding-top: 25vw;
+        padding-left: 1vw;
         color: $white;
-        font-size: 5vw;
-        text-shadow: 4px 4px $black;
+        font-size: 4vw;
+        text-shadow: 4px 4px black;
         letter-spacing: 10px;
         margin: 0 auto;
         position: absolute;
@@ -159,9 +164,9 @@ div.banner {
 
 
     img.headshot {
-        width: 300px !important;
-        height: 400px;
-        margin: 40px 50px 30px 50px;
+        width: 30vw !important;
+        height: 40vw;
+        margin: 0 50px 30px 50px;
         border-right: 1.5px solid $black;
         padding-right: 200px;
     }
@@ -172,9 +177,12 @@ div.banner {
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        width: 50%;
+        width: 40%;
         box-shadow: none;
         color: $black;
+        font-family: 'Glass Antiqua';
+        font-size: 120%;
+        line-height: 30px;
 
     }
 } }
