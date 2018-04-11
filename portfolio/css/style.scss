@@ -4,10 +4,11 @@
 
 $black: hsl(0, 1%, 26%);
 $white: hsl(0, 0%, 95%);
+$sky: hsl(164, 21%, 90%);
 
 html {
     font-family: 'Fjalla One', serif;
-    background-image:url('https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a82c3751ed73cbbd31bbaef3d7233a83&auto=format&fit=crop&w=1050&q=80');
+    // background-image:url('https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a82c3751ed73cbbd31bbaef3d7233a83&auto=format&fit=crop&w=1050&q=80');
 
     body{
     padding: 0;
@@ -18,15 +19,20 @@ html {
     }
 }
 
+hr{
+    background-color: $sky;
+}
+
 //Navigation
 span#topNavBar {
-    color: $white;
-    background-color: none;
+    color: $black;
+    background-color: $black;
     width: 100%;
-    position: absolute;  
+    position: fixed;  
     z-index: 9999;
     top: 0;
     left:0;
+    height: 50px;
     // box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
     // border-bottom: 2px dashed $black;
 
@@ -40,6 +46,10 @@ span#topNavBar {
 
             
     }
+    ul {
+        margin: 0;
+        padding-top: 2px;
+    }
     li.nametag {
         display: inline;
         background-image: url('img/name.png');
@@ -48,6 +58,7 @@ span#topNavBar {
     nav#menu{
         display: flex;
         justify-content: space-around;
+        padding-top: 10px;
 
         img#ember {
             width: 5vw;
@@ -55,7 +66,10 @@ span#topNavBar {
         }
 
         .linksul {
-            padding-top: 7px;
+            padding-top: 1px;
+            display: flex;
+            align-content: center;
+            padding-left: 1000px;
         }
 
     li.links {
@@ -63,62 +77,32 @@ span#topNavBar {
         
         a {
             text-decoration: none;
+            padding: 1vw;
+            font-size: 1vw;
             color: $white;
-            padding: .5vw;
-            font-size: 2vw;
-            text-shadow: 1px 2px $black;
+            // text-shadow: 1px 2px $black;
             // font-family: 'Ribeye';
 
         }
         a:hover {
-            background-color: $white;
-            color: rgba(0, 0, 0, .5);
-            border-radius: 3px;
-            padding: 2px 0 2px 0;
-            text-shadow: none;
+            background-color: lighten($black, 5%);
         }
     }
 }
 }
 
-#name {
-    background-image: url('img/name.png');
+img#logo{
+    height: 2vw;
 }
 
-// .nav-transparent{
-//     background-color: hsla(0, 0, 0, 0);
-//     color: $white;
-//     width: 100%;
-//     position: fixed;  
-//     z-index: 9999;
-//     top: 0;
-//     left:0;
-//     a {
-//         color: $white;
-//     }
-// }
-
-// .nav-colored {
-//     background-color: $white;
-//     color: $black;
-//     width: 100%;
-//     position: fixed;  
-//     z-index: 9999;
-//     top: 0;
-//     left:0;
-// }
-
-
 div.main {
-    margin: 0 5%;
-    // padding-top: 60px;
-    width: 90%;
-    box-shadow: -1px 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: $sky;
     
     div {
         display: flex;
         flex-direction: column;
-        background-color: $white;
+        background-color: $sky;
         height: 80%;
 
         
@@ -126,20 +110,66 @@ div.main {
 }
 
 div.banner {
-    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2); 
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    top: 0;
     video {
         width: 100%;
     }
+    span#textBanner {
+        position: absolute;
+        height: 10vw;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        padding-top: 15vw;
+    }
+
+
+    
+
+
     h3 {
-        padding-top: 25vw;
-        padding-left: 1vw;
+        // display: flex;
+        // align-self: center;
         color: $white;
-        font-size: 4vw;
-        text-shadow: 4px 4px black;
+        font-size: 2vw;
+        // text-shadow: 3px 2px black;
         letter-spacing: 10px;
         margin: 0 auto;
+        font-family: 'Ribeye';
+    }
+    h2 {
+        // display: flex;
+        // align-self: center;
+        color: $white;
+        font-size: 5vw;
+        // text-shadow: 4px 4px black;
+        letter-spacing: 15px;
+        margin: 0 auto;
+        font-family: 'Erica One';
+    }
+    div#buttons {
         position: absolute;
-        font-family: 'Bangers';
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        height: 20px;
+        z-index: 9996;
+        background: transparent;
+        padding-top: 13vw;
+        i {
+            color: $white;
+            padding: 10px;
+            font-size: 3vw;
+        }
+        a:hover i::before{
+            opacity: 0;
+        }
+        a:hover i::after{
+            content:' ';
+            font-size: 20px;
+        }
+
     }
 
 }
@@ -147,16 +177,17 @@ div.banner {
 // ABOUT
 
 .aboutDiv {
+    background-color: $sky;
     h1 {
         text-align: center;
         letter-spacing: 20px;
         font-family: 'Ribeye';
-        color: $black;
+        color: darken($black, 10%);
 
     }
 
 .about {
-    background-color: $white;
+    background-color: $sky;
     display: flex;
     align-content: center;
     align-items: center;
@@ -164,15 +195,14 @@ div.banner {
 
 
     img.headshot {
-        width: 30vw !important;
+        width: 40vw !important;
         height: 40vw;
-        margin: 0 50px 30px 50px;
-        border-right: 1.5px solid $black;
-        padding-right: 200px;
+        padding: 10px 30px 30px 10px;
+        border-radius: 100%;
     }
 
     div#textBox {
-        background-color: $white;
+        background-color: $sky;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -183,6 +213,7 @@ div.banner {
         font-family: 'Glass Antiqua';
         font-size: 120%;
         line-height: 30px;
+        padding-left: 40px;
 
     }
 } }
@@ -190,12 +221,13 @@ div.banner {
 // WORK
 
 #skills {
+    background-color: $sky;
 
     h1 {
         text-align: center;
         letter-spacing: 20px;
         font-family: 'Ribeye';
-        color: $black;
+        color: darken($black, 10%);
     }
 
     ul {
@@ -219,25 +251,25 @@ div.banner {
 }
 }
 .work {
-       background-color: $white;
+       background-color: $sky;
        overflow: hidden; 
-       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
     h1 {
         text-align: center;
         letter-spacing: 20px;
         font-family: 'Ribeye';
+        color: darken($black, 10%);
     }
     img {
         width: 400px;
         height: 300px;
         padding: 0;
         margin: 0;
-        opacity: 0.5;
+        opacity: 0.8;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
         cursor: pointer;
     }
 
-    img:hover {
+    img:hover{
         opacity: 1;
     }
 
@@ -255,9 +287,11 @@ div.banner {
 
 // CONTACT
 .contactDiv {
+    padding-bottom: 30px;
+    background-color: $sky;
 
     h1 {
-        color: $black;
+        color: darken($black, 10%);
         letter-spacing: 20px;
         text-align: center;
         font-family: 'Ribeye';
@@ -270,7 +304,7 @@ div.banner {
     align-items: center;
     justify-content: center;
     width: 40%;
-    background-color: $white;
+    background-color: $sky;
 
 
     input {
@@ -299,32 +333,15 @@ div.banner {
     .submit {
         background: linear-gradient(indigo, black);
         border: 1px solid $black;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         color: $white;
         text-transform: uppercase;
         font-family: 'Fjalla One', serif;
-        letter-spacing: 10px;
-        width: 320px;
-        height: 30px;
+        letter-spacing: 4px;
+        width: 200px;
+        height: 40px;
         cursor: pointer;
-    }
-    i {
-        font-size: 25px;
-        padding: 10px;
-        color: $black;
-    }
-    i:hover {
-        color: indigo;
-    }
-    p {
-        display: inline;
-        text-decoration: none;
-        color: $black;
-        font-family: 'Playfair Display', serif;
-        font-size: 80%;
-        padding-left: 0;
-    }
-        
+        border-radius: 5px;
+    }        
     }
 
     form {
@@ -344,12 +361,8 @@ div.banner {
 
 
 div.socialmedia {
-    background-color: $white;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
     width: 40%;
+    background-color: $sky !important;
 
     h1 {
         color: $black;
@@ -372,30 +385,50 @@ div.socialmedia {
         margin: 0 auto;
         // text-shadow: 2px 2px $black;
     }
-    #linkedin {
-        color: hsl(201, 94%, 36%);
-        // text-shadow: 2px 2px $black;
-    }
 
 }
 
 
 
 footer {
+    background-color: $black;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    padding-bottom: 5px;
     h5 { 
     background-color: $black;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Ribeye', cursive;
     font-weight: 100;
     color: $white;
-    display: block;
+    display: inline;
     padding-left: 10px;
-    padding-top: 10px;
     font-size: 70%;
-    height: 20px;
-    margin: 0;
     letter-spacing: 1px; 
+    line-height: 15px;
+    padding-bottom: .5vh;
+
+    }
+ul {
+    display: inline;
+    padding-left: 75vw;
+    
+}
+li{
+    display: inline;
+}
+    i {
+        color: $white;
+        padding-top: 6px;
+        padding-left: 10px;
     }
 }
+
+
+
+
+
 
 ::-webkit-scrollbar {
     width: 10px;

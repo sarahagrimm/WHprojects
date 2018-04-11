@@ -153,9 +153,26 @@ function storyPrompt() {
     var start = prompt('Hit the town?', "Yes or No");
     if (start === 'No'){
         storyOne = prompt('Watch tv or listen to music?');
+        if(storyOne === 'Watch tv' || 'watch tv' || 'Watch TV' || 'watch TV'){
+            var tv = prompt('Show or Movie?');
+            if(tv === 'show' || 'Show'){
+                var show = prompt('What genre?', "Comedy or Drama");
+                if (show === 'Drama' || 'drama'){
+                    var drama = prompt('What drama show?', "Orange is the New Black or The Following?");
+                    var dramaShow = prompt('Good choice!');
+                }
+                if (show === 'Comedy' || 'comedy'){
+                    var comedy = prompt('What comedy show?', "Its Always Sunny In Philadelphia or Workaholics?");
+                    if (comedy === 'Its Always Sunny In Philadelphia' || 'its always sunny in philadelphia'){
+                        var comedyShow = prompt('Good choice!');
+                    }
+                }
+            }
+        }
     }
     else if (start === 'Yes'){
         storyTwo = prompt('Shopping or Go to the park?', "Shop or Park");
+
         //SHOPPING
         if (storyTwo === 'Shopping'){
         var shopping = prompt('Shop for yourself or shop for your dog?', "Enter: Me or Dog");
@@ -164,23 +181,18 @@ function storyPrompt() {
         if (me === 'Doggo'){
         var doggo = prompt ('What will you buy for your dog?', "Collar, Leash, Bed, or Clothes");
         var doggoDone = prompt('Good choice! Your doggo is happy!');
-        }
-
+        }}}
         //SHOPPING END
 
-        //PARK
-        if (storyTwo === 'Park'){
-            var park = prompt('Will you bring your doggo?', "Yes or No");
-                // if (park === 'Yes'){
-                //     var parkYes = prompt('Good choice! Your doggo is happy!');
-                // }
-            }
+        else if(storyTwo === 'Park' || 'park'){
+        var park = prompt('Will you bring your doggo?', "Yes or No");
+        if (park === 'No' || 'no'){
+        var noDog = prompt('Uhhh... Why not? You should always take your doggo.');
         }
+        if (park === 'Yes' || 'yes'){
+        var yesDog = prompt('Good choice! Your doggo is happy!');
         }
-    }
-
-    var one = prompt()
-
+    }}
     outputStory();
 }
 

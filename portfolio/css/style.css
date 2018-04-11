@@ -3,7 +3,6 @@
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 html {
   font-family: 'Fjalla One', serif;
-  background-image: url("https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a82c3751ed73cbbd31bbaef3d7233a83&auto=format&fit=crop&w=1050&q=80");
 }
 
 html body {
@@ -15,14 +14,19 @@ html ul {
   list-style: none;
 }
 
+hr {
+  background-color: #e0ebe8;
+}
+
 span#topNavBar {
-  color: #f2f2f2;
-  background-color: none;
+  color: #434242;
+  background-color: #434242;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
+  height: 50px;
 }
 
 span#topNavBar h1 {
@@ -30,6 +34,11 @@ span#topNavBar h1 {
   font-size: 5vw;
   display: inline;
   text-shadow: 3px 3px #434242;
+}
+
+span#topNavBar ul {
+  margin: 0;
+  padding-top: 2px;
 }
 
 span#topNavBar li.nametag {
@@ -40,6 +49,7 @@ span#topNavBar li.nametag {
 span#topNavBar nav#menu {
   display: flex;
   justify-content: space-around;
+  padding-top: 10px;
 }
 
 span#topNavBar nav#menu img#ember {
@@ -48,7 +58,10 @@ span#topNavBar nav#menu img#ember {
 }
 
 span#topNavBar nav#menu .linksul {
-  padding-top: 7px;
+  padding-top: 1px;
+  display: flex;
+  align-content: center;
+  padding-left: 1000px;
 }
 
 span#topNavBar nav#menu li.links {
@@ -57,66 +70,104 @@ span#topNavBar nav#menu li.links {
 
 span#topNavBar nav#menu li.links a {
   text-decoration: none;
+  padding: 1vw;
+  font-size: 1vw;
   color: #f2f2f2;
-  padding: .5vw;
-  font-size: 2vw;
-  text-shadow: 1px 2px #434242;
 }
 
 span#topNavBar nav#menu li.links a:hover {
-  background-color: #f2f2f2;
-  color: rgba(0, 0, 0, 0.5);
-  border-radius: 3px;
-  padding: 2px 0 2px 0;
-  text-shadow: none;
+  background-color: #504e4e;
 }
 
-#name {
-  background-image: url("img/name.png");
+img#logo {
+  height: 2vw;
 }
 
 div.main {
-  margin: 0 5%;
-  width: 90%;
-  box-shadow: -1px 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #e0ebe8;
 }
 
 div.main div {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: #e0ebe8;
   height: 80%;
 }
 
 div.banner {
   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+  top: 0;
 }
 
 div.banner video {
   width: 100%;
 }
 
+div.banner span#textBanner {
+  position: absolute;
+  height: 10vw;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  padding-top: 15vw;
+}
+
 div.banner h3 {
-  padding-top: 25vw;
-  padding-left: 1vw;
   color: #f2f2f2;
-  font-size: 4vw;
-  text-shadow: 4px 4px black;
+  font-size: 2vw;
   letter-spacing: 10px;
   margin: 0 auto;
+  font-family: 'Ribeye';
+}
+
+div.banner h2 {
+  color: #f2f2f2;
+  font-size: 5vw;
+  letter-spacing: 15px;
+  margin: 0 auto;
+  font-family: 'Erica One';
+}
+
+div.banner div#buttons {
   position: absolute;
-  font-family: 'Bangers';
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  height: 20px;
+  z-index: 9996;
+  background: transparent;
+  padding-top: 13vw;
+}
+
+div.banner div#buttons i {
+  color: #f2f2f2;
+  padding: 10px;
+  font-size: 3vw;
+}
+
+div.banner div#buttons a:hover i::before {
+  opacity: 0;
+}
+
+div.banner div#buttons a:hover i::after {
+  content: ' ';
+  font-size: 20px;
+}
+
+.aboutDiv {
+  background-color: #e0ebe8;
 }
 
 .aboutDiv h1 {
   text-align: center;
   letter-spacing: 20px;
   font-family: 'Ribeye';
-  color: #434242;
+  color: #292828;
 }
 
 .aboutDiv .about {
-  background-color: #f2f2f2;
+  background-color: #e0ebe8;
   display: flex;
   align-content: center;
   align-items: center;
@@ -124,15 +175,14 @@ div.banner h3 {
 }
 
 .aboutDiv .about img.headshot {
-  width: 30vw !important;
+  width: 40vw !important;
   height: 40vw;
-  margin: 0 50px 30px 50px;
-  border-right: 1.5px solid #434242;
-  padding-right: 200px;
+  padding: 10px 30px 30px 10px;
+  border-radius: 100%;
 }
 
 .aboutDiv .about div#textBox {
-  background-color: #f2f2f2;
+  background-color: #e0ebe8;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -143,13 +193,18 @@ div.banner h3 {
   font-family: 'Glass Antiqua';
   font-size: 120%;
   line-height: 30px;
+  padding-left: 40px;
+}
+
+#skills {
+  background-color: #e0ebe8;
 }
 
 #skills h1 {
   text-align: center;
   letter-spacing: 20px;
   font-family: 'Ribeye';
-  color: #434242;
+  color: #292828;
 }
 
 #skills ul {
@@ -172,15 +227,15 @@ div.banner h3 {
 }
 
 .work {
-  background-color: #f2f2f2;
+  background-color: #e0ebe8;
   overflow: hidden;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .work h1 {
   text-align: center;
   letter-spacing: 20px;
   font-family: 'Ribeye';
+  color: #292828;
 }
 
 .work img {
@@ -188,7 +243,7 @@ div.banner h3 {
   height: 300px;
   padding: 0;
   margin: 0;
-  opacity: 0.5;
+  opacity: 0.8;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
@@ -208,8 +263,13 @@ div.banner h3 {
   display: inline;
 }
 
+.contactDiv {
+  padding-bottom: 30px;
+  background-color: #e0ebe8;
+}
+
 .contactDiv h1 {
-  color: #434242;
+  color: #292828;
   letter-spacing: 20px;
   text-align: center;
   font-family: 'Ribeye';
@@ -221,7 +281,7 @@ div.banner h3 {
   align-items: center;
   justify-content: center;
   width: 40%;
-  background-color: #f2f2f2;
+  background-color: #e0ebe8;
 }
 
 .contact input {
@@ -252,33 +312,14 @@ div.banner h3 {
 .contact .submit {
   background: linear-gradient(indigo, black);
   border: 1px solid #434242;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   color: #f2f2f2;
   text-transform: uppercase;
   font-family: 'Fjalla One', serif;
-  letter-spacing: 10px;
-  width: 320px;
-  height: 30px;
+  letter-spacing: 4px;
+  width: 200px;
+  height: 40px;
   cursor: pointer;
-}
-
-.contact i {
-  font-size: 25px;
-  padding: 10px;
-  color: #434242;
-}
-
-.contact i:hover {
-  color: indigo;
-}
-
-.contact p {
-  display: inline;
-  text-decoration: none;
-  color: #434242;
-  font-family: 'Playfair Display', serif;
-  font-size: 80%;
-  padding-left: 0;
+  border-radius: 5px;
 }
 
 form {
@@ -297,12 +338,8 @@ form input[type=text]:focus, form textarea:focus, form input[type=email]:focus {
 }
 
 div.socialmedia {
-  background-color: #f2f2f2;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
   width: 40%;
+  background-color: #e0ebe8 !important;
 }
 
 div.socialmedia h1 {
@@ -327,22 +364,41 @@ div.socialmedia #insta {
   margin: 0 auto;
 }
 
-div.socialmedia #linkedin {
-  color: #0676b2;
+footer {
+  background-color: #434242;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  padding-bottom: 5px;
 }
 
 footer h5 {
   background-color: #434242;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Ribeye', cursive;
   font-weight: 100;
   color: #f2f2f2;
-  display: block;
+  display: inline;
   padding-left: 10px;
-  padding-top: 10px;
   font-size: 70%;
-  height: 20px;
-  margin: 0;
   letter-spacing: 1px;
+  line-height: 15px;
+  padding-bottom: .5vh;
+}
+
+footer ul {
+  display: inline;
+  padding-left: 75vw;
+}
+
+footer li {
+  display: inline;
+}
+
+footer i {
+  color: #f2f2f2;
+  padding-top: 6px;
+  padding-left: 10px;
 }
 
 ::-webkit-scrollbar {
