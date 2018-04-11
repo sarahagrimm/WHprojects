@@ -9,4 +9,14 @@ p {
 h3 {
   text-align: center;
 }
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btns button {
+  margin: 10px;
+}
 /*# sourceMappingURL=style.css.map */

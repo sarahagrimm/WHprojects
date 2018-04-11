@@ -149,9 +149,17 @@
 var storyOne;
 var storyTwo;
 
+// var start = prompt("It's Friday night! It's finally the weekend, how will you celebrate? Go Out or Stay Home.");
+// switch(start){
+//     case 'Go Out' || 'go out' || 'Go out':
+//     var out = prompt('Do you go shopping or go to the park for some exercise?', "Park or Shop?");
+//     if(out === '') {
+        
+//     }
+// }
 function storyPrompt() {
-    var start = prompt('Hit the town?', "Yes or No");
-    if (start === 'No'){
+    var start = prompt("It's Friday night! It's finally the weekend, how will you celebrate?", "Hit the town or stay in?");
+    if (start === 'stay in' || 'Stay In'){
         storyOne = prompt('Watch tv or listen to music?');
         if(storyOne === 'Watch tv' || 'watch tv' || 'Watch TV' || 'watch TV'){
             var tv = prompt('Show or Movie?');
@@ -170,7 +178,7 @@ function storyPrompt() {
             }
         }
     }
-    else if (start === 'Yes'){
+    else if (start === 'hit the town' || 'Hit the Town'){
         storyTwo = prompt('Shopping or Go to the park?', "Shop or Park");
 
         //SHOPPING
@@ -203,4 +211,46 @@ function outputStory() {
 storyPrompt();
 
 
+
+// var options = document.getElementById('options');
+
+// var one = [
+//     "It's Friday night! It's finally the weekend, how will you celebrate?",
+//     "Hit the town?",
+//     "Stay in?"
+// ];
+
+// var two = [
+//     " ",
+//     "Go shopping?",
+//     "Go to the park?"
+// ];
+
+// var three = [
+//     " ",
+//     "Shop for yourself?",
+//     "Shop for your dog?"
+// ];
+
+// function playScene(scene){
+//     options.innerHTML = '';
+//     for(var i = 1; i < scene.length; i++){
+//         options.innerHTML += makeBtns(scene[i]);
+//     }
+//     setListeners();
+// }
+// }
+// playScene(one);
+
+// function makeBtns(str){
+//     return `<button type="button">${str}</button>`;
+// }
+
+// function setListeners(){
+//     document.addEventListener('click', function(e){
+//         if(e.target.type == 'button'){
+//             playScene(two);
+//         }
+//     });
+// }
  
