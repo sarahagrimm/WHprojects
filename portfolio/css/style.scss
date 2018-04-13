@@ -5,27 +5,19 @@
 $black: hsl(0, 1%, 26%);
 $white: hsl(0, 0%, 95%);
 $sky: hsl(164, 21%, 90%);
-
 html {
-    font-family: 'Fjalla One', serif;
-    // background-image:url('https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a82c3751ed73cbbd31bbaef3d7233a83&auto=format&fit=crop&w=1050&q=80');
-
-    body{
+    background-color: $sky;
+body{
     padding: 0;
     margin: 0;
-}
-    ul {
-        list-style: none;
-    }
-}
+}}
 
 hr{
-    background-color: $sky;
+    width: 60%;
 }
 
 //Navigation
 span#topNavBar {
-    color: $black;
     background-color: $black;
     width: 100%;
     position: fixed;  
@@ -33,43 +25,23 @@ span#topNavBar {
     top: 0;
     left:0;
     height: 50px;
-    // box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
-    // border-bottom: 2px dashed $black;
+    box-shadow: -1px 2px 2px 3px rgba(0, 0, 0, 0.2);
 
-
-        h1 {
-            text-transform: uppercase;
-            font-size: 5vw;
-            display: inline;
-            text-shadow: 3px 3px $black;
-
-
-            
-    }
     ul {
         margin: 0;
         padding-top: 2px;
     }
     li.nametag {
         display: inline;
-        background-image: url('img/name.png');
     }
 
     nav#menu{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-top: 10px;
 
-        img#ember {
-            width: 5vw;
-            margin: -10px 10px -4px -115px;
-        }
-
         .linksul {
-            padding-top: 1px;
-            display: flex;
-            align-content: center;
-            padding-left: 1000px;
+            font-family: 'Fjalla One', cursive;
         }
 
     li.links {
@@ -92,7 +64,7 @@ span#topNavBar {
 }
 
 img#logo{
-    height: 2vw;
+    height: 5vh;
 }
 
 div.main {
@@ -129,18 +101,13 @@ div.banner {
 
 
     h3 {
-        // display: flex;
-        // align-self: center;
         color: $white;
         font-size: 2vw;
-        // text-shadow: 3px 2px black;
         letter-spacing: 10px;
         margin: 0 auto;
         font-family: 'Ribeye';
     }
     h2 {
-        // display: flex;
-        // align-self: center;
         color: $white;
         font-size: 5vw;
         // text-shadow: 4px 4px black;
@@ -178,6 +145,7 @@ div.banner {
 
 .aboutDiv {
     background-color: $sky;
+
     h1 {
         text-align: center;
         letter-spacing: 20px;
@@ -192,67 +160,53 @@ div.banner {
     align-content: center;
     align-items: center;
     justify-content: center;
+    font-family: 'Playfair Display', cursive;
+    width: 100%;
 
 
     img.headshot {
-        width: 40vw !important;
-        height: 40vw;
+        width: 15vw !important;
+        height: 15vw;
         padding: 10px 30px 30px 10px;
         border-radius: 100%;
     }
 
-    div#textBox {
+    div.textBox {
         background-color: $sky;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        width: 40%;
+        width: 80%;
         box-shadow: none;
         color: $black;
-        font-family: 'Glass Antiqua';
         font-size: 120%;
         line-height: 30px;
         padding-left: 40px;
 
     }
-} }
+    #facts {
+        h1 {
+            font-size: 150%;
+        }
 
-// WORK
-
-#skills {
-    background-color: $sky;
-
-    h1 {
-        text-align: center;
-        letter-spacing: 20px;
-        font-family: 'Ribeye';
-        color: darken($black, 10%);
-    }
-
-    ul {
-    padding: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-
-    li {
-        text-align: center;
-        margin: 0 auto;
-        display: inline;
-
-        i {
-            font-size: 120px;
-            padding: 10px 10px 10px 0;
-            cursor: pointer;
+        .row {
+            display: flex;
+            flex-direction: row;
+            i {
+                font-size: 200%;
+                padding: 20px;
+            }
         }
     }
+} }
 
-}
-}
 .work {
+       
        background-color: $sky;
        overflow: hidden; 
+       font-family: 'Playfair Display';
+       font-size: 10px;
     h1 {
         text-align: center;
         letter-spacing: 20px;
@@ -282,13 +236,50 @@ div.banner {
     li {
         display: inline;
         
+    }}
+    
+// WORK
+
+#skills {
+    background-color: $sky;
+    padding: 100px 0 100px;
+
+    h1 {
+        text-align: center;
+        letter-spacing: 20px;
+        font-family: 'Ribeye';
+        color: darken($black, 10%);
     }
+
+    ul {
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    li {
+        text-align: center;
+        margin: 0 auto;
+        display: inline;
+
+        i {
+            font-size: 120px;
+            padding: 10px 10px 10px 0;
+            cursor: pointer;
+        }
+    }
+
+}
 }
 
 // CONTACT
 .contactDiv {
     padding-bottom: 30px;
     background-color: $sky;
+    display: flex;
+    float: left;
+    margin: 0 auto;
+    width: 50%;
 
     h1 {
         color: darken($black, 10%);
@@ -299,25 +290,36 @@ div.banner {
 
 }
 .contact {
+    background-color: $sky;
+    margin: 0 auto;
     display: flex;
     align-content: center;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    background-color: $sky;
 
+    h4 {
+        font-size: 20px;
+    }
 
+    div {
+        margin: 0 auto;
+        padding: 10px;
+
+    }
+
+    .side {
+        display: flex;
+    }
     input {
-        width: 300px;
+        width: 200px;
         font-family: 'Playfair Display', serif;
         border: 1px solid indigo;
         box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         padding: 10px;
         background-color: $black;
+
     }
     textarea {
-        width: 300px;
+        width: 500px;
         height: 150px;
         font-family: 'Playfair Display', serif;
         border: 1px solid indigo;
@@ -331,7 +333,7 @@ div.banner {
         color: hsl(0, 100%, 40%);
     }
     .submit {
-        background: linear-gradient(indigo, black);
+       // background: linear-gradient(indigo, black);
         border: 1px solid $black;
         color: $white;
         text-transform: uppercase;
@@ -341,16 +343,18 @@ div.banner {
         height: 40px;
         cursor: pointer;
         border-radius: 5px;
+        margin: 0 auto;
     }        
     }
 
     form {
-        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         h4 {
-            padding: 0;
-            margin: 10px 0;
             //font-weight: 100;
             font-family: 'Playfair Display', serif;
+            //display: inline;
             
         }
         input[type=text]:focus, textarea:focus, input[type=email]:focus {
@@ -359,35 +363,27 @@ div.banner {
           }
     }
 
-
-div.socialmedia {
-    width: 40%;
-    background-color: $sky !important;
-
+#follow {
+    display: flex;
+    float: right;
+    width: 50%;
+    height: 100%;
     h1 {
-        color: $black;
+        color: darken($black, 10%);
         letter-spacing: 20px;
         text-align: center;
-        font-size: 99%;
+        font-family: 'Ribeye';
     }
-    i {
-        font-size: 40px;
-        padding: 20px;
-        color: $black;
-
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    a {
-        text-decoration: none;
+    li {
+        font-family: 'Ribeye', cursive;
+        list-style: none;
     }
-
-    #insta {
-        color: hsl(352, 78%, 53%);
-        margin: 0 auto;
-        // text-shadow: 2px 2px $black;
-    }
-
 }
-
 
 
 footer {
@@ -397,8 +393,7 @@ footer {
     z-index: 9999;
     bottom: 0;
     padding-bottom: 5px;
-    h5 { 
-    background-color: $black;
+    h5 {
     font-family: 'Ribeye', cursive;
     font-weight: 100;
     color: $white;

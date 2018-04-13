@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sarah Grimm | Web Development & Design</title>
+    <title>Sarah Grimm | Web Development & Design</title>   
     <link href="img/logo.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -49,7 +52,6 @@
                           </video>
                           <span id="textBanner">
                     <h2>   I'm Sarah<small>.</small></h2>
-                    <!-- <img src="img/name.png"> -->
                     <h3> developer &amp; designer </h3>
                     <div id="buttons">
                         <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -65,18 +67,30 @@
 
  <!-- ABOUT SECTION -->
             <div class="aboutDiv">
-                    <!-- <h1>about me</h1> -->
-            <section class="about">
-                <img src="img/purpme.jpg" class="headshot" alt="headshot">
-                <div id=textBox>
 
+            <div class="about">
+                <img src="img/purpme.jpg" class="headshot" alt="headshot">
+                <div class="textBox">
+                        <h1>about me</h1>
+                        <hr>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, asperiores odio voluptatum dolores labore autem velit maiores ipsam repellendus libero magnam animi a similique nisi error? Cupiditate esse sequi non eveniet vero natus pariatur voluptatem, architecto maxime repellendus quisquam atque! Harum aut porro alias, cumque amet pariatur distinctio, maxime numquam aliquid, hic dolores tenetur eaque soluta fugit eligendi magnam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae nisi voluptas laborum dicta neque iure est dolores voluptate, eligendi consequuntur consequatur eius consectetur nam assumenda eum repudiandae velit reiciendis tempora architecto ad iste. </p>
                 </div>
-                </section>
+
+                <div id="facts">
+                    <h1>what do I do when I'm not coding?</h1>
+                    <hr>
+                    <div class="row">
+                    <div class="col-xs-4 icons"><i class="fas fa-paw"></i></div>
+                    <div class="col-xs-4 icons"><i class="fab fa-steam"></i></div>
                 </div>
+                </div>
+                
+                </div>
+                </div>
+                <hr>
                 <div class="work">
                     <h1>my work</h1>
-                    
+                    <hr>
                     <ul>
                         
                         <li>
@@ -98,12 +112,11 @@
                         
                     </ul>
                 </div>
-            </div>
+            
  <!-- WORK SECTION -->
-
             <div id="skills">
-                    <hr>
                     <h1>my skills</h1>
+                    <hr>
                 <ul>
                     
                     <li>
@@ -126,6 +139,9 @@
                     </li>
                     <li><i class="devicon-windows8-original colored"></i>
                     </li>
+                    <li><i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    </li>
+                    <li><i class="devicon-jquery-plain-wordmark colored"></i></li>
     
                 </ul>
 
@@ -134,59 +150,44 @@
             <div class="contactDiv">
                     <h1>contact me</h1>
                     <hr>
-            <section class="contact">
+                    <!--form-->
+            <div class="contact">
     
-    
-                <!-- <a href="mailto:sgrimmdev@gmail.com"><i class="far fa-envelope"></i></a>
-    
-                <h3>
-                    sgrimmdev@gmail.com
-                </h3> -->
                 <form action="mailto:sgrimmdev@gmail.com" method="post" enctype="text/plain">
-                        <h4>Name <b>*</b></h4>
-                            <input type="text" name="name" placeholder="name" required><br>
+                        <div class="form side"><h4>Name <b>*</b></h4>
+                            <input type="text" name="name" placeholder="name" required></div>
     
-                        <h4>E-mail Address <b>*</b></h4>
-                        <input type="email" name="mail" placeholder="email" required><br>
+                        <div class="form side"><h4>E-mail Address <b>*</b></h4>
+                        <input type="email" name="mail" placeholder="email" required></div>
     
-                        <h4>Contact Number <small>(optional)</small></h4>
-                        <input type="text" name="number" placeholder="number"><br>
+                        <div class="form"><h4>Contact Number <!--<small>(optional)</small>--></h4>
+                        <input type="text" name="number" placeholder="number"></div>
     
-                        <h4>
+                        <div class="form"><h4>
                             Message <b>*</b>
                         </h4>
-                        <textarea rows="4" columns="40" placeholder="leave a message" required></textarea><br>
+                        <textarea rows="4" columns="40" placeholder="leave a message" required></textarea><br></div>
     
-                        <button class="submit btn-primary">SUBMIT</button>
-            </form>
-    
-                <p>&nbsp;</p>
-        </section>
-    
+                        <div class="form"><button class="btn btn-default submit btn-primary"><i class="fas fa-paper-plane"></i></button></div>
+                    </form>
         </div>
-        <!-- <div class="socialmedia">
-                <!-- <h1>Find Me On...</h1> -->
-    
-
-                        <!-- <a href="https://www.facebook.com/sarahagrimm?">
-                            <i class="devicon-facebook-plain colored"></i>
-    
-                        </a>
-                        <a href="https://github.com/sarahagrimm">
-                            <i class="devicon-github-plain colored"></i>
-    
-    
-                        </a>
-                    <a href="#"><i class="devicon-slack-plain colored"></i>
-                    </a>
-                        <a href="https://www.instagram.com/worsethanthefear/">
-                            <i id="insta" class="fab fa-instagram"></i>
-                        </a>
-                        <a href="">
-                            <i id="linkedin" class="fab fa-linkedin"></i>
-    
-                        </a>
-            </div> --> -->
+        </div>
+        <!--form end-->
+<div id="follow">
+        <h1>or follow me on:</h1>
+        <hr>
+        <ul>
+            <li>facebook</li>
+            <li>twitter</li>
+            <li>instagram</li>
+            <li>github</li>
+            <li>linkedIn</li>
+            <li>slack</li>
+            <li>messenger</li>
+        </ul>
+    </div>
+        </div>
+        </div>
   <!-- FOOTER -->
         
         <footer>
@@ -208,6 +209,7 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 </body>
 

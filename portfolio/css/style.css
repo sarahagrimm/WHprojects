@@ -2,7 +2,7 @@
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 html {
-  font-family: 'Fjalla One', serif;
+  background-color: #e0ebe8;
 }
 
 html body {
@@ -10,16 +10,11 @@ html body {
   margin: 0;
 }
 
-html ul {
-  list-style: none;
-}
-
 hr {
-  background-color: #e0ebe8;
+  width: 60%;
 }
 
 span#topNavBar {
-  color: #434242;
   background-color: #434242;
   width: 100%;
   position: fixed;
@@ -27,13 +22,7 @@ span#topNavBar {
   top: 0;
   left: 0;
   height: 50px;
-}
-
-span#topNavBar h1 {
-  text-transform: uppercase;
-  font-size: 5vw;
-  display: inline;
-  text-shadow: 3px 3px #434242;
+  box-shadow: -1px 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 span#topNavBar ul {
@@ -43,25 +32,16 @@ span#topNavBar ul {
 
 span#topNavBar li.nametag {
   display: inline;
-  background-image: url("img/name.png");
 }
 
 span#topNavBar nav#menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 10px;
 }
 
-span#topNavBar nav#menu img#ember {
-  width: 5vw;
-  margin: -10px 10px -4px -115px;
-}
-
 span#topNavBar nav#menu .linksul {
-  padding-top: 1px;
-  display: flex;
-  align-content: center;
-  padding-left: 1000px;
+  font-family: 'Fjalla One', cursive;
 }
 
 span#topNavBar nav#menu li.links {
@@ -80,7 +60,7 @@ span#topNavBar nav#menu li.links a:hover {
 }
 
 img#logo {
-  height: 2vw;
+  height: 5vh;
 }
 
 div.main {
@@ -172,63 +152,50 @@ div.banner div#buttons a:hover i::after {
   align-content: center;
   align-items: center;
   justify-content: center;
+  font-family: 'Playfair Display', cursive;
+  width: 100%;
 }
 
 .aboutDiv .about img.headshot {
-  width: 40vw !important;
-  height: 40vw;
+  width: 15vw !important;
+  height: 15vw;
   padding: 10px 30px 30px 10px;
   border-radius: 100%;
 }
 
-.aboutDiv .about div#textBox {
+.aboutDiv .about div.textBox {
   background-color: #e0ebe8;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  width: 40%;
+  width: 80%;
   box-shadow: none;
   color: #434242;
-  font-family: 'Glass Antiqua';
   font-size: 120%;
   line-height: 30px;
   padding-left: 40px;
 }
 
-#skills {
-  background-color: #e0ebe8;
+.aboutDiv .about #facts h1 {
+  font-size: 150%;
 }
 
-#skills h1 {
-  text-align: center;
-  letter-spacing: 20px;
-  font-family: 'Ribeye';
-  color: #292828;
-}
-
-#skills ul {
-  padding: 20px;
+.aboutDiv .about #facts .row {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-direction: row;
 }
 
-#skills ul li {
-  text-align: center;
-  margin: 0 auto;
-  display: inline;
-}
-
-#skills ul li i {
-  font-size: 120px;
-  padding: 10px 10px 10px 0;
-  cursor: pointer;
+.aboutDiv .about #facts .row i {
+  font-size: 200%;
+  padding: 20px;
 }
 
 .work {
   background-color: #e0ebe8;
   overflow: hidden;
+  font-family: 'Playfair Display';
+  font-size: 10px;
 }
 
 .work h1 {
@@ -263,9 +230,44 @@ div.banner div#buttons a:hover i::after {
   display: inline;
 }
 
+#skills {
+  background-color: #e0ebe8;
+  padding: 100px 0 100px;
+}
+
+#skills h1 {
+  text-align: center;
+  letter-spacing: 20px;
+  font-family: 'Ribeye';
+  color: #292828;
+}
+
+#skills ul {
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#skills ul li {
+  text-align: center;
+  margin: 0 auto;
+  display: inline;
+}
+
+#skills ul li i {
+  font-size: 120px;
+  padding: 10px 10px 10px 0;
+  cursor: pointer;
+}
+
 .contactDiv {
   padding-bottom: 30px;
   background-color: #e0ebe8;
+  display: flex;
+  float: left;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .contactDiv h1 {
@@ -276,16 +278,27 @@ div.banner div#buttons a:hover i::after {
 }
 
 .contact {
+  background-color: #e0ebe8;
+  margin: 0 auto;
   display: flex;
   align-content: center;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  background-color: #e0ebe8;
+}
+
+.contact h4 {
+  font-size: 20px;
+}
+
+.contact div {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.contact .side {
+  display: flex;
 }
 
 .contact input {
-  width: 300px;
+  width: 200px;
   font-family: 'Playfair Display', serif;
   border: 1px solid indigo;
   box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -295,7 +308,7 @@ div.banner div#buttons a:hover i::after {
 }
 
 .contact textarea {
-  width: 300px;
+  width: 500px;
   height: 150px;
   font-family: 'Playfair Display', serif;
   border: 1px solid indigo;
@@ -310,7 +323,6 @@ div.banner div#buttons a:hover i::after {
 }
 
 .contact .submit {
-  background: linear-gradient(indigo, black);
   border: 1px solid #434242;
   color: #f2f2f2;
   text-transform: uppercase;
@@ -320,15 +332,16 @@ div.banner div#buttons a:hover i::after {
   height: 40px;
   cursor: pointer;
   border-radius: 5px;
+  margin: 0 auto;
 }
 
 form {
-  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 form h4 {
-  padding: 0;
-  margin: 10px 0;
   font-family: 'Playfair Display', serif;
 }
 
@@ -337,31 +350,29 @@ form input[type=text]:focus, form textarea:focus, form input[type=email]:focus {
   border: 1px solid #4a0080;
 }
 
-div.socialmedia {
-  width: 40%;
-  background-color: #e0ebe8 !important;
+#follow {
+  display: flex;
+  float: right;
+  width: 50%;
+  height: 100%;
 }
 
-div.socialmedia h1 {
-  color: #434242;
+#follow h1 {
+  color: #292828;
   letter-spacing: 20px;
   text-align: center;
-  font-size: 99%;
+  font-family: 'Ribeye';
 }
 
-div.socialmedia i {
-  font-size: 40px;
-  padding: 20px;
-  color: #434242;
+#follow ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-div.socialmedia a {
-  text-decoration: none;
-}
-
-div.socialmedia #insta {
-  color: #e52a43;
-  margin: 0 auto;
+#follow li {
+  font-family: 'Ribeye', cursive;
+  list-style: none;
 }
 
 footer {
@@ -374,7 +385,6 @@ footer {
 }
 
 footer h5 {
-  background-color: #434242;
   font-family: 'Ribeye', cursive;
   font-weight: 100;
   color: #f2f2f2;
