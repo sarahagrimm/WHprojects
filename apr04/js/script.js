@@ -146,111 +146,72 @@
  // loops
  // arrays
 
-var storyOne;
-var storyTwo;
-
-// var start = prompt("It's Friday night! It's finally the weekend, how will you celebrate? Go Out or Stay Home.");
-// switch(start){
-//     case 'Go Out' || 'go out' || 'Go out':
-//     var out = prompt('Do you go shopping or go to the park for some exercise?', "Park or Shop?");
-//     if(out === '') {
-        
-//     }
-// }
-function storyPrompt() {
-    var start = prompt("It's Friday night! It's finally the weekend, how will you celebrate?", "Hit the town or stay in?");
-    if (start === 'stay in' || 'Stay In'){
-        storyOne = prompt('Watch tv or listen to music?');
-        if(storyOne === 'Watch tv' || 'watch tv' || 'Watch TV' || 'watch TV'){
-            var tv = prompt('Show or Movie?');
-            if(tv === 'show' || 'Show'){
-                var show = prompt('What genre?', "Comedy or Drama");
-                if (show === 'Drama' || 'drama'){
-                    var drama = prompt('What drama show?', "Orange is the New Black or The Following?");
-                    var dramaShow = prompt('Good choice!');
-                }
-                if (show === 'Comedy' || 'comedy'){
-                    var comedy = prompt('What comedy show?', "Its Always Sunny In Philadelphia or Workaholics?");
-                    if (comedy === 'Its Always Sunny In Philadelphia' || 'its always sunny in philadelphia'){
-                        var comedyShow = prompt('Good choice!');
-                    }
-                }
-            }
-        }
-    }
-    else if (start === 'hit the town' || 'Hit the Town'){
-        storyTwo = prompt('Shopping or Go to the park?', "Shop or Park");
-
-        //SHOPPING
-        if (storyTwo === 'Shopping'){
-        var shopping = prompt('Shop for yourself or shop for your dog?', "Enter: Me or Dog");
-        if (shopping === 'Me'){
-        var me = prompt('No... you definitely wanna shop for your dog', "Enter 'Doggo' to continue");
-        if (me === 'Doggo'){
-        var doggo = prompt ('What will you buy for your dog?', "Collar, Leash, Bed, or Clothes");
-        var doggoDone = prompt('Good choice! Your doggo is happy!');
-        }}}
-        //SHOPPING END
-
-        else if(storyTwo === 'Park' || 'park'){
-        var park = prompt('Will you bring your doggo?', "Yes or No");
-        if (park === 'No' || 'no'){
-        var noDog = prompt('Uhhh... Why not? You should always take your doggo.');
-        }
-        if (park === 'Yes' || 'yes'){
-        var yesDog = prompt('Good choice! Your doggo is happy!');
-        }
-    }}
-    outputStory();
-}
-
-function outputStory() {
-    document.getElementById('start').innerHTML = start;
-
-}
-storyPrompt();
-
-
-
-// var options = document.getElementById('options');
-
-// var one = [
-//     "It's Friday night! It's finally the weekend, how will you celebrate?",
-//     "Hit the town?",
-//     "Stay in?"
-// ];
-
-// var two = [
-//     " ",
-//     "Go shopping?",
-//     "Go to the park?"
-// ];
-
-// var three = [
-//     " ",
-//     "Shop for yourself?",
-//     "Shop for your dog?"
-// ];
-
-// function playScene(scene){
-//     options.innerHTML = '';
-//     for(var i = 1; i < scene.length; i++){
-//         options.innerHTML += makeBtns(scene[i]);
-//     }
-//     setListeners();
-// }
-// }
-// playScene(one);
-
-// function makeBtns(str){
-//     return `<button type="button">${str}</button>`;
-// }
-
-// function setListeners(){
-//     document.addEventListener('click', function(e){
-//         if(e.target.type == 'button'){
-//             playScene(two);
-//         }
-//     });
-// }
+ var start;
+ var optionOne;
+ var optionTwo;
  
+ var start = document.querySelector('button[class="start"]');
+ start.addEventListener('click', story);
+
+ function story(){
+ confirm("It's Friday night! Time to celebrate the weekend!");
+ var start = prompt("Hit the town or stay in?", 'Enter "town" or "in"');
+ 
+ // HIT THE TOWN - optionOne
+ if (start === 'town'){
+     console.log('getting ready...');
+     var optionOne = prompt('Go shopping or go the the park?', 'Enter "shop" or "dog park"');
+ }
+ 
+ // STAY IN - optionTwo
+ else if(start === 'in') {
+     console.log('changing into comfy clothes...');
+     var optionTwo = prompt('Watch TV or play video games?', 'Enter "tv" or "game"');
+     }
+ 
+ 
+ // SHOP - optionOne
+ if (optionOne === 'shop'){
+         console.log('heading to the mall...');
+         var shop = prompt('Shop for yourself or for your dog?', 'Enter "for me" or "my dog"');
+     }
+     
+ //PARK
+else if (optionOne === 'dog park') {
+         console.log('grabbing picnic lunch...');
+         var park = prompt('Will you bring your dog to the park?', 'Enter "Yes" or "No"');
+     }
+     
+ if (park === "Yes"){
+         console.log('playing fetch...');
+         confirm('Good choice! Your pup is happy and so are you!');
+     
+ }
+ else if (park === "No"){
+     console.log('going back for dog...');
+     confirm("Wow, that's rude. I think you should reconsider.");
+ }
+     if (shop === "for me"){
+         console.log('going to pet store...');
+         confirm("I mean... I guess that's okay, but you should grab something for your dog too...");
+     }
+     else if (shop === "my dog"){
+         console.log('buying new dog bed...');
+         confirm ("Great choice! Your pup is happy and so are you!");
+     }
+ 
+ 
+ 
+ // TV
+ if (optionTwo === 'tv'){
+         console.log('grabbing the remote...');
+         confirm('You curl up on the couch with your pup and enjoy your night in front of the tube.');
+ }
+     
+     // VIDEO GAME
+ else if (optionTwo === 'game'){
+         console.log('booting up Steam...');
+         confirm('You pull up your favorite game on your PC and play all night.'); 
+     
+     }
+    }
