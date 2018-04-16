@@ -62,16 +62,25 @@ span#topNavBar {
             font-size: 150%;
             color: $white;
         }
+        
         a {
             text-decoration: none;
             font-size: 1.25vw;
-            color: $white;
             letter-spacing: 2px;
             padding: 20px;
 
         }
-        a:hover {
-            background-color: lighten($black, 5%);
+
+        #home{
+            display: none;
+        }
+        // .fab:hover, .fas:hover {
+        //     color: indigo;
+        //     text-shadow: 0 0 20px $white;
+        // }
+
+        .fa-home:hover ~ #home{
+            display: inline;
         }
     }
 }
@@ -166,16 +175,24 @@ div.banner {
     font-family: 'Playfair Display', cursive;
     width: 100%;
 
+    .aboutInfo{
+        width: 100%;
+        display: block;
+        i {
+            font-size: 25px;
+        }
+    }
 .photos {
     display: flex;
     flex-direction: row;
+    width: 99%;
 
 }
     img.headshot {
         width: 20vw;
         height: 21vw;
         padding: 10px;
-        margin: 20px 200px 20px 200px;
+        margin: 40px 200px 20px 200px;
         border-radius: 100%;
         border: 3px solid darken($sky, 30%);
     }
@@ -277,21 +294,24 @@ div.banner {
 // CONTACT
 .contactDiv {
     padding-bottom: 30px;
-    background-color: $sky;
+    //background-color: lighten($black, 3%);
     display: flex;
     float: left;
     margin-left: 30px;
     margin-bottom: 100px;
     width: 50%;
-    border: 2px solid darken($sky, 20%);
-    border-radius: 75px;
+    //border: 3px solid darken($sky, 20%);
+    //border-radius: 50px;
+    color: $white;
+
 
 }
 .contact-form {
-    background-color: $sky;
     margin: 0 auto;
     display: flex;
     align-content: center;
+    background: none;
+
     & ul li {
         padding: 0;
         margin: 0;
@@ -307,25 +327,25 @@ div.banner {
         height: 40px;
         font-family: 'Playfair Display', serif;
         box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
+        border-radius: 8px;
         padding: 10px;
-        background-color: $black;
-
-        &:clicked {
-            
+        background-color: lighten($black, 10%);
         border: 1px solid indigo;
-        }
 
+    }
+
+    #subject {
+        width: 400px;
     }
     textarea {
         width: 400px;
         height: 100px;
         font-family: 'Playfair Display', serif;
         border: 1px solid indigo;
-        box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
         padding: 10px;
-        background-color: $black;
+        background-color: lighten($black, 10%);
     }
 
     b {
@@ -360,13 +380,6 @@ div.banner {
             border: 1px solid hsl(275, 100%, 25%);
           }
     }
-
-    div.or {
-        width: 20%;
-        display: flex;
-        align-content: center;
-        flex-direction: column;
-    }
 }}
 #follow {
     display: flex;
@@ -375,7 +388,6 @@ div.banner {
     margin-right: 40px;
     margin-bottom: 100px;
     width: 40%;
-    border: 2px solid darken($sky, 20%);
     border-radius: 75px;
 
     ul {
@@ -403,20 +415,20 @@ footer {
     bottom: 0;
     padding-bottom: 5px;
     h5 {
-    font-family: 'Ribeye', cursive;
+    font-family: 'Playfair Display', cursive;
     font-weight: 100;
     color: $white;
     display: inline;
     padding-left: 10px;
     font-size: 70%;
-    letter-spacing: 1px; 
+    letter-spacing: 2px; 
     line-height: 15px;
     padding-bottom: .5vh;
 
     }
 ul {
     display: inline;
-    padding-left: 75vw;
+    padding-left: 70vw;
     
 }
 li{
@@ -427,11 +439,10 @@ li{
         padding-top: 6px;
         padding-left: 10px;
     }
+    .fab:hover, .fas:hover{
+        color: indigo;
+    }
 }
-
-
-
-
 
 
 ::-webkit-scrollbar {

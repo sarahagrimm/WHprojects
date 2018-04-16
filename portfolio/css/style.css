@@ -65,13 +65,16 @@ span#topNavBar nav#menu li.links i {
 span#topNavBar nav#menu li.links a {
   text-decoration: none;
   font-size: 1.25vw;
-  color: #f2f2f2;
   letter-spacing: 2px;
   padding: 20px;
 }
 
-span#topNavBar nav#menu li.links a:hover {
-  background-color: #504e4e;
+span#topNavBar nav#menu li.links #home {
+  display: none;
+}
+
+span#topNavBar nav#menu li.links .fa-home:hover ~ #home {
+  display: inline;
 }
 
 img#logo {
@@ -165,16 +168,26 @@ div.banner div#buttons a:hover i::after {
   width: 100%;
 }
 
+.aboutDiv .about .aboutInfo {
+  width: 100%;
+  display: block;
+}
+
+.aboutDiv .about .aboutInfo i {
+  font-size: 25px;
+}
+
 .aboutDiv .about .photos {
   display: flex;
   flex-direction: row;
+  width: 99%;
 }
 
 .aboutDiv .about img.headshot {
   width: 20vw;
   height: 21vw;
   padding: 10px;
-  margin: 20px 200px 20px 200px;
+  margin: 40px 200px 20px 200px;
   border-radius: 100%;
   border: 3px solid #84aea3;
 }
@@ -273,21 +286,19 @@ div.banner div#buttons a:hover i::after {
 
 .contactDiv {
   padding-bottom: 30px;
-  background-color: #e0ebe8;
   display: flex;
   float: left;
   margin-left: 30px;
   margin-bottom: 100px;
   width: 50%;
-  border: 2px solid #a2c3ba;
-  border-radius: 75px;
+  color: #f2f2f2;
 }
 
 .contact-form {
-  background-color: #e0ebe8;
   margin: 0 auto;
   display: flex;
   align-content: center;
+  background: none;
 }
 
 .contact-form ul li {
@@ -305,13 +316,14 @@ div.banner div#buttons a:hover i::after {
   height: 40px;
   font-family: 'Playfair Display', serif;
   box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 10px;
-  background-color: #434242;
+  background-color: #5d5b5b;
+  border: 1px solid indigo;
 }
 
-.contact-form ul li input:clicked {
-  border: 1px solid indigo;
+.contact-form ul li #subject {
+  width: 400px;
 }
 
 .contact-form ul li textarea {
@@ -319,10 +331,10 @@ div.banner div#buttons a:hover i::after {
   height: 100px;
   font-family: 'Playfair Display', serif;
   border: 1px solid indigo;
-  box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
   padding: 10px;
-  background-color: #434242;
+  background-color: #5d5b5b;
 }
 
 .contact-form ul li b {
@@ -357,13 +369,6 @@ div.banner div#buttons a:hover i::after {
   border: 1px solid #4a0080;
 }
 
-.contact-form ul li div.or {
-  width: 20%;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-}
-
 #follow {
   display: flex;
   float: right;
@@ -371,7 +376,6 @@ div.banner div#buttons a:hover i::after {
   margin-right: 40px;
   margin-bottom: 100px;
   width: 40%;
-  border: 2px solid #a2c3ba;
   border-radius: 75px;
 }
 
@@ -402,20 +406,20 @@ footer {
 }
 
 footer h5 {
-  font-family: 'Ribeye', cursive;
+  font-family: 'Playfair Display', cursive;
   font-weight: 100;
   color: #f2f2f2;
   display: inline;
   padding-left: 10px;
   font-size: 70%;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   line-height: 15px;
   padding-bottom: .5vh;
 }
 
 footer ul {
   display: inline;
-  padding-left: 75vw;
+  padding-left: 70vw;
 }
 
 footer li {
@@ -426,6 +430,10 @@ footer i {
   color: #f2f2f2;
   padding-top: 6px;
   padding-left: 10px;
+}
+
+footer .fab:hover, footer .fas:hover {
+  color: indigo;
 }
 
 ::-webkit-scrollbar {
