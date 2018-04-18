@@ -18,10 +18,10 @@
     <main>
         <header>
 
-            <span id="topNavBar" class="nav-transparent nav-colored">
-                <nav id="menu">
 
-                    <ul>
+                <nav id="horizontal">
+<span id="topNavBar">
+                    <ul class="linksul">
                         <li class="nametag">
                             <img src="img/logo.png" id="logo">
                             
@@ -29,8 +29,8 @@
                     </ul>
                     <ul class="linksul">
                         <li class="links">
-                            <a href="#" id="alink"><i class="fas fa-home"></i> 
-                                <p id="home">home</p>
+                            <a href="#" id="alink">
+                                <i class="fas fa-home"></i>
                             </a>
                         </li>
                         <li class="links">
@@ -49,10 +49,42 @@
                             </a>
                         </li>
                     </ul>
+                </span>            
                 </nav>
 
 
-            </span>
+                <nav id="dropdown">
+                    <ul class="hamburger">
+                        <li class="hamburgerLi">
+                            <a href="#"><i class="fa fa-bars"></i></a>
+                        <ul class="list">
+                                <li class="listLi">
+                                        <a href="#">
+                                            <i class="fas fa-home"></i> HOME
+                                        </a>
+                                    </li>
+                                    <li class="listLi">
+                                        <a href="about.html"><i class="fas fa-user"></i> ABOUT ME
+                                            <!-- about me -->
+                                        </a>
+                                    </li>
+                                    <li class="listLi">
+                                        <a href="work.html"><i class="fas fa-heartbeat"></i> MY WORK
+                                            <!-- my work -->
+                                        </a>
+                                    </li>
+                                 <li class="listLi">
+                                        <a href="contact.html"><i class="fas fa-paper-plane"></i> CONTACT ME
+                                            <!-- contact me -->
+                                        </a>
+                                    </li>   
+                        </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            <!-- </span> -->
 
         </header>
 
@@ -139,7 +171,6 @@
                 </div>
 
             </div>
-        </div>
         <hr>
         <div class="work">
             <h1>my work</h1>
@@ -217,11 +248,11 @@
         </div>
         <!-- CONTACT SECTION -->
         <div class="contactDiv">
-            <h1>email me</h1>
-            <hr>
+
             <!--form-->
             <div class="contact-form">
-
+                <h1>email me</h1>
+                <hr>
                 <form action="mailto:sgrimmdev@gmail.com" method="post" enctype="text/plain">
                     <ul>
                         <li><input type="text" name="name" placeholder="name" required> 
@@ -238,7 +269,7 @@
                 </ul>
                 </form>
             </div>
-        </div>
+        
         <!--form end-->
 
         <div id="follow">
@@ -263,7 +294,7 @@
                     <i class="fab fa-facebook-messenger"></i> messenger</li>
             </ul>
         </div>
-        </div>
+
         </div>
         <!-- FOOTER -->
 
