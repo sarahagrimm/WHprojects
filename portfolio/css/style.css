@@ -2,7 +2,7 @@
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 html {
-  background-color: #e0ebe8;
+  background-color: #434242;
 }
 
 html body {
@@ -25,12 +25,12 @@ hr {
 
 nav#horizontal {
   background-color: #434242;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
-  height: 10vh;
+  height: 8vh;
   box-shadow: -1px 2px 2px 3px rgba(0, 0, 0, 0.2);
   padding: 10px 40px 10px 0;
 }
@@ -38,7 +38,8 @@ nav#horizontal {
 nav#horizontal span {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
+  height: 100%;
 }
 
 nav#horizontal ul {
@@ -64,7 +65,7 @@ nav#horizontal a {
 }
 
 nav#horizontal .fab:hover, nav#horizontal .fas:hover {
-  color: indigo;
+  color: #484747;
   text-shadow: 0 0 20px #f2f2f2;
 }
 
@@ -79,6 +80,7 @@ nav#horizontal li.nametag {
 nav#horizontal li.nametag img#logo {
   height: 40px;
   width: 45px;
+  text-shadow: 0 0 20px #f2f2f2;
 }
 
 nav#dropdown {
@@ -126,15 +128,9 @@ nav#dropdown a {
   text-decoration: none;
 }
 
-@media (max-width: 960px) {
-  .linksul {
-    display: none;
-  }
-  .name {
-    display: block;
-  }
-  nav#dropdown {
-    display: block;
+@media (max-width: 900px) {
+  main {
+    width: 100%;
   }
   div.banner {
     padding-top: 40px;
@@ -143,11 +139,23 @@ nav#dropdown a {
     font-size: 12px;
     padding-top: 10px;
   }
+  footer {
+    width: 100%;
+  }
+  .links {
+    padding: 0;
+  }
+  .links i {
+    font-size: 300%;
+  }
+  .linksul {
+    padding: 0;
+  }
 }
 
 main {
-  float: none;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
   background-color: #e0ebe8;
 }
 
@@ -155,6 +163,7 @@ main div {
   display: flex;
   flex-direction: column;
   background-color: #e0ebe8;
+  width: 100vw;
 }
 
 main div.banner {
@@ -191,14 +200,15 @@ main div.banner h2 {
 }
 
 main div.banner div#buttons {
-  position: absolute;
+  position: static;
   display: flex;
   flex-direction: row;
-  align-self: center;
+  align-content: center;
+  justify-content: center;
   height: 20px;
   z-index: 9996;
   background: transparent;
-  padding-top: 13vw;
+  padding-top: 3vw;
 }
 
 main div.banner div#buttons i {
@@ -461,7 +471,6 @@ footer {
   position: fixed;
   z-index: 9999;
   bottom: 0;
-  padding-right: 20px;
 }
 
 footer span {
@@ -477,6 +486,12 @@ footer h5 {
   font-size: 65%;
   letter-spacing: 2px;
   padding-bottom: .5vh;
+}
+
+footer .footerUl {
+  bottom: 0;
+  padding-right: 30px;
+  margin: 0;
 }
 
 footer ul {
@@ -495,26 +510,6 @@ footer i {
 }
 
 footer .fab:hover, footer .fas:hover {
-  color: indigo;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #f2f2f2;
-  border-radius: 3px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #434242;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #4a0080;
+  color: #5d5b5b;
 }
 /*# sourceMappingURL=style.css.map */

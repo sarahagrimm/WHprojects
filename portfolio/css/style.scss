@@ -9,7 +9,7 @@ $black: hsl(0, 1%, 26%);
 $white: hsl(0, 0%, 95%);
 $sky: hsl(164, 21%, 90%);
 html {
-    background-color: $sky;
+    background-color: $black;
 body{
     padding: 0;
     margin: 0;
@@ -33,18 +33,19 @@ hr{
 //Navigation
 nav#horizontal {
     background-color: $black;
-    width: 100%;
+    width: 100vw;
     position: fixed;  
     z-index: 9999;
     top: 0;
     left:0;
-    height: 10vh;
+    height: 8vh;
     box-shadow: -1px 2px 2px 3px rgba(0, 0, 0, 0.2);
     padding: 10px 40px 10px 0;
 span {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
+    height: 100%;
 }
     ul {
         display: flex;
@@ -69,7 +70,7 @@ span {
     
         }
         .fab:hover, .fas:hover {
-            color: indigo;
+            color: lighten($black, 2%);
             text-shadow: 0 0 20px $white;
         }
     .linksul {
@@ -81,6 +82,7 @@ span {
     img#logo{
         height: 40px;
         width: 45px;
+        text-shadow: 0 0 20px $white;
 }
     }
 }
@@ -132,23 +134,25 @@ span {
     }
 
     // MOBILE ONLY
-    @media (max-width: 960px) {
-        .linksul { display: none; }
-        .name {display: block;}
-        nav#dropdown { display: block;}
-        div.banner { padding-top: 40px; h3{ font-size: 12px; padding-top: 10px;}}
+    @media (max-width: 900px) {
+        main{ width: 100%; }
+        div.banner { padding-top: 40px; h3{ font-size: 12px; padding-top: 10px; }}
+        footer{ width: 100%; }
+        .links { padding: 0; i { font-size: 300%; }}
+        .linksul { padding:0; }
       }
 
 
 main {
-    float: none;
-    width: 100%;
+    width: 100vw;
+    overflow: hidden;
     background-color: $sky;
     
     div {
         display: flex;
         flex-direction: column;
         background-color: $sky;
+        width: 100vw;
 
         
     }   
@@ -183,14 +187,15 @@ div.banner {
         font-family: 'Erica One';
     }
     div#buttons {
-        position: absolute;
+        position: static;
         display: flex;
         flex-direction: row;
-        align-self: center;
+        align-content: center;
+        justify-content: center;
         height: 20px;
         z-index: 9996;
         background: transparent;
-        padding-top: 13vw;
+        padding-top: 3vw;
         i {
             color: $white;
             padding: 10px;
@@ -453,7 +458,7 @@ footer {
     position: fixed;
     z-index: 9999;
     bottom: 0;
-    padding-right: 20px;
+
 
     span {
         display: flex;
@@ -468,6 +473,12 @@ footer {
     letter-spacing: 2px;
     padding-bottom: .5vh;
 
+    }
+
+    .footerUl {
+        bottom: 0;
+        padding-right: 30px;
+        margin: 0;
     }
 ul {
     display: inline;
@@ -485,28 +496,28 @@ li{
         font-size: 80%;
     }
     .fab:hover, .fas:hover{
-        color: indigo;
+        color: lighten($black, 10%);
     }
 }
 
 
-::-webkit-scrollbar {
-    width: 10px;
-}
+// ::-webkit-scrollbar {
+//     width: 10px;
+// }
 
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px $white; 
-    border-radius: 3px;
-}
+// /* Track */
+// ::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 5px $white; 
+//     border-radius: 3px;
+// }
  
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: $black;
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//     background: hsl(275, 100%, 25%);
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: hsl(275, 100%, 25%); 
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//     background: hsl(275, 100%, 25%); 
+// }
     
