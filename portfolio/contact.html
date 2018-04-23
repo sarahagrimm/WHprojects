@@ -6,124 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sarah Grimm | Web Development & Design</title>
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbwAAAMEAAACuAAAAowAAAJIAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAALwAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8AAADSAAAAoQAAAK8AAACxAAAArwAAAKUAAAB/AAAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAA7wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAhAAAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPEAAAD/AAAA/wAAAP8AAAD/AAAA/wAAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP4AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD9AAAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAG0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADSAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADrAAAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOgAAAPMAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtAAAA0gAAAP8AAAD/AAAA/wAAAP8AAABtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAACeAAAA/wAAAP8AAAD/AAAATwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAPEAAAD/AAAA/wAAAMAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC8AAAA/wAAAP8AAADxAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKwAAAM8AAADVAAAAOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAhQAAAAAAAAAAAAAAAAAAAAAAAAAA4D8AAOP/AADgDwAA4A8AAOAfAADgHwAA4B8AAOAfAADgDwAA8A8AAPgPAAD8DwAA/gcAAP8HAAD/DwAA/58AAA=="
-        rel="icon" type="image/x-icon">
+    <link href="img/logo.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    
 </head>
 
 <body>
 
-    <div class="main">
-        <header>
-            <span id="topNavBar">
-                <nav id="menu">
+        <nav id="horizontal">
+                <ul class="linksulName">
+                    <li class="nametag">
+                        <img src="img/logo2.png" id="logo">
+                        
+                        
+                        
+                    </li>
+                </ul>
+                <ul class="linksul">
+                    <li class="links">
+                        <a href="/" id="alink">
+                            <!-- <i class="fas fa-home"></i> -->
+                            <!-- <img class="linksIcons" src="img/home.svg"> -->
+                            home
+                        </a>
+                    </li>
+                    <li class="links">
+                        <a href="about.html">
+                            <!-- <i class="fas fa-user-circle"></i> -->
+                            about me
+                        </a>
+                    </li>
+                    <li class="links">
+                        <a href="work.html">
+                            <!-- <i class="fas fa-code"></i>  -->
+                            my work
+                        </a>
+                    </li>
+                    <li class="links">
+                        <a href="contact.html">
+                            <!-- <i class="fas fa-paper-plane"></i>  -->
+                            contact me
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <i class="fas fa-bookmark"></i>
+            
+            <nav id="dropdown">
+                <ul class="hamburger">
+                    <li class="hamburgerLi">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                    <ul class="list">
+                            <li class="listLi">
+                                    <a href="#">
+                                        <!-- <i class="fas fa-home"></i>  -->
+                                        HOME
+                                    </a>
+                                </li>
+                                <li class="listLi">
+                                    <a href="about.html">
+                                        <!-- <i class="fas fa-user"></i> -->
+                                         ABOUT
+                                    </a>
+                                </li>
+                                <li class="listLi">
+                                    <a href="work.html">
+                                        <!-- <i class="fas fa-heartbeat"></i> -->
+                                         WORK
+                                        
+                                    </a>
+                                </li>
+                             <li class="listLi">
+                                    <a href="contact.html">
+                                        <!-- <i class="fas fa-paper-plane"></i>  -->
+                                        CONTACT
+                                    </a>
+                                </li>   
+                    </ul>
+                    </li>
+                </ul>
+
+            </nav>
+
+
+    </header>
+                       
+                        <div class="spacingDiv"></div>
+                        <main>
+
+         <!-- CONTACT SECTION -->
+        <div class="contactDiv">
+            <div class="formDiv">
+            <!--form-->
+            <h1>email me</h1>
+            <hr>
+            <div class="contact-form">
+
+                <form action="mailto:sgrimmdev@gmail.com" method="post" enctype="text/plain">
                     <ul>
-                        <li class="nametag">
-                            <img id="ember" src="img/orangeember.png">
-                            <!-- <img src="img/ghost.png"> -->
-                        </li>
-                        <li class="nametag">
-                            <h1>sarah grimm</h1>
-                        </li>
-                    </ul>
-                    <ul class="linksul">
-                        <li class="links">
-                            <a href="index.html">home</a>
-                        </li>
-                        <li class="links">
-                            <a href="about.html">about me</a>
-                        </li>
-                        <li class="links">
-                            <a href="work.html">my work</a>
-                        </li>
-                        <li class="links">
-                            <a href="#">contact me</a>
-                        </li>
-                    </ul>
-                </nav>
+                        <li><input type="text" name="name" placeholder="name" required> 
 
+                        <input type="email" name="mail" placeholder="email" required></li>
 
-            </span>
+                        <li id="subject"><input type="text" placeholder="subject">
 
-        </header>
+                        <li><textarea rows="2" columns="10" placeholder="leave a message" required></textarea></li>
+                    
+                        <li><button class="btn btn-default submit btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button></li>
+                    
+                </ul>
+                </form>
+            </div></div>
+        
+        <!--form end-->
+        <div class="socialMedia">
+        <h1>or follow me on:</h1>
+        <hr>
+        <div id="follow">
 
-
-
-        <section class="contact">
-
-            <!-- <h1>Send Me A Message!</h1> -->
-
-
-            <!-- <a href="mailto:sgrimmdev@gmail.com"><i class="far fa-envelope"></i></a>
-
-            <h3>
-                sgrimmdev@gmail.com
-            </h3> -->
-            <form action="mailto:sgrimmdev@gmail.com" method="post" enctype="text/plain">
-                    <h4>Name <b>*</b></h4>
-                        <input type="text" name="name" placeholder="name" required><br>
-
-                    <h4>E-mail Address <b>*</b></h4>
-                    <input type="email" name="mail" placeholder="email" required><br>
-
-                    <h4>Contact Number <small>(optional)</small></h4>
-                    <input type="text" name="number" placeholder="number"><br>
-
-                    <h4>
-                        Message <b>*</b>
-                    </h4>
-                    <textarea rows="4" columns="40" placeholder="leave a message" required></textarea><br>
-
-                    <button class="submit btn-primary">SUBMIT</button>
-        </form>
-
-            <p>&nbsp;</p>
-    </section>
-
-
-        <div class="socialmedia">
-            <!-- <h1>Find Me On...</h1> -->
-
-            <ul class="social">
+            <ul>
                 <li>
-                    <a href="https://www.facebook.com/sarahagrimm?">
-                        <i class="devicon-facebook-plain colored"></i>
-
-                    </a>
-                </li>
-
-
+                    <i class="devicon-facebook-plain colored"></i> facebook</li>
                 <li>
-                    <a href="https://github.com/sarahagrimm">
-                        <i class="devicon-github-plain-wordmark colored"></i>
-
-
-                    </a>
-                </li>
-                <li><a href="#"><i class="devicon-slack-plain colored"></i>
-                </a></li>
+                    <i class="devicon-twitter-plain colored"></i> twitter</li>
                 <li>
-                    <a href="https://www.instagram.com/worsethanthefear/">
-                        <i id="insta" class="fab fa-instagram"></i>
-                    </a>
-                </li>
+                    <i class="fab fa-instagram"></i> instagram</li>
                 <li>
-                    <a href="">
-                        <i id="linkedin" class="fab fa-linkedin-in"></i>
-
-                    </a>
-                </li>
+                    <i class="devicon-github-plain colored"></i>
+                    github</li>
+                <li>
+                    <i class="fab fa-linkedin"></i> linkedIn</li>
+                <li>
+                    <i class="devicon-slack-plain colored"></i>
+                    slack</li>
+                <li>
+                    <i class="fab fa-facebook-messenger"></i> messenger</li>
             </ul>
         </div>
+        </div>
 
-        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-
-        <footer>
+        </div>
+    </main>
+    <footer>
+            <span>
+            <ul>
+                <li>
             <h5>
-                &copy;Sarah Grimm
+                Created by Sarah Grimm
             </h5>
+            </li>
+            </ul>
+            <ul class="footerUl">
+                <li>
+                    <a href="facebook.com/sarahagrimm"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-slack"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </li>
+            </ul>
+            </span>
         </footer>
-    </div>
 
     <script src="js/script.js"></script>
 </body>

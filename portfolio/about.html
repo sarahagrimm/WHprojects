@@ -6,54 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sarah Grimm | Web Development & Design</title>
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbwAAAMEAAACuAAAAowAAAJIAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAALwAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8AAADSAAAAoQAAAK8AAACxAAAArwAAAKUAAAB/AAAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAA7wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAhAAAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPEAAAD/AAAA/wAAAP8AAAD/AAAA/wAAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP4AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD9AAAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAG0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADSAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADrAAAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOgAAAPMAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtAAAA0gAAAP8AAAD/AAAA/wAAAP8AAABtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAACeAAAA/wAAAP8AAAD/AAAATwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAPEAAAD/AAAA/wAAAMAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC8AAAA/wAAAP8AAADxAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKwAAAM8AAADVAAAAOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAhQAAAAAAAAAAAAAAAAAAAAAAAAAA4D8AAOP/AADgDwAA4A8AAOAfAADgHwAA4B8AAOAfAADgDwAA8A8AAPgPAAD8DwAA/gcAAP8HAAD/DwAA/58AAA==" rel="icon" type="image/x-icon">
+    <link href="img/logo.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>
 
-    <div class="main">
         <header>
-            <span id="topNavBar">
-            <nav id="menu">
+
+
+                <nav id="horizontal">
+                        <ul class="linksulName">
+                            <li class="nametag">
+                                <img src="img/logo2.png" id="logo">
+                                
+                                
+                                
+                            </li>
+                        </ul>
+                        <ul class="linksul">
+                            <li class="links">
+                                <a href="/" id="alink">
+                                    <!-- <i class="fas fa-home"></i> -->
+                                    <!-- <img class="linksIcons" src="img/home.svg"> -->
+                                    home
+                                </a>
+                            </li>
+                            <li class="links">
+                                <a href="about.html">
+                                    <!-- <i class="fas fa-user-circle"></i> -->
+                                    about me
+                                </a>
+                            </li>
+                            <li class="links">
+                                <a href="work.html">
+                                    <!-- <i class="fas fa-code"></i>  -->
+                                    my work
+                                </a>
+                            </li>
+                            <li class="links">
+                                <a href="contact.html">
+                                    <!-- <i class="fas fa-paper-plane"></i>  -->
+                                    contact me
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <i class="fas fa-bookmark"></i>
+                    
+                    <nav id="dropdown">
+                        <ul class="hamburger">
+                            <li class="hamburgerLi">
+                                <a href="#"><i class="fas fa-bars"></i></a>
+                            <ul class="list">
+                                    <li class="listLi">
+                                            <a href="#">
+                                                <!-- <i class="fas fa-home"></i>  -->
+                                                HOME
+                                            </a>
+                                        </li>
+                                        <li class="listLi">
+                                            <a href="about.html">
+                                                <!-- <i class="fas fa-user"></i> -->
+                                                 ABOUT
+                                            </a>
+                                        </li>
+                                        <li class="listLi">
+                                            <a href="work.html">
+                                                <!-- <i class="fas fa-heartbeat"></i> -->
+                                                 WORK
+                                                
+                                            </a>
+                                        </li>
+                                     <li class="listLi">
+                                            <a href="contact.html">
+                                                <!-- <i class="fas fa-paper-plane"></i>  -->
+                                                CONTACT
+                                            </a>
+                                        </li>   
+                            </ul>
+                            </li>
+                        </ul>
+    
+                    </nav>
+    
+    
+            </header>
+            <main>
+
+                        <!-- ABOUT SECTION -->
+                            <div class="abouth1">
+                                <h1>ABOUT ME</h1>
+                        </div>
+
+                        <!-- <hr> -->
+            <div class="about">
+
+                <div class="photo">
+                        <img src="img/me.jpg" class="headshot" alt="headshot2">
+                </div>
+                <div class="textBox">
+
+                    
+                        <div class="aboutInfo"><i class="fas fa-birthday-cake"></i> I'm 25 years old. </div>
+                        <div class="aboutInfo">
+                        <img src="img/pin.png">Fresno, California</div>
+                        <div class="aboutInfo"><i class="fas fa-plane"></i> Maryland</div>
+                        <div class="aboutInfo"></div>
+                        <div class="aboutInfo"></div>
+                        <div class="aboutInfo"></div>
+                        <div class="aboutInfo"></div>
+                        <p>
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, asperiores odio voluptatum dolores labore autem velit
+                        maiores ipsam repellendus libero magnam animi a similique nisi error?  </p>
+                </div>
+
+                <!-- <div id="facts">
+                    <h1>what do I do when I'm not coding?</h1>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-4 icons">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <div class="col-xs-4 icons">
+                            <i class="fab fa-steam"></i>
+                        </div>
+                    </div> -->
+                </div>
+                </main>
+
+                            <!-- FOOTER -->
+
+            <footer>
+                    <span>
                     <ul>
-                            <li class="nametag"><img id="ember" src="img/orangeember.png"></li>
-                            <li class="nametag"><h1>sarah grimm</h1></li>
+                        <li>
+                    <h5>
+                        Created by Sarah Grimm
+                    </h5>
+                    </li>
                     </ul>
-                <ul class="linksul">
-                            <li class="links">
-                                <a href="index.html">home</a>
-                            </li>
-                            <li class="links">
-                                <a href="#">about me</a>
-                            </li>
-                            <li class="links">
-                                <a href="work.html">my work</a>
-                            </li>
-                            <li class="links">
-                                <a href="contact.html">contact me</a>
-                            </li>
-                </ul>
-            </nav>
-
-
-        </span>
-
-    </header>
-        <section class="about">
-
-        <img src="img/me2.jpg" class="headshot" alt="headshot"></li>
-        <div id=textBox>
-                <h1>about me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, asperiores odio voluptatum dolores labore autem velit maiores ipsam repellendus libero magnam animi a similique nisi error? Cupiditate esse sequi non eveniet vero natus pariatur voluptatem, architecto maxime repellendus quisquam atque! Harum aut porro alias, cumque amet pariatur distinctio, maxime numquam aliquid, hic dolores tenetur eaque soluta fugit eligendi magnam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae nisi voluptas laborum dicta neque iure est dolores voluptate, eligendi consequuntur consequatur eius consectetur nam assumenda eum repudiandae velit reiciendis tempora architecto ad iste. Nesciunt reprehenderit animi numquam tempore alias, possimus ab quisquam labore itaque! Dignissimos aspernatur officiis inventore fugit. Provident mollitia culpa id, libero obcaecati asperiores autem sed quibusdam doloremque, hic explicabo ipsum tempore fugiat nobis! Quaerat, dicta? Blanditiis architecto doloremque quam unde voluptatibus quaerat reiciendis eos ipsa rerum. Voluptatum aperiam minus libero illum. Eum, molestiae, soluta, corporis numquam nisi repellat ipsa enim magni illo assumenda nulla nostrum consectetur dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore necessitatibus quidem accusantium ad ab illo quibusdam assumenda impedit voluptas odio, sed aliquam ea! Voluptas fugit possimus reiciendis ipsa, minus dolore eiu</p>
-        </div>
-        </section>
-    <footer>
-            <h5>
-                &copy;Sarah Grimm
-            </h5>
-        </footer>   
-</div>
+                    <ul class="footerUl">
+                        <li>
+                            <a href="facebook.com/sarahagrimm"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-slack"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                    </span>
+                </footer>
 
 <script src="js/script.js"></script>
 </body>
