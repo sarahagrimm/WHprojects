@@ -150,68 +150,76 @@
  var optionOne;
  var optionTwo;
  
- var start = document.querySelector('button[class="start"]');
- start.addEventListener('click', story);
+  var start = document.querySelector('button[class="start"]');
+ start.addEventListener('click', showBegin);
 
- function story(){
- confirm("It's Friday night! Time to celebrate the weekend!");
- var start = prompt("Hit the town or stay in?", 'Enter "town" or "in"');
- 
- // HIT THE TOWN - optionOne
- if (start === 'town'){
-     console.log('getting ready...');
-     var optionOne = prompt('Go shopping or go the the park?', 'Enter "shop" or "dog park"');
+ function showBegin(){
+     //document.getElementById('begin').style.display = "block";
+     //document.getElementById('begin2').style.display = "block";
+     document.getElementById('start').style.display = "none";
+     document.getElementById('storyWindow').style.display = "block";
  }
+
+
+
+//   function story(){
+
  
- // STAY IN - optionTwo
- else if(start === 'in') {
-     console.log('changing into comfy clothes...');
-     var optionTwo = prompt('Watch TV or play video games?', 'Enter "tv" or "game"');
-     }
+//  // HIT THE TOWN - optionOne
+//  if (){
+//      console.log('getting ready...');
+//      optionOne = prompt('Go shopping or go the the park?', 'Enter "shop" or "dog park"');
+//  }
+ 
+//  // STAY IN - optionTwo
+//  else if(start === 'in') {
+//      console.log('changing into comfy clothes...');
+//      var optionTwo = prompt('Watch TV or play video games?', 'Enter "tv" or "game"');
+//      }
  
  
- // SHOP - optionOne
- if (optionOne === 'shop'){
-         console.log('heading to the mall...');
-         var shop = prompt('Shop for yourself or for your dog?', 'Enter "for me" or "my dog"');
-     }
+//  // SHOP - optionOne
+//  if (optionOne === 'shop'){
+//          console.log('heading to the mall...');
+//          var shop = prompt('Shop for yourself or for your dog?', 'Enter "for me" or "my dog"');
+//      }
      
- //PARK
-else if (optionOne === 'dog park') {
-         console.log('grabbing picnic lunch...');
-         var park = prompt('Will you bring your dog to the park?', 'Enter "Yes" or "No"');
-     }
+//  //PARK
+// else if (optionOne === 'dog park') {
+//          console.log('grabbing picnic lunch...');
+//          var park = prompt('Will you bring your dog to the park?', 'Enter "Yes" or "No"');
+//      }
      
- if (park === "Yes"){
-         console.log('playing fetch...');
-         confirm('Good choice! Your pup is happy and so are you!');
+//  if (park === "Yes"){
+//          console.log('playing fetch...');
+//          confirm('Good choice! Your pup is happy and so are you!');
      
- }
- else if (park === "No"){
-     console.log('going back for dog...');
-     confirm("Wow, that's rude. I think you should reconsider.");
- }
-     if (shop === "for me"){
-         console.log('going to pet store...');
-         confirm("I mean... I guess that's okay, but you should grab something for your dog too...");
-     }
-     else if (shop === "my dog"){
-         console.log('buying new dog bed...');
-         confirm ("Great choice! Your pup is happy and so are you!");
-     }
+//  }
+//  else if (park === "No"){
+//      console.log('going back for dog...');
+//      confirm("Wow, that's rude. I think you should reconsider.");
+//  }
+//      if (shop === "for me"){
+//          console.log('going to pet store...');
+//          confirm("I mean... I guess that's okay, but you should grab something for your dog too...");
+//      }
+//      else if (shop === "my dog"){
+//          console.log('buying new dog bed...');
+//          confirm ("Great choice! Your pup is happy and so are you!");
+//      }
  
  
  
- // TV
- if (optionTwo === 'tv'){
-         console.log('grabbing the remote...');
-         confirm('You curl up on the couch with your pup and enjoy your night in front of the tube.');
- }
+//  // TV
+//  if (optionTwo === 'tv'){
+//          console.log('grabbing the remote...');
+//          confirm('You curl up on the couch with your pup and enjoy your night in front of the tube.');
+//  }
      
-     // VIDEO GAME
- else if (optionTwo === 'game'){
-         console.log('booting up Steam...');
-         confirm('You pull up your favorite game on your PC and play all night.'); 
+//      // VIDEO GAME
+//  else if (optionTwo === 'game'){
+//          console.log('booting up Steam...');
+//          confirm('You pull up your favorite game on your PC and play all night.'); 
      
-     }
-    }
+//      }
+    // }
