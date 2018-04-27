@@ -37,33 +37,33 @@ nav#horizontal {
   align-items: center;
 }
 
-nav#horizontal ul {
+nav#horizontal ul.linksul {
   display: flex;
   justify-content: center;
   align-content: center;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0;
 }
 
-nav#horizontal ul li.links {
+nav#horizontal ul.linksul li.links {
   list-style: none;
   padding: 0;
 }
 
-nav#horizontal a {
+nav#horizontal ul.linksul a {
   text-decoration: none;
-  padding: 20px;
+  margin: 0 auto;
   color: white;
   font-family: 'Yeseva One';
   text-transform: uppercase;
+  padding: 30px;
 }
 
-nav#horizontal a:hover {
+nav#horizontal ul.linksul a:hover {
   background-color: #343f41;
-  padding: 20px;
-}
-
-nav#horizontal .linksul {
-  font-family: 'Oleo Script', sans-serif;
-  text-transform: lowercase;
+  height: 100%;
 }
 
 nav#horizontal li.nametag {
@@ -291,7 +291,6 @@ main div.banner div#buttons {
   background: transparent;
   padding-top: 5vw;
   text-shadow: 0 0 20px black;
-  animation: floatUp 1s ease 2s forwards;
 }
 
 @media (max-width: 900px) {
@@ -304,18 +303,18 @@ main div.banner div#buttons i {
   color: #f2f2f2;
   padding: 10px;
   font-size: 5vw;
+  position: relative;
 }
 
-main div.banner div#buttons a:hover i::before {
+main div.banner div#buttons a:hover i {
   opacity: 0;
 }
 
-main div.banner div#buttons a:hover i::after {
-  content: 'hello';
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  font-family: 'Peralta';
+main div.banner div#buttons a:after {
+  content: 'HOME';
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .fa {
@@ -335,7 +334,7 @@ main div.banner div#buttons a:hover i::after {
 }
 
 .fallingM {
-  animation: floatDown 1s ease 3.5s forwards;
+  animation: floatDown 1s ease 2.9s forwards;
 }
 
 .space {

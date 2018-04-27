@@ -48,40 +48,37 @@ nav#horizontal {
     align-items: center;
     
 
-    ul {
+    ul.linksul{
         display: flex;
         justify-content: center;
         align-content: center;
-        // height: 100%;
-        // padding-top: 15px;
+        font-family: 'Oleo Script', sans-serif;
+        text-transform: lowercase;
+        padding: 0;
+        margin: 0;
+
         li.links {
             list-style: none;
             padding: 0;
         }
-    }
 
         a {
             text-decoration: none;
-            padding: 20px;
+            margin: 0 auto;
             color: white;
             font-family: 'Yeseva One';
             text-transform: uppercase;
+            padding: 30px;
     
         }
 
         a:hover {
             background-color: lighten(#293133, 5%);
+            height: 100%;
+            //padding: 14px 25px;
             //border-radius: 15px;
-            padding: 20px;
-        }
-        
-    .linksul {
-        font-family: 'Oleo Script', sans-serif;
-        text-transform: lowercase;
 
-
-    }
-
+        }}
 
     li.nametag {
         display: inline;
@@ -287,7 +284,6 @@ div.banner {
         background: transparent;
         padding-top: 5vw;
         text-shadow: 0 0 20px black;
-        animation: floatUp 1s ease 2s forwards;
 
         @media (max-width: 900px) {
             display: none;
@@ -296,21 +292,23 @@ div.banner {
             color: $white;
             padding: 10px;
             font-size: 5vw;
-        }
-        a:hover i::before{
-            opacity: 0;
-        }
-        a:hover i::after{
-            content:'hello';
-            font-size: 30px;
-            margin: 0;
-            padding: 0;
-            font-family: 'Peralta';
+            position: relative;
         }
 
-    }
 
-}
+        a:hover {
+            i {
+                opacity: 0;
+            }
+        }
+            a:after {
+                content: 'HOME';
+                position: absolute;
+                text-align: center;
+                width: 100%;
+            }
+        
+}}
 }
 
 .fa {
@@ -331,7 +329,7 @@ div.banner {
 }
 
 .fallingM {
-    animation: floatDown 1s ease 3.5s forwards;
+    animation: floatDown 1s ease 2.9s forwards;
 }
 
 .space {
