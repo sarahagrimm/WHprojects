@@ -13,20 +13,59 @@
 
     <header>
         <div id="friday">
-        <h1>Friday Night</h1></div>
+        <h1>Friday Night</h1>
+        <button id="replayStart" onclick="showBegin()"><i class="fas fa-undo"></i></button>
+    </div>
     </header>
     <main>
 
         <div class="btn">
-        <button id="start" onclick="showBegin()">Click here to play</button></div>
+        <button id="start" onclick="showBegin()">Click here to play</button>
+    </div>
 
-            <div id="storyWindow">
+        <!-- <div id="storyWindow"> -->
+
+
+        <div id="startingScene">
+            <h1>Hey, <span id="user"></span>!</h1>
         <h2 id="begin">It's Friday Night! Time to celebrate the weekend!</h2>
+
     <h4 id="begin2">Enjoy a night out or stay in and relax?</h4>
 
-    <button id="choice1">Hit the town</button>
-    <button id="choice2">Stay in</button>
+    <div class="buttons">
+    <button id="btn1" onclick="showChoice1()">Hit the town</button>
+    <button id="btn2" onclick="showChoice2()">Stay in</button></div>
 </div>
+
+<div id="choiceOne">
+    <h2>Would you like to go shopping or go to the park?</h2>
+    <div class="buttons">
+    <button id="btn1">Go Shopping</button>
+    <button id="btn2">Go to the Park</button>
+</div>
+</div>
+
+<div id="choiceOne2">
+    <h2>Shop for yourself or for your dog?</h2>
+    <div class="buttons">
+        <button id="btn1">Shop for me</button>
+        <button id="btn2">Shop for dog</button>
+    </div>
+</div>
+
+<div id="choiceTwo">
+    <h2>Would you like to watch TV or play video games?</h2>
+    <div class="buttons">
+        <button id="btn1">Watch TV</button>
+        <button id="btn2">Park</button>
+    </div>
+
+</div>
+
+
+
+
+<!-- </div> -->
     </main>
 
     <script src="js/script.js"></script>

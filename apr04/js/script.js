@@ -149,15 +149,32 @@
  var start;
  var optionOne;
  var optionTwo;
+ var user = document.getElementById('user');
  
-  var start = document.querySelector('button[class="start"]');
- start.addEventListener('click', showBegin);
 
  function showBegin(){
-     //document.getElementById('begin').style.display = "block";
-     //document.getElementById('begin2').style.display = "block";
+     var username = prompt("What's your name?", 'Sarah');
      document.getElementById('start').style.display = "none";
-     document.getElementById('storyWindow').style.display = "block";
+     document.getElementById('startingScene').style.display = "block";
+     document.getElementById('choiceOne').style.display = "none";
+     document.getElementById('choiceTwo').style.display = "none";
+     user.innerHTML = username;
+     
+ }
+
+    // var town = document.querySelector('button[id="#choice1"]');
+    // town.addEventListener('click', showChoice1);
+    
+ function showChoice1(){
+    document.getElementById('choiceOne').style.display = "block";
+    document.getElementById('startingScene').style.display = "none";
+    console.log('getting ready...');
+ }
+
+ function showChoice2(){
+     document.getElementById('choiceTwo').style.display = "block";
+     document.getElementById('startingScene').style.display = "none";
+     console.log('packing picnic lunch...');
  }
 
 

@@ -32,14 +32,13 @@ html hr, body hr {
 }
 
 html nav#horizontal, body nav#horizontal {
-  background-color: #0197A4;
-  background-color: #293133;
+  background-color: #2e3538;
   width: 100vw;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 80px;
   box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
   padding: 10px 40px 10px 0;
   display: flex;
@@ -51,33 +50,19 @@ html nav#horizontal ul, body nav#horizontal ul {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 100%;
-  padding-top: 15px;
 }
 
 html nav#horizontal ul li.links, body nav#horizontal ul li.links {
   list-style: none;
-  height: 100%;
-  border-right: 2px dashed #f2f2f2;
-  margin: 0 auto;
   padding: 0;
-}
-
-html nav#horizontal ul li.links:last-child, body nav#horizontal ul li.links:last-child {
-  border: none;
-}
-
-html nav#horizontal i, body nav#horizontal i {
-  font-size: 150%;
-  color: #f2f2f2;
 }
 
 html nav#horizontal a, body nav#horizontal a {
   text-decoration: none;
-  letter-spacing: 2px;
   padding: 20px;
   color: white;
-  font-family: 'Peralta';
+  font-family: 'Yeseva One';
+  text-transform: uppercase;
 }
 
 html nav#horizontal a:hover, body nav#horizontal a:hover {
@@ -85,18 +70,9 @@ html nav#horizontal a:hover, body nav#horizontal a:hover {
   padding: 20px;
 }
 
-html nav#horizontal a:active, body nav#horizontal a:active {
-  background-color: #403f3f;
-}
-
 html nav#horizontal .linksul, body nav#horizontal .linksul {
-  font-family: 'Peralta', sans-serif;
+  font-family: 'Oleo Script', sans-serif;
   text-transform: lowercase;
-  height: 50px;
-}
-
-html nav#horizontal .linksIcons, body nav#horizontal .linksIcons {
-  width: 30px;
 }
 
 html nav#horizontal li.nametag, body nav#horizontal li.nametag {
@@ -104,11 +80,10 @@ html nav#horizontal li.nametag, body nav#horizontal li.nametag {
 }
 
 html nav#horizontal li.nametag img#logo, body nav#horizontal li.nametag img#logo {
-  height: 60px;
-  width: 70px;
+  height: 150px;
+  width: 255px;
   top: 0;
-  margin-top: -10px;
-  padding-bottom: 5px;
+  padding-top: 25px;
   border-radius: 100%;
 }
 
@@ -117,8 +92,12 @@ html .fa-bookmark, body .fa-bookmark {
   font-size: 120px;
   position: absolute;
   top: 0;
-  padding-left: 30px;
-  z-index: 9998;
+  padding-left: 35px;
+}
+
+html img.linksIcons, body img.linksIcons {
+  width: 40px;
+  padding-top: 10px;
 }
 
 html nav#dropdown, body nav#dropdown {
@@ -181,7 +160,7 @@ html nav#dropdown a, body nav#dropdown a {
   text-align: left;
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   html main, body main {
     width: 100%;
     background-color: #343232;

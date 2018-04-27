@@ -40,7 +40,7 @@ nav#horizontal {
     z-index: 9999;
     top: 0;
     left:0;
-    height: 60px;
+    height: 80px;
     box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
     padding: 10px 40px 10px 0;
     display: flex;
@@ -186,7 +186,7 @@ img.linksIcons {
     @media only screen and (max-width: 900px) {
         main{ width: 100%; background-color: $black;}
         div.banner { padding-top: 20px; }
-        span#textBanner {img { height: 100vw; } .fa { font-family: 'Erica One', cursive; letter-spacing: 0; font-size: 50px; }}
+        span#textBanner {img { height: 100vw; } .fa { font-family: 'Erica One', cursive; letter-spacing: 0; font-size: 70px; }}
         footer{ width: 100%; }
         .links { font-size: 15px; display: none;}
         .linksul { padding:0; display: none; }
@@ -196,10 +196,15 @@ img.linksIcons {
         .spacingDiv { display: none; }
         // video#myVideo { display: none; }
         .goldengate { display: none; }
-        .developer, .and, .designer { display: block; text-align: center; font-size: 40%; }
+        .developer, .and, .designer { display: block; text-align: center; font-size: 100%; line-height: 40px;}
         nav#dropdown { display: inline; }
         div#buttons { display: none; }
       }
+
+      @media screen and (orientation:landscape) {
+        .goldengate { display: block; }
+     }
+
 
     //   .spacingDiv {
     //       height: 40px;
@@ -232,8 +237,8 @@ div.banner {
     }
 
     img.goldengate {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
     }
     span#textBanner {
         position: absolute;

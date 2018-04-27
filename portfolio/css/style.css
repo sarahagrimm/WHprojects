@@ -29,7 +29,7 @@ nav#horizontal {
   z-index: 9999;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 80px;
   box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
   padding: 10px 40px 10px 0;
   display: flex;
@@ -169,7 +169,7 @@ nav#dropdown a a:hover {
   span#textBanner .fa {
     font-family: 'Erica One', cursive;
     letter-spacing: 0;
-    font-size: 50px;
+    font-size: 70px;
   }
   footer {
     width: 100%;
@@ -198,13 +198,20 @@ nav#dropdown a a:hover {
   .developer, .and, .designer {
     display: block;
     text-align: center;
-    font-size: 40%;
+    font-size: 100%;
+    line-height: 40px;
   }
   nav#dropdown {
     display: inline;
   }
   div#buttons {
     display: none;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .goldengate {
+    display: block;
   }
 }
 
@@ -237,8 +244,8 @@ main div.banner img.forest {
 }
 
 main div.banner img.goldengate {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 main div.banner span#textBanner {

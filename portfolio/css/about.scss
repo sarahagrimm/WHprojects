@@ -6,6 +6,7 @@ $black: hsl(0, 1%, 20%);
 $white: hsl(0, 0%, 95%);
 $sky: hsl(164, 21%, 90%);
 $blue: #0197A4;
+$blueblack: hsl(200, 10%, 20%);
 
 html, body {
     max-width: 100%;
@@ -39,14 +40,13 @@ hr{
 
 //Navigation
 nav#horizontal {
-    background-color: $blue;
-    background-color: #293133;
+    background-color: $blueblack;
     width: 100vw;
     position: fixed;  
     z-index: 9999;
     top: 0;
     left:0;
-    height: 60px;
+    height: 80px;
     box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
     padding: 10px 40px 10px 0;
     display: flex;
@@ -58,33 +58,20 @@ nav#horizontal {
         display: flex;
         justify-content: center;
         align-content: center;
-        height: 100%;
-        padding-top: 15px;
+        // height: 100%;
+        // padding-top: 15px;
         li.links {
             list-style: none;
-            height: 100%;
-            border-right: 2px dashed $white;
-            margin: 0 auto;
             padding: 0;
-            &:last-child {
-                border: none;
-            }
-            
-            
         }
     }
-        i {
-            font-size: 150%;
-            color: $white;
-        }
-        
+
         a {
             text-decoration: none;
-            //font-size: 1.25vw;
-            letter-spacing: 2px;
             padding: 20px;
             color: white;
-            font-family: 'Peralta';
+            font-family: 'Yeseva One';
+            text-transform: uppercase;
     
         }
 
@@ -93,59 +80,42 @@ nav#horizontal {
             //border-radius: 15px;
             padding: 20px;
         }
-
-        a:active {
-            background-color: lighten($black, 5%);
-        }
-        // .fab:hover, .fas:hover {
-            // animation-name: bounce;
-            // animation-duration: 1s;
-            // animation-delay: .5s;
-            //animation-iteration-count: infinite;
-            //animation-timing-function: linear;
-            // animation-iteration-count: ease-in-out;
-
-
-
         
     .linksul {
-        font-family: 'Peralta', sans-serif;
+        font-family: 'Oleo Script', sans-serif;
         text-transform: lowercase;
-        height: 50px;
+
 
     }
 
-    .linksIcons {
-        width: 30px;
-    }
 
     li.nametag {
         display: inline;
     img#logo{
-        height: 60px;
-        width: 70px;
+        height: 150px;
+        width: 255px;
         top: 0;
-        margin-top: -10px;
-        padding-bottom: 5px;
+        padding-top: 25px;
         border-radius: 100%;
-        //border: 1px dotted $white;
-        //box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
-        //background-color: #211D1C;
-        //padding: 10px;
-        //position: absolute;
         
 }
 }
 }
+
 
 .fa-bookmark {
     color: #C53E25;
     font-size: 120px;
     position: absolute;
     top: 0;
-    padding-left: 30px;
-    z-index: 9998;
-}   
+    padding-left: 35px;
+}
+
+
+img.linksIcons {
+    width: 40px;
+    padding-top: 10px;
+}
 
 // dropdown
 
@@ -217,7 +187,7 @@ nav#horizontal {
     }
 
     // MOBILE ONLY
-    @media only screen and (max-width: 900px) {
+    @media screen and (max-width: 600px) {
         main{ width: 100%; background-color: $black;}
         div.banner { padding-top: 20px; }
         span#textBanner {img { height: 100vw; } .fa { font-family: 'Erica One', cursive; letter-spacing: 0; font-size: 50px; }}
