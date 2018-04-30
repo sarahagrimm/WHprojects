@@ -10,25 +10,30 @@ $blueblack: hsl(200, 10%, 20%);
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
-    background-color: $sky;
+    overflow: hidden;
+    //background-color: $sky;
+    //background-color: $blueblack;
     padding: 0;
     margin: 0;
     height: 100%;
+    background: url('/img/goldengate.jpg');
+    background: url('https://images.unsplash.com/photo-1519120693210-d47b03b31d77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b8d462021896b6a8825629fb69a04b4&auto=format&fit=crop&w=937&q=80');
+    background-size: cover;
 
     h1 {
-        color: darken($white, 10%);
-        letter-spacing: 20px;
+        color: darken($black, 10%);
+        // letter-spacing: 20px;
         text-align: center;
-        height: 20vh;
+        height: 100px;
         width: 100%;
-        padding-top: 30px;
-        text-shadow: 0 0 20px   black;
-        background-image: url('/img/splat.jpg');
+        margin-top: auto;
+        //padding-top: 25px;
+        text-shadow: 0 0 20px lightblue;
+        //background-image: url('/img/splat.jpg');
         background-position: center;
         background-repeat: none;
         background-size: cover;
-        font-size: 100px;
+        font-size: 8vh;
     }
 
 
@@ -46,76 +51,68 @@ nav#horizontal {
     z-index: 9999;
     top: 0;
     left:0;
-    height: 80px;
+    height: 50px;
     box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
     padding: 10px 40px 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
+    ul.linksulName {
+        padding: 10px;
+    }
 
-    ul {
+    ul.linksul{
         display: flex;
         justify-content: center;
         align-content: center;
-        // height: 100%;
-        // padding-top: 15px;
+        font-family: 'Oleo Script', sans-serif;
+        text-transform: lowercase;
+        padding: 0;
+        margin: 0;
+
         li.links {
             list-style: none;
             padding: 0;
         }
-    }
 
         a {
             text-decoration: none;
-            padding: 20px;
+            margin: 0 auto;
             color: white;
             font-family: 'Yeseva One';
             text-transform: uppercase;
+            padding: 20px;
     
         }
 
         a:hover {
             background-color: lighten(#293133, 5%);
+            height: 100%;
+            //padding: 14px 25px;
             //border-radius: 15px;
-            padding: 20px;
-        }
-        
-    .linksul {
-        font-family: 'Oleo Script', sans-serif;
-        text-transform: lowercase;
 
-
-    }
-
+        }}
 
     li.nametag {
-        display: inline;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     img#logo{
-        height: 150px;
+        height: 200px;
         width: 255px;
         top: 0;
-        padding-top: 25px;
+        padding-top: 55px;
         border-radius: 100%;
         
+    }
 }
-}
-}
-
-
-.fa-bookmark {
-    color: #C53E25;
-    font-size: 120px;
-    position: absolute;
-    top: 0;
-    padding-left: 35px;
+            img.linksIcons {
+              width: 30px;
+            }
 }
 
-
-img.linksIcons {
-    width: 40px;
-    padding-top: 10px;
-}
 
 // dropdown
 
@@ -188,21 +185,14 @@ img.linksIcons {
 
     // MOBILE ONLY
     @media screen and (max-width: 600px) {
-        main{ width: 100%; background-color: $black;}
-        div.banner { padding-top: 20px; }
-        span#textBanner {img { height: 100vw; } .fa { font-family: 'Erica One', cursive; letter-spacing: 0; font-size: 50px; }}
-        footer{ width: 100%; }
+        //main{ width: 100%; background-color: $black;}
+        footer{ width: 100vw; }
         .links { font-size: 15px; display: none;}
         .linksul { padding:0; display: none; }
-        .skills { ul { flex-wrap: wrap;
-            overflow-x: auto; } }
         .footerUl { display: none; }
-        .spacingDiv { display: none; }
-        // video#myVideo { display: none; }
-        .goldengate { display: none; }
-        .developer, .and, .designer { display: block; text-align: center; font-size: 40%; }
         nav#dropdown { display: inline; }
-        div#buttons { display: none; }
+        div.about { width: 100vw; padding: 0; margin: 0; flex-direction: column; height: 100%; }
+        html, body { overflow: visible; }
       }
 
 
@@ -212,12 +202,10 @@ main {
 margin-top: 50px;
 width: 100vw;
 overflow: hidden;
-background-color: $sky;
 
 div {
     display: flex;
     flex-direction: column;
-    background-color: $sky;
     width: 100vw;
 
     
@@ -225,15 +213,13 @@ div {
 
 // ABOUT
 
-.abouth1 {
-        position: relative;
-        padding-top: 10px;
-        /* example content */
-        width: 100%;
-        height: 200px;
-        font-family: 'Peralta';
-        //z-index: 9999;
-}
+// .abouth1 {
+//         position: relative;
+//         //padding-top: 10px;
+//         width: 100%;
+//         height: 200px;
+//         font-family: 'Peralta';
+// }
 
 .about {
     background-color: $sky;
@@ -242,8 +228,12 @@ div {
     align-content: center;
     align-items: center;
     justify-content: center;
+    margin-left: 100px;
     font-family: 'Playfair Display', cursive;
-    width: 100%;
+    width: 90vw;
+    margin-top: 65px;
+    height: 75vh;
+    box-shadow: 0 0 20px black;
 
     .aboutInfo{
         width: 100%;
@@ -257,21 +247,29 @@ div {
     }
 .photo {
     display: flex;
-    flex-direction: row;
-    width: 100vw;
+    flex-direction: column;
+    width: 50vw;
     align-self: center;
     justify-content: center;
-    padding-top: 25px;
+    align-items: center;
+    //padding-top: 25px;
+
+    .facts {
+        text-align: center;
+        padding: 20px;
+        h3 {
+            font-size: 100%;
+        }
+        img {
+            width: 30px;
+        }
+    }
 
 }
     img.headshot {
-        width: 400px;
-        height: 601px;
-        padding: 15px;
-        //margin: 0 auto;
-        //margin: 10vh 10vw 10vh 10vw;
-        border-radius: 100px;
-        border: 15px double #962D6E;
+        width: 300px;
+        height: 301px;
+
     }
 
     div.textBox {
@@ -279,14 +277,10 @@ div {
         display: flex;
         align-content: center;
         justify-content: center;
-        color: $black;
-        font-size: 120%;
-        margin-right: 100px;
-    
-    #facts {
-        h1 {
-            font-size: 150%;
-        }
+        color: black;
+        font-size: 100%;
+        padding: 60px;
+        height: 100%;        
 
         .row {
             display: flex;
@@ -297,6 +291,12 @@ div {
             }
         }
     }
+                    span.passion {
+                        color: red;
+                    }
+                    span.love {
+                        color: indigo;
+                    }
 } }
 
 footer {
@@ -344,4 +344,4 @@ li{
     }
     .fab:hover, .fas:hover{
         color: lighten($black, 10%);
-    }}}
+    }}

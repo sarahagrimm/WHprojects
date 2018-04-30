@@ -1,49 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
-@font-face {
-  font-family: 'Milkshake';
-  src: url("fonts/milkshake.otf");
-}
-
 html, body {
-  max-width: 100%;
   overflow-x: hidden;
-  background-color: #e0ebe8;
+  background-color: white;
+  background-color: #2e3538;
   padding: 0;
   margin: 0;
-}
-
-html h1, body h1 {
-  color: #d9d9d9;
-  letter-spacing: 20px;
-  text-align: center;
-  font-family: 'Peralta', cursive;
-  height: 50vh;
-  width: 100%;
-  font-size: 18vh;
-  text-shadow: 0 0 20px   black;
-  background-image: url("/img/splat.jpg");
-  background-position: center;
-  background-repeat: none;
+  background: url("https://images.unsplash.com/photo-1519120693210-d47b03b31d77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b8d462021896b6a8825629fb69a04b4&auto=format&fit=crop&w=937&q=80");
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-hr {
-  width: 50%;
-  background-color: #f2f2f2;
+header {
+  width: 100vw;
 }
 
 nav#horizontal {
-  background-color: #0197A4;
-  background-color: #293133;
+  background-color: #2e3538;
   width: 100vw;
   position: fixed;
-  z-index: 9999;
+  z-index: 9999 !important;
   top: 0;
   left: 0;
   height: 50px;
@@ -52,68 +28,59 @@ nav#horizontal {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100vw;
 }
 
-nav#horizontal ul {
+nav#horizontal ul.linksulName {
+  padding: 10px;
+}
+
+nav#horizontal ul.linksul {
   display: flex;
   justify-content: center;
   align-content: center;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0;
 }
 
-nav#horizontal ul li.links {
+nav#horizontal ul.linksul li.links {
   list-style: none;
-  height: 100%;
-  border-right: 2px dashed #f2f2f2;
-  margin: 0 auto;
   padding: 0;
 }
 
-nav#horizontal ul li.links:last-child {
-  border: none;
-}
-
-nav#horizontal i {
-  font-size: 150%;
-  color: #f2f2f2;
-}
-
-nav#horizontal a {
+nav#horizontal ul.linksul a {
   text-decoration: none;
-  letter-spacing: 2px;
-  padding: 20px;
+  margin: 0 auto;
   color: white;
-  font-family: 'Peralta';
-}
-
-nav#horizontal a:hover {
-  background-color: #343f41;
+  font-family: 'Yeseva One';
+  text-transform: uppercase;
   padding: 20px;
 }
 
-nav#horizontal a:active {
-  background-color: #504e4e;
-}
-
-nav#horizontal .linksul {
-  font-family: 'Peralta', sans-serif;
-  text-transform: lowercase;
-}
-
-nav#horizontal .linksIcons {
-  width: 30px;
+nav#horizontal ul.linksul a:hover {
+  background-color: #343f41;
+  height: 100%;
 }
 
 nav#horizontal li.nametag {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 nav#horizontal li.nametag img#logo {
-  height: 60px;
-  width: 70px;
+  height: 130px;
+  width: 255px;
   top: 0;
-  margin-top: -10px;
-  padding-top: 15px;
+  padding-top: 25px;
   border-radius: 100%;
+}
+
+nav#horizontal img.linksIcons {
+  width: 30px;
 }
 
 nav#dropdown {
@@ -175,29 +142,7 @@ nav#dropdown a {
   text-align: left;
 }
 
-div.spacingDiv {
-  height: 10px;
-}
-
 @media only screen and (max-width: 900px) {
-  main {
-    width: 100%;
-    background-color: #434242;
-  }
-  div.banner {
-    padding-top: 20px;
-  }
-  span#textBanner img {
-    height: 100vw;
-  }
-  span#textBanner .fa {
-    font-family: 'Erica One', cursive;
-    letter-spacing: 0;
-    font-size: 50px;
-  }
-  footer {
-    width: 100%;
-  }
   .links {
     font-size: 15px;
     display: none;
@@ -213,63 +158,49 @@ div.spacingDiv {
   .footerUl {
     display: none;
   }
-  .spacingDiv {
-    display: none;
-  }
-  .goldengate {
-    display: none;
-  }
-  .developer, .and, .designer {
-    display: block;
-    text-align: center;
-    font-size: 40%;
-  }
   nav#dropdown {
     display: inline;
   }
-  div#buttons {
-    display: none;
+  div.workPage {
+    width: 100vw;
+    margin: 0;
   }
-}
-
-.fa-bookmark {
-  color: #C53E25;
-  font-size: 120px;
-  position: fixed;
-  top: 0;
-  padding-left: 30px;
-}
-
-.spacingDiv {
-  height: 40px;
-}
-
-main {
-  width: 100vw;
-  overflow: hidden;
-  background-color: #e0ebe8;
+  div.work ul {
+    flex-wrap: wrap;
+  }
+  div.work img {
+    width: 100vw;
+    height: 200px;
+  }
 }
 
 main div {
   display: flex;
   flex-direction: column;
-  background-color: #e0ebe8;
+  background-color: white;
   width: 100vw;
 }
 
+.workPage {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
 .work {
-  background-color: #e0ebe8;
-  overflow: hidden;
+  background-color: white;
   font-family: 'Playfair Display';
   font-size: 10px;
+  width: 100%;
 }
 
 .work img {
-  width: 400px;
-  height: 300px;
-  padding: 0;
+  width: 380px;
+  height: 250px;
   margin: 0;
-  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -280,24 +211,31 @@ main div {
   opacity: 1;
 }
 
-.work img:hover {
-  opacity: 1;
-}
-
 .work ul {
   padding: 0;
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
   width: 100vw;
 }
 
 .work li {
-  display: inline;
+  display: flex;
+  flex-direction: column;
 }
 
 #skills {
-  background-color: #e0ebe8;
+  background-color: white;
+  width: 100%;
+}
+
+#skills h1 {
+  color: #292828;
+  font-family: 'Ribeye';
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  font-size: 8vh;
 }
 
 #skills ul {
@@ -317,7 +255,7 @@ main div {
 }
 
 #skills ul li i {
-  font-size: 50px;
+  font-size: 90px;
   padding: 20px;
   cursor: pointer;
 }
@@ -334,6 +272,7 @@ footer span {
   display: flex;
   justify-content: space-between;
   height: 30px;
+  align-items: center;
 }
 
 footer h5 {

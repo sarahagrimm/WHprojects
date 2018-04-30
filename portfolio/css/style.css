@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One");
+@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One|Lobster|Abril+Fatface|Luckiest+Guy|Chelsea+Market|Slackey|Sail|Ranchers");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
-@font-face {
-  font-family: 'Autumn In November';
-  src: url("fonts/milkshake.otf");
-}
-
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -29,12 +24,16 @@ nav#horizontal {
   z-index: 9999;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 50px;
   box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
-  padding: 10px 40px 10px 0;
+  padding: 10px 40px 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav#horizontal ul.linksulName {
+  padding: 10px;
 }
 
 nav#horizontal ul.linksul {
@@ -58,7 +57,7 @@ nav#horizontal ul.linksul a {
   color: white;
   font-family: 'Yeseva One';
   text-transform: uppercase;
-  padding: 30px;
+  padding: 20px;
 }
 
 nav#horizontal ul.linksul a:hover {
@@ -71,24 +70,15 @@ nav#horizontal li.nametag {
 }
 
 nav#horizontal li.nametag img#logo {
-  height: 150px;
+  height: 220px;
   width: 255px;
   top: 0;
-  padding-top: 25px;
+  padding-top: 45px;
   border-radius: 100%;
 }
 
-.fa-bookmark {
-  color: #C53E25;
-  font-size: 120px;
-  position: absolute;
-  top: 0;
-  padding-left: 35px;
-}
-
-img.linksIcons {
-  width: 40px;
-  padding-top: 10px;
+nav#horizontal img.linksIcons {
+  width: 30px;
 }
 
 nav#dropdown {
@@ -213,6 +203,10 @@ nav#dropdown a a:hover {
   .goldengate {
     display: block;
   }
+  html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 }
 
 main {
@@ -238,14 +232,18 @@ main div.banner video {
 }
 
 main div.banner img.forest {
-  width: 100vw;
-  height: 100vh;
+  width: 105vw;
+  height: 105vh;
   overflow: hidden;
+  display: none;
 }
 
 main div.banner img.goldengate {
-  width: 100vw;
-  height: 100vh;
+  width: 105vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 main div.banner span#textBanner {
@@ -258,14 +256,14 @@ main div.banner span#textBanner {
 }
 
 main div.banner h3 {
-  color: #f2f2f2;
+  color: #272626;
   letter-spacing: -5px;
   margin: 0 auto;
   font-family: 'Peralta';
-  padding-top: 45vh;
+  padding-top: 46vh;
   z-index: 9997;
   font-size: 70px;
-  text-shadow: 0 0 20px black;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
 }
 
 main div.banner h2 {
@@ -319,9 +317,10 @@ main div.banner div#buttons a:after {
 
 .fa {
   font-family: 'Erica One';
+  font-family: 'Ranchers';
   letter-spacing: -5px;
   font-size: 8vw;
-  text-shadow: 0 0 20px   black;
+  text-shadow: 0 0 40px black;
   opacity: 0;
 }
 

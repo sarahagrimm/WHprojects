@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins');
-@font-face {
-    font-family: 'Milkshake';
-    src: url('fonts/milkshake.otf');
-}
+
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
 
@@ -10,18 +7,20 @@ $black: hsl(0, 1%, 26%);
 $white: hsl(0, 0%, 95%);
 $sky: hsl(164, 21%, 90%);
 $blue: #0197A4;
+$blueblack: hsl(200, 10%, 20%);
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: $sky;
     padding: 0;
     margin: 0;
     overflow-y: hidden;
+    background: url('https://images.unsplash.com/photo-1519120693210-d47b03b31d77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b8d462021896b6a8825629fb69a04b4&auto=format&fit=crop&w=937&q=80');
+    background-size: cover;
 
     h1 {
         color: darken($black, 10%);
-        letter-spacing: 20px;
+        //letter-spacing: 20px;
         text-align: center;
         font-family: 'Ribeye', cursive;
     }
@@ -38,104 +37,71 @@ hr{
 
 //Navigation
 nav#horizontal {
-    background-color: $blue;
-    background-color: #293133;
+    background-color: $blueblack;
     width: 100vw;
     position: fixed;  
     z-index: 9999;
     top: 0;
     left:0;
-    height: 60px;
+    height: 50px;
     box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
     padding: 10px 40px 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
+    ul.linksulName {
+        padding: 10px;
+    }
 
-    ul {
+    ul.linksul{
         display: flex;
         justify-content: center;
         align-content: center;
-        height: 100%;
-        padding-top: 15px;
+        font-family: 'Oleo Script', sans-serif;
+        text-transform: lowercase;
+        padding: 0;
+        margin: 0;
+
         li.links {
             list-style: none;
-            height: 100%;
-            border-right: 2px dashed $white;
-            margin: 0 auto;
             padding: 0;
-            &:last-child {
-                border: none;
-            }
-            
-            
         }
-    }
-        i {
-            font-size: 150%;
-            color: $white;
-        }
-        
+
         a {
             text-decoration: none;
-            //font-size: 1.25vw;
-            letter-spacing: 2px;
-            padding: 20px;
+            margin: 0 auto;
             color: white;
-            font-family: 'Peralta';
+            font-family: 'Yeseva One';
+            text-transform: uppercase;
+            padding: 20px;
     
         }
 
         a:hover {
             background-color: lighten(#293133, 5%);
+            height: 100%;
+            //padding: 14px 25px;
             //border-radius: 15px;
-            padding: 20px;
-        }
 
-        a:active {
-            background-color: lighten($black, 5%);
-        }
-        // .fab:hover, .fas:hover {
-            // animation-name: bounce;
-            // animation-duration: 1s;
-            // animation-delay: .5s;
-            //animation-iteration-count: infinite;
-            //animation-timing-function: linear;
-            // animation-iteration-count: ease-in-out;
-
-
-
-        
-    .linksul {
-        font-family: 'Peralta', sans-serif;
-        text-transform: lowercase;
-        height: 50px;
-
-    }
-
-    .linksIcons {
-        width: 30px;
-    }
+        }}
 
     li.nametag {
         display: inline;
     img#logo{
-        height: 60px;
-        width: 70px;
+        height: 250px;
+        width: 255px;
         top: 0;
-        margin-top: -10px;
-        padding-bottom: 5px;
+        padding-top: 65px;
         border-radius: 100%;
-        //border: 1px dotted $white;
-        //box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
-        //background-color: #211D1C;
-        //padding: 10px;
-        //position: absolute;
         
+    }
 }
+            img.linksIcons {
+              width: 30px;
+            }
 }
-}
+
     
     // dropdown
     
@@ -208,64 +174,60 @@ nav#horizontal {
     
         // MOBILE ONLY
         @media only screen and (max-width: 900px) {
-            main{ width: 100%; background-color: $black;}
-            div.banner { padding-top: 20px; }
-            span#textBanner {img { height: 100vw; } .fa { font-family: 'Erica One', cursive; letter-spacing: 0; font-size: 50px; }}
             footer{ width: 100%; }
             .links { font-size: 15px; display: none;}
             .linksul { padding:0; display: none; }
-            .skills { ul { flex-wrap: wrap;
-                overflow-x: auto; } }
             .footerUl { display: none; }
-            .spacingDiv { display: none; }
-            // video#myVideo { display: none; }
-            .goldengate { display: none; }
-            .developer, .and, .designer { display: block; text-align: center; font-size: 40%; }
             nav#dropdown { display: inline; }
-            div#buttons { display: none; }
+            div.contactDiv { width: 100vw; padding: 0; margin: 0; flex-direction: column; }
+            div.formDiv { display: none; }
+            div.socialMedia { padding-top: 60px; }
+            div.contactMe { display: block; padding-top: 60px;}
           }
-    
-          .fa-bookmark {
-            color: #C53E25;
-            font-size: 120px;
-            position: absolute;
-            top: 0;
-            padding-left: 30px;
-        }
-
 
 
 main {
-    width: 100vw;
+    //width: 100vw;
     overflow: hidden;
-    background-color: $sky;
     
     div {
         display: flex;
         flex-direction: column;
-        background-color: $sky;
         width: 100vw;
 
         
     }   
 }
 // CONTACT
+
+.contactMe {
+    display: none;
+    text-align: center;
+    h2 {
+        font-size: 25px;
+    }
+}
 .contactDiv {
-    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
-    margin-bottom: 100px;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
     color: $black;
-    padding-top: 100px;
-
+    margin: 150px 0 100px 70px;
+    width: 90vw;
+    background-color: $sky;
+    .formDiv {
+        width: 50%;
+    }
 
 .contact-form {
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     align-content: center;
-    background: none;
-    float: left;
+    // float: left;
 
     & ul li {
         padding: 0;
@@ -279,7 +241,7 @@ main {
 
     input {
         width: 300px;
-        height: 40px;
+        height: 50px;
         font-family: 'Playfair Display', serif;
         box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 8px;
@@ -288,8 +250,12 @@ main {
         border: 1px solid indigo;
 
     }
+
+    input.subject {
+        width: 600px;
+    }
     textarea {
-        width: 400px;
+        width: 600px;
         height: 100px;
         font-family: 'Playfair Display', serif;
         border: 1px solid indigo;
@@ -308,18 +274,20 @@ main {
         text-shadow: 2px 2px $black;
         font-family: 'Fjalla One', serif;
         letter-spacing: 4px;
-        width: 100px;
+        width: 300px;
         height: 40px;
         cursor: pointer;
         border-radius: 5px;
         margin-right: 50px;
-        float: right;
     }        
 
     form {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         align-content: center;
+        align-self: center;
+        flex-direction: column;
 
     }
         input[type=text]:focus, textarea:focus, input[type=email]:focus {
@@ -328,13 +296,18 @@ main {
           }
     }
 }
-#follow {
+
+.socialMedia {
+    // width: 50%;
+    background-color: $sky;
+    position: relative;
+    width: 90%;
     display: flex;
     float: right;
     height: 100%;
     margin-right: 40px;
     margin-bottom: 100px;
-    border-radius: 75px;
+    //border-radius: 75px;
 
     ul {
         display: flex;
@@ -347,9 +320,12 @@ main {
         list-style: none;
     }
     i {
-        font-size: 150%;
+        font-size: 200%;
         padding: 10px;
 
+    }
+    h1 {
+        text-align: center;
     }
 }}
 

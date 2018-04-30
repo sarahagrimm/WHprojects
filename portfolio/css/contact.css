@@ -1,23 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
-@font-face {
-  font-family: 'Milkshake';
-  src: url("fonts/milkshake.otf");
-}
-
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #e0ebe8;
   padding: 0;
   margin: 0;
   overflow-y: hidden;
+  background: url("https://images.unsplash.com/photo-1519120693210-d47b03b31d77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b8d462021896b6a8825629fb69a04b4&auto=format&fit=crop&w=937&q=80");
+  background-size: cover;
 }
 
 html h1, body h1 {
   color: #292828;
-  letter-spacing: 20px;
   text-align: center;
   font-family: 'Ribeye', cursive;
 }
@@ -29,14 +24,13 @@ hr {
 }
 
 nav#horizontal {
-  background-color: #0197A4;
-  background-color: #293133;
+  background-color: #2e3538;
   width: 100vw;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 50px;
   box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
   padding: 10px 40px 10px 0;
   display: flex;
@@ -44,56 +38,37 @@ nav#horizontal {
   align-items: center;
 }
 
-nav#horizontal ul {
+nav#horizontal ul.linksulName {
+  padding: 10px;
+}
+
+nav#horizontal ul.linksul {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 100%;
-  padding-top: 15px;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0;
 }
 
-nav#horizontal ul li.links {
+nav#horizontal ul.linksul li.links {
   list-style: none;
-  height: 100%;
-  border-right: 2px dashed #f2f2f2;
-  margin: 0 auto;
   padding: 0;
 }
 
-nav#horizontal ul li.links:last-child {
-  border: none;
-}
-
-nav#horizontal i {
-  font-size: 150%;
-  color: #f2f2f2;
-}
-
-nav#horizontal a {
+nav#horizontal ul.linksul a {
   text-decoration: none;
-  letter-spacing: 2px;
-  padding: 20px;
+  margin: 0 auto;
   color: white;
-  font-family: 'Peralta';
-}
-
-nav#horizontal a:hover {
-  background-color: #343f41;
+  font-family: 'Yeseva One';
+  text-transform: uppercase;
   padding: 20px;
 }
 
-nav#horizontal a:active {
-  background-color: #504e4e;
-}
-
-nav#horizontal .linksul {
-  font-family: 'Peralta', sans-serif;
-  text-transform: lowercase;
-  height: 50px;
-}
-
-nav#horizontal .linksIcons {
-  width: 30px;
+nav#horizontal ul.linksul a:hover {
+  background-color: #343f41;
+  height: 100%;
 }
 
 nav#horizontal li.nametag {
@@ -101,12 +76,15 @@ nav#horizontal li.nametag {
 }
 
 nav#horizontal li.nametag img#logo {
-  height: 60px;
-  width: 70px;
+  height: 250px;
+  width: 255px;
   top: 0;
-  margin-top: -10px;
-  padding-bottom: 5px;
+  padding-top: 65px;
   border-radius: 100%;
+}
+
+nav#horizontal img.linksIcons {
+  width: 30px;
 }
 
 nav#dropdown {
@@ -170,21 +148,6 @@ nav#dropdown a {
 }
 
 @media only screen and (max-width: 900px) {
-  main {
-    width: 100%;
-    background-color: #434242;
-  }
-  div.banner {
-    padding-top: 20px;
-  }
-  span#textBanner img {
-    height: 100vw;
-  }
-  span#textBanner .fa {
-    font-family: 'Erica One', cursive;
-    letter-spacing: 0;
-    font-size: 50px;
-  }
   footer {
     width: 100%;
   }
@@ -196,69 +159,71 @@ nav#dropdown a {
     padding: 0;
     display: none;
   }
-  .skills ul {
-    flex-wrap: wrap;
-    overflow-x: auto;
-  }
   .footerUl {
     display: none;
-  }
-  .spacingDiv {
-    display: none;
-  }
-  .goldengate {
-    display: none;
-  }
-  .developer, .and, .designer {
-    display: block;
-    text-align: center;
-    font-size: 40%;
   }
   nav#dropdown {
     display: inline;
   }
-  div#buttons {
+  div.contactDiv {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+  div.formDiv {
     display: none;
+  }
+  div.socialMedia {
+    padding-top: 60px;
+  }
+  div.contactMe {
+    display: block;
+    padding-top: 60px;
   }
 }
 
-.fa-bookmark {
-  color: #C53E25;
-  font-size: 120px;
-  position: absolute;
-  top: 0;
-  padding-left: 30px;
-}
-
 main {
-  width: 100vw;
   overflow: hidden;
-  background-color: #e0ebe8;
 }
 
 main div {
   display: flex;
   flex-direction: column;
-  background-color: #e0ebe8;
   width: 100vw;
 }
 
+.contactMe {
+  display: none;
+  text-align: center;
+}
+
+.contactMe h2 {
+  font-size: 25px;
+}
+
 .contactDiv {
-  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
-  margin-left: 30px;
-  margin-bottom: 100px;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
   color: #434242;
-  padding-top: 100px;
+  margin: 150px 0 100px 70px;
+  width: 90vw;
+  background-color: #e0ebe8;
+}
+
+.contactDiv .formDiv {
+  width: 50%;
 }
 
 .contactDiv .contact-form {
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   align-content: center;
-  background: none;
-  float: left;
 }
 
 .contactDiv .contact-form ul li {
@@ -273,7 +238,7 @@ main div {
 
 .contactDiv .contact-form ul li input {
   width: 300px;
-  height: 40px;
+  height: 50px;
   font-family: 'Playfair Display', serif;
   box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -282,8 +247,12 @@ main div {
   border: 1px solid indigo;
 }
 
+.contactDiv .contact-form ul li input.subject {
+  width: 600px;
+}
+
 .contactDiv .contact-form ul li textarea {
-  width: 400px;
+  width: 600px;
   height: 100px;
   font-family: 'Playfair Display', serif;
   border: 1px solid indigo;
@@ -302,48 +271,56 @@ main div {
   text-shadow: 2px 2px #434242;
   font-family: 'Fjalla One', serif;
   letter-spacing: 4px;
-  width: 100px;
+  width: 300px;
   height: 40px;
   cursor: pointer;
   border-radius: 5px;
   margin-right: 50px;
-  float: right;
 }
 
 .contactDiv .contact-form ul li form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   align-content: center;
+  align-self: center;
+  flex-direction: column;
 }
 
 .contactDiv .contact-form ul li input[type=text]:focus, .contactDiv .contact-form ul li textarea:focus, .contactDiv .contact-form ul li input[type=email]:focus {
   box-shadow: inset 0 0 5px #490679;
 }
 
-.contactDiv #follow {
+.contactDiv .socialMedia {
+  background-color: #e0ebe8;
+  position: relative;
+  width: 90%;
   display: flex;
   float: right;
   height: 100%;
   margin-right: 40px;
   margin-bottom: 100px;
-  border-radius: 75px;
 }
 
-.contactDiv #follow ul {
+.contactDiv .socialMedia ul {
   display: flex;
   flex-direction: column;
   align-items: left;
   margin: 0 auto;
 }
 
-.contactDiv #follow li {
+.contactDiv .socialMedia li {
   font-family: 'Ribeye', cursive;
   list-style: none;
 }
 
-.contactDiv #follow i {
-  font-size: 150%;
+.contactDiv .socialMedia i {
+  font-size: 200%;
   padding: 10px;
+}
+
+.contactDiv .socialMedia h1 {
+  text-align: center;
 }
 
 footer {

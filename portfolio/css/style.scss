@@ -1,11 +1,8 @@
 // ADD GITHUB PULL FROM APR18
 
 
-@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One');
-@font-face {
-    font-family: 'Autumn In November';
-    src: url('fonts/milkshake.otf');
-}
+@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One|Lobster|Abril+Fatface|Luckiest+Guy|Chelsea+Market|Slackey|Sail|Ranchers');
+
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
 
@@ -40,12 +37,16 @@ nav#horizontal {
     z-index: 9999;
     top: 0;
     left:0;
-    height: 80px;
+    height: 50px;
     box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
-    padding: 10px 40px 10px 0;
+    padding: 10px 40px 5px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    ul.linksulName {
+        padding: 10px;
+    }
     
 
     ul.linksul{
@@ -68,7 +69,7 @@ nav#horizontal {
             color: white;
             font-family: 'Yeseva One';
             text-transform: uppercase;
-            padding: 30px;
+            padding: 20px;
     
         }
 
@@ -83,29 +84,17 @@ nav#horizontal {
     li.nametag {
         display: inline;
     img#logo{
-        height: 150px;
+        height: 220px;
         width: 255px;
         top: 0;
-        padding-top: 25px;
+        padding-top: 45px;
         border-radius: 100%;
         
+    }
 }
-}
-}
-
-
-.fa-bookmark {
-    color: #C53E25;
-    font-size: 120px;
-    position: absolute;
-    top: 0;
-    padding-left: 35px;
-}
-
-
-img.linksIcons {
-    width: 40px;
-    padding-top: 10px;
+            img.linksIcons {
+              width: 30px;
+            }
 }
 
 // dropdown
@@ -200,6 +189,7 @@ img.linksIcons {
 
       @media screen and (orientation:landscape) {
         .goldengate { display: block; }
+        html { overflow-y: hidden; overflow-x: hidden; }
      }
 
 
@@ -228,14 +218,18 @@ div.banner {
         z-index: 999;
     }
     img.forest {
-        width: 100vw;
-        height: 100vh;
+        width: 105vw;
+        height: 105vh;
         overflow: hidden;
+        display: none;
     }
 
     img.goldengate {
-        width: 100vw;
-        height: 100vh;
+        width: 105vw;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-self: center;
     }
     span#textBanner {
         position: absolute;
@@ -248,14 +242,14 @@ div.banner {
     }
 
     h3 {
-        color: $white;
+        color: $black;
         letter-spacing: -5px;
         margin: 0 auto;
         font-family: 'Peralta';
-        padding-top: 45vh;
+        padding-top: 46vh;
         z-index: 9997;
         font-size: 70px; 
-        text-shadow: 0 0 20px black;
+        text-shadow: 0px 1px 0px rgba(255,255,255,.5); 
 
     }
 
@@ -263,11 +257,9 @@ div.banner {
     h2 {
         color: $white;
         font-size: 75px;
-        //text-shadow: 4px 4px black;
         letter-spacing: 15px;
         margin: 0 auto;
         position: absolute;
-        //animation: float 2s ease 1s forwards;
         display: flex;
         justify-content: center;
         align-self: center;
@@ -314,9 +306,11 @@ div.banner {
 .fa {
     //font-family: 'Peralta', cursive;
     font-family: 'Erica One';
+    font-family: 'Ranchers';
+    //font-family: 'Abril Fatface';
     letter-spacing: -5px;
     font-size: 8vw;
-    text-shadow: 0 0 20px   black;
+    text-shadow: 0 0 40px black;
     opacity: 0;
 }
 

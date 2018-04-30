@@ -3,26 +3,26 @@
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
-  background-color: #e0ebe8;
+  overflow: hidden;
   padding: 0;
   margin: 0;
   height: 100%;
+  background: url("/img/goldengate.jpg");
+  background: url("https://images.unsplash.com/photo-1519120693210-d47b03b31d77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b8d462021896b6a8825629fb69a04b4&auto=format&fit=crop&w=937&q=80");
+  background-size: cover;
 }
 
 html h1, body h1 {
-  color: #d9d9d9;
-  letter-spacing: 20px;
+  color: #1a1919;
   text-align: center;
-  height: 20vh;
+  height: 100px;
   width: 100%;
-  padding-top: 30px;
-  text-shadow: 0 0 20px   black;
-  background-image: url("/img/splat.jpg");
+  margin-top: auto;
+  text-shadow: 0 0 20px lightblue;
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  font-size: 100px;
+  font-size: 8vh;
 }
 
 html hr, body hr {
@@ -38,7 +38,7 @@ html nav#horizontal, body nav#horizontal {
   z-index: 9999;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 50px;
   box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
   padding: 10px 40px 10px 0;
   display: flex;
@@ -46,58 +46,56 @@ html nav#horizontal, body nav#horizontal {
   align-items: center;
 }
 
-html nav#horizontal ul, body nav#horizontal ul {
+html nav#horizontal ul.linksulName, body nav#horizontal ul.linksulName {
+  padding: 10px;
+}
+
+html nav#horizontal ul.linksul, body nav#horizontal ul.linksul {
   display: flex;
   justify-content: center;
   align-content: center;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0;
 }
 
-html nav#horizontal ul li.links, body nav#horizontal ul li.links {
+html nav#horizontal ul.linksul li.links, body nav#horizontal ul.linksul li.links {
   list-style: none;
   padding: 0;
 }
 
-html nav#horizontal a, body nav#horizontal a {
+html nav#horizontal ul.linksul a, body nav#horizontal ul.linksul a {
   text-decoration: none;
-  padding: 20px;
+  margin: 0 auto;
   color: white;
   font-family: 'Yeseva One';
   text-transform: uppercase;
-}
-
-html nav#horizontal a:hover, body nav#horizontal a:hover {
-  background-color: #343f41;
   padding: 20px;
 }
 
-html nav#horizontal .linksul, body nav#horizontal .linksul {
-  font-family: 'Oleo Script', sans-serif;
-  text-transform: lowercase;
+html nav#horizontal ul.linksul a:hover, body nav#horizontal ul.linksul a:hover {
+  background-color: #343f41;
+  height: 100%;
 }
 
 html nav#horizontal li.nametag, body nav#horizontal li.nametag {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 html nav#horizontal li.nametag img#logo, body nav#horizontal li.nametag img#logo {
-  height: 150px;
+  height: 200px;
   width: 255px;
   top: 0;
-  padding-top: 25px;
+  padding-top: 55px;
   border-radius: 100%;
 }
 
-html .fa-bookmark, body .fa-bookmark {
-  color: #C53E25;
-  font-size: 120px;
-  position: absolute;
-  top: 0;
-  padding-left: 35px;
-}
-
-html img.linksIcons, body img.linksIcons {
-  width: 40px;
-  padding-top: 10px;
+html nav#horizontal img.linksIcons, body nav#horizontal img.linksIcons {
+  width: 30px;
 }
 
 html nav#dropdown, body nav#dropdown {
@@ -161,23 +159,8 @@ html nav#dropdown a, body nav#dropdown a {
 }
 
 @media screen and (max-width: 600px) {
-  html main, body main {
-    width: 100%;
-    background-color: #343232;
-  }
-  html div.banner, body div.banner {
-    padding-top: 20px;
-  }
-  html span#textBanner img, body span#textBanner img {
-    height: 100vw;
-  }
-  html span#textBanner .fa, body span#textBanner .fa {
-    font-family: 'Erica One', cursive;
-    letter-spacing: 0;
-    font-size: 50px;
-  }
   html footer, body footer {
-    width: 100%;
+    width: 100vw;
   }
   html .links, body .links {
     font-size: 15px;
@@ -187,29 +170,21 @@ html nav#dropdown a, body nav#dropdown a {
     padding: 0;
     display: none;
   }
-  html .skills ul, body .skills ul {
-    flex-wrap: wrap;
-    overflow-x: auto;
-  }
   html .footerUl, body .footerUl {
     display: none;
-  }
-  html .spacingDiv, body .spacingDiv {
-    display: none;
-  }
-  html .goldengate, body .goldengate {
-    display: none;
-  }
-  html .developer, html .and, html .designer, body .developer, body .and, body .designer {
-    display: block;
-    text-align: center;
-    font-size: 40%;
   }
   html nav#dropdown, body nav#dropdown {
     display: inline;
   }
-  html div#buttons, body div#buttons {
-    display: none;
+  html div.about, body div.about {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    height: 100%;
+  }
+  html html, html body, body html, body body {
+    overflow: visible;
   }
 }
 
@@ -217,23 +192,12 @@ html main, body main {
   margin-top: 50px;
   width: 100vw;
   overflow: hidden;
-  background-color: #e0ebe8;
 }
 
 html main div, body main div {
   display: flex;
   flex-direction: column;
-  background-color: #e0ebe8;
   width: 100vw;
-}
-
-html .abouth1, body .abouth1 {
-  position: relative;
-  padding-top: 10px;
-  /* example content */
-  width: 100%;
-  height: 200px;
-  font-family: 'Peralta';
 }
 
 html .about, body .about {
@@ -243,8 +207,12 @@ html .about, body .about {
   align-content: center;
   align-items: center;
   justify-content: center;
+  margin-left: 100px;
   font-family: 'Playfair Display', cursive;
-  width: 100%;
+  width: 90vw;
+  margin-top: 65px;
+  height: 75vh;
+  box-shadow: 0 0 20px black;
 }
 
 html .about .aboutInfo, body .about .aboutInfo {
@@ -262,19 +230,29 @@ html .about .aboutInfo img, body .about .aboutInfo img {
 
 html .about .photo, body .about .photo {
   display: flex;
-  flex-direction: row;
-  width: 100vw;
+  flex-direction: column;
+  width: 50vw;
   align-self: center;
   justify-content: center;
-  padding-top: 25px;
+  align-items: center;
+}
+
+html .about .photo .facts, body .about .photo .facts {
+  text-align: center;
+  padding: 20px;
+}
+
+html .about .photo .facts h3, body .about .photo .facts h3 {
+  font-size: 100%;
+}
+
+html .about .photo .facts img, body .about .photo .facts img {
+  width: 30px;
 }
 
 html .about img.headshot, body .about img.headshot {
-  width: 400px;
-  height: 601px;
-  padding: 15px;
-  border-radius: 100px;
-  border: 15px double #962D6E;
+  width: 300px;
+  height: 301px;
 }
 
 html .about div.textBox, body .about div.textBox {
@@ -282,26 +260,31 @@ html .about div.textBox, body .about div.textBox {
   display: flex;
   align-content: center;
   justify-content: center;
-  color: #343232;
-  font-size: 120%;
-  margin-right: 100px;
+  color: black;
+  font-size: 100%;
+  padding: 60px;
+  height: 100%;
 }
 
-html .about div.textBox #facts h1, body .about div.textBox #facts h1 {
-  font-size: 150%;
-}
-
-html .about div.textBox #facts .row, body .about div.textBox #facts .row {
+html .about div.textBox .row, body .about div.textBox .row {
   display: flex;
   flex-direction: row;
 }
 
-html .about div.textBox #facts .row i, body .about div.textBox #facts .row i {
+html .about div.textBox .row i, body .about div.textBox .row i {
   font-size: 200%;
   padding: 20px;
 }
 
-html footer, body footer {
+html .about span.passion, body .about span.passion {
+  color: red;
+}
+
+html .about span.love, body .about span.love {
+  color: indigo;
+}
+
+footer {
   background-color: #343232;
   width: 100vw;
   position: fixed;
@@ -309,13 +292,13 @@ html footer, body footer {
   bottom: 0;
 }
 
-html footer span, body footer span {
+footer span {
   display: flex;
   justify-content: space-between;
   height: 30px;
 }
 
-html footer h5, body footer h5 {
+footer h5 {
   font-family: 'Playfair Display', serif;
   color: #f2f2f2;
   display: inline;
@@ -324,28 +307,28 @@ html footer h5, body footer h5 {
   padding-bottom: .5vh;
 }
 
-html footer .footerUl, body footer .footerUl {
+footer .footerUl {
   bottom: 0;
   padding-right: 30px;
   margin: 0;
 }
 
-html footer ul, body footer ul {
+footer ul {
   display: inline;
 }
 
-html footer li, body footer li {
+footer li {
   display: inline;
 }
 
-html footer i, body footer i {
+footer i {
   color: #f2f2f2;
   padding-top: 6px;
   padding-left: 10px;
   font-size: 80%;
 }
 
-html footer .fab:hover, html footer .fas:hover, body footer .fab:hover, body footer .fas:hover {
+footer .fab:hover, footer .fas:hover {
   color: #4d4c4c;
 }
 /*# sourceMappingURL=about.css.map */
