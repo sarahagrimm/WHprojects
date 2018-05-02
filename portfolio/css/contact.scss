@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Elsie');
 
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
@@ -22,7 +22,7 @@ html, body {
         color: darken($black, 10%);
         //letter-spacing: 20px;
         text-align: center;
-        font-family: 'Ribeye', cursive;
+        font-family: 'Elsie', cursive;
     }
 
 }
@@ -37,14 +37,14 @@ hr{
 
 //Navigation
 nav#horizontal {
-    background-color: $blueblack;
+    //background-color: $blueblack;
     width: 100vw;
     position: fixed;  
     z-index: 9999;
     top: 0;
     left:0;
     height: 50px;
-    box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
+    //box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
     padding: 10px 40px 10px 0;
     display: flex;
     justify-content: space-between;
@@ -218,8 +218,16 @@ main {
     margin: 150px 0 100px 70px;
     width: 90vw;
     background-color: $sky;
+    padding: 0;
     .formDiv {
         width: 50%;
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    h1 {
+        font-size: 200px;
     }
 
 .contact-form {
@@ -227,6 +235,7 @@ main {
     display: flex;
     justify-content: center;
     align-content: center;
+
     // float: left;
 
     & ul li {
@@ -316,7 +325,7 @@ main {
         margin: 0 auto;
     }
     li {
-        font-family: 'Ribeye', cursive;
+        font-family: 'Elsie', cursive;
         list-style: none;
     }
     i {
@@ -330,7 +339,7 @@ main {
 }}
 
 footer {
-    background-color: $black;
+    background-color: $blueblack;
     width: 100vw;
     position: fixed;
     z-index: 9999;

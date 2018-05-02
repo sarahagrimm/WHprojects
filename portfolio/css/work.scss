@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Elsie');
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
 
@@ -15,7 +15,7 @@ html, body {
     background-color: $blueblack;
     padding: 0;
     margin: 0;
-    background: url('https://images.unsplash.com/photo-1519120693210-d47b03b31d77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b8d462021896b6a8825629fb69a04b4&auto=format&fit=crop&w=937&q=80');
+    background: url('https://cdn.pixabay.com/photo/2018/05/01/07/53/flower-3364922_1280.jpg');
     background-size: cover;
 
 }
@@ -24,14 +24,14 @@ header {
 }
 //Navigation
 nav#horizontal {
-    background-color: $blueblack;
+    // background-color: $blueblack;
     width: 100vw;
     position: fixed;  
     z-index: 9999 !important;
     top: 0;
     left:0;
     height: 50px;
-    box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
     padding: 10px 40px 10px 0;
     display: flex;
     justify-content: space-between;
@@ -182,7 +182,7 @@ main {
     div {
         display: flex;
         flex-direction: column;
-        background-color: $sky;
+        //background-color: $sky;
         width: 100vw;
         
         
@@ -192,7 +192,7 @@ main {
         width: 100vw;
 
         //overflow: hidden;
-        background-color: $sky;
+        //background-color: $sky;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -202,7 +202,7 @@ main {
 }
 
 .work {
-    background-color: $sky;
+    //background-color: $sky;
     font-family: 'Playfair Display';
     font-size: 10px;
     width: 100%;
@@ -249,7 +249,7 @@ main {
     width: 100%;
     h1 {
         color: darken($black, 10%);
-        font-family: 'Ribeye';
+        font-family: 'Elsie';
         text-align: center;
         height: 100px;
         width: 100%;
@@ -283,7 +283,7 @@ main {
 
     
 footer {
-    background-color: $black;
+    background-color: $blueblack;
     width: 100vw;
     position: fixed;
     z-index: 9999;

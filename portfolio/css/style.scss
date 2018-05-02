@@ -1,7 +1,7 @@
 // ADD GITHUB PULL FROM APR18
 
 
-@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One|Lobster|Abril+Fatface|Luckiest+Guy|Chelsea+Market|Slackey|Sail|Ranchers');
+@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One|Lobster|Abril+Fatface|Luckiest+Guy|Chelsea+Market|Slackey|Sail|Ranchers|Elsie');
 
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
@@ -31,14 +31,14 @@ html, body {
 
 //Navigation
 nav#horizontal {
-    background-color: $blueblack;
+    //background-color: $blueblack;
     width: 100vw;
     position: fixed;  
     z-index: 9999;
     top: 0;
     left:0;
     height: 50px;
-    box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
+    //box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
     padding: 10px 40px 5px 0;
     display: flex;
     justify-content: space-between;
@@ -75,9 +75,6 @@ nav#horizontal {
 
         a:hover {
             background-color: lighten(#293133, 5%);
-            height: 100%;
-            //padding: 14px 25px;
-            //border-radius: 15px;
 
         }}
 
@@ -91,6 +88,7 @@ nav#horizontal {
         border-radius: 100%;
         
     }
+    
 }
             img.linksIcons {
               width: 30px;
@@ -226,7 +224,7 @@ div.banner {
 
     img.goldengate {
         width: 105vw;
-        height: 70vh;
+        height: 105vh;
         display: flex;
         justify-content: center;
         align-self: center;
@@ -242,14 +240,17 @@ div.banner {
     }
 
     h3 {
-        color: $black;
-        letter-spacing: -5px;
+        color: $white;
+        // letter-spacing: -3px;
         margin: 0 auto;
         font-family: 'Peralta';
-        padding-top: 46vh;
+        font-family: 'Elsie';
+        padding-top: 58vh;
         z-index: 9997;
-        font-size: 70px; 
-        text-shadow: 0px 1px 0px rgba(255,255,255,.5); 
+        font-size: 100px; 
+        // text-shadow: 0px 1px 0px rgba(255,255,255,.5); 
+        text-shadow: 0 0 20px black;
+
 
     }
 
@@ -265,51 +266,16 @@ div.banner {
         align-self: center;
         z-index: 9997;
     }
-    div#buttons {
-        position: static;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        height: 20px;
-        z-index: 9996;
-        background: transparent;
-        padding-top: 5vw;
-        text-shadow: 0 0 20px black;
-
-        @media (max-width: 900px) {
-            display: none;
-        }
-        i {
-            color: $white;
-            padding: 10px;
-            font-size: 5vw;
-            position: relative;
-        }
-
-
-        a:hover {
-            i {
-                opacity: 0;
-            }
-        }
-            a:after {
-                content: 'HOME';
-                position: absolute;
-                text-align: center;
-                width: 100%;
-            }
-        
 }}
-}
+
 
 .fa {
     //font-family: 'Peralta', cursive;
     font-family: 'Erica One';
-    font-family: 'Ranchers';
+    font-family: 'Elsie';
     //font-family: 'Abril Fatface';
     letter-spacing: -5px;
-    font-size: 8vw;
+    font-size: 10vw;
     text-shadow: 0 0 40px black;
     opacity: 0;
 }

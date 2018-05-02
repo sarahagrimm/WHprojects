@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One|Lobster|Abril+Fatface|Luckiest+Guy|Chelsea+Market|Slackey|Sail|Ranchers");
+@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One|Lobster|Abril+Fatface|Luckiest+Guy|Chelsea+Market|Slackey|Sail|Ranchers|Elsie");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 html, body {
@@ -18,14 +18,12 @@ html h1, body h1 {
 }
 
 nav#horizontal {
-  background-color: #2e3538;
   width: 100vw;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
   height: 50px;
-  box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
   padding: 10px 40px 5px 0;
   display: flex;
   justify-content: space-between;
@@ -62,7 +60,6 @@ nav#horizontal ul.linksul a {
 
 nav#horizontal ul.linksul a:hover {
   background-color: #343f41;
-  height: 100%;
 }
 
 nav#horizontal li.nametag {
@@ -240,7 +237,7 @@ main div.banner img.forest {
 
 main div.banner img.goldengate {
   width: 105vw;
-  height: 70vh;
+  height: 105vh;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -256,14 +253,14 @@ main div.banner span#textBanner {
 }
 
 main div.banner h3 {
-  color: #272626;
-  letter-spacing: -5px;
+  color: #f2f2f2;
   margin: 0 auto;
   font-family: 'Peralta';
-  padding-top: 46vh;
+  font-family: 'Elsie';
+  padding-top: 58vh;
   z-index: 9997;
-  font-size: 70px;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  font-size: 100px;
+  text-shadow: 0 0 20px black;
 }
 
 main div.banner h2 {
@@ -278,48 +275,11 @@ main div.banner h2 {
   z-index: 9997;
 }
 
-main div.banner div#buttons {
-  position: static;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  height: 20px;
-  z-index: 9996;
-  background: transparent;
-  padding-top: 5vw;
-  text-shadow: 0 0 20px black;
-}
-
-@media (max-width: 900px) {
-  main div.banner div#buttons {
-    display: none;
-  }
-}
-
-main div.banner div#buttons i {
-  color: #f2f2f2;
-  padding: 10px;
-  font-size: 5vw;
-  position: relative;
-}
-
-main div.banner div#buttons a:hover i {
-  opacity: 0;
-}
-
-main div.banner div#buttons a:after {
-  content: 'HOME';
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
 .fa {
   font-family: 'Erica One';
-  font-family: 'Ranchers';
+  font-family: 'Elsie';
   letter-spacing: -5px;
-  font-size: 8vw;
+  font-size: 10vw;
   text-shadow: 0 0 40px black;
   opacity: 0;
 }

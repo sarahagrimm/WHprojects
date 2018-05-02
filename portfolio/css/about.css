@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins");
+@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oswald");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 html, body {
@@ -7,9 +7,11 @@ html, body {
   padding: 0;
   margin: 0;
   height: 100%;
-  background: url("/img/goldengate.jpg");
-  background: url("https://images.unsplash.com/photo-1519120693210-d47b03b31d77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b8d462021896b6a8825629fb69a04b4&auto=format&fit=crop&w=937&q=80");
+  background: url("https://images.unsplash.com/photo-1508921108053-9f757ead871c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=80d14e1a55b5c3c7e5b71a2b3643c281&auto=format&fit=crop&w=1050&q=80");
+  background: url("https://cdn.pixabay.com/photo/2018/01/21/01/46/architecture-3095716_1280.jpg");
   background-size: cover;
+  background-position: left top;
+  background-attachment: fixed;
 }
 
 html h1, body h1 {
@@ -32,14 +34,12 @@ html hr, body hr {
 }
 
 html nav#horizontal, body nav#horizontal {
-  background-color: #2e3538;
   width: 100vw;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
   height: 50px;
-  box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
   padding: 10px 40px 10px 0;
   display: flex;
   justify-content: space-between;
@@ -88,7 +88,7 @@ html nav#horizontal li.nametag, body nav#horizontal li.nametag {
 
 html nav#horizontal li.nametag img#logo, body nav#horizontal li.nametag img#logo {
   height: 200px;
-  width: 255px;
+  width: 225px;
   top: 0;
   padding-top: 55px;
   border-radius: 100%;
@@ -192,27 +192,31 @@ html main, body main {
   margin-top: 50px;
   width: 100vw;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-html main div, body main div {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
+html span.banner, body span.banner {
+  width: 70vw;
+  height: 40px;
+  background-color: #2e3538;
+  position: absolute;
+  margin-top: 100px;
 }
 
 html .about, body .about {
-  background-color: #e0ebe8;
+  background-color: #e1eae7;
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: center;
-  margin-left: 100px;
-  font-family: 'Playfair Display', cursive;
-  width: 90vw;
-  margin-top: 65px;
-  height: 75vh;
-  box-shadow: 0 0 20px black;
+  font-family: 'Playfair Display', serif;
+  width: 70vw;
+  margin-top: 100px;
+  height: 475px;
+  box-shadow: 0 0 50px black;
+  border-radius: 15px;
 }
 
 html .about .aboutInfo, body .about .aboutInfo {
@@ -237,26 +241,27 @@ html .about .photo, body .about .photo {
   align-items: center;
 }
 
-html .about .photo .facts, body .about .photo .facts {
+html .about .photo div.facts, body .about .photo div.facts {
   text-align: center;
   padding: 20px;
 }
 
-html .about .photo .facts h3, body .about .photo .facts h3 {
+html .about .photo div.facts h3, body .about .photo div.facts h3 {
   font-size: 100%;
 }
 
-html .about .photo .facts img, body .about .photo .facts img {
-  width: 30px;
+html .about .photo div.facts img.pin, body .about .photo div.facts img.pin {
+  width: 25px;
+  height: 25px;
 }
 
 html .about img.headshot, body .about img.headshot {
+  padding: 30px 0 0 20px;
   width: 300px;
   height: 301px;
 }
 
 html .about div.textBox, body .about div.textBox {
-  background-color: #e0ebe8;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -264,6 +269,10 @@ html .about div.textBox, body .about div.textBox {
   font-size: 100%;
   padding: 60px;
   height: 100%;
+}
+
+html .about div.textBox span, body .about div.textBox span {
+  font-weight: bold;
 }
 
 html .about div.textBox .row, body .about div.textBox .row {
@@ -285,7 +294,7 @@ html .about span.love, body .about span.love {
 }
 
 footer {
-  background-color: #343232;
+  background-color: #2e3538;
   width: 100vw;
   position: fixed;
   z-index: 9999;
