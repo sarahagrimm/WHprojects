@@ -7,7 +7,7 @@ html, body {
   padding: 0;
   margin: 0;
   overflow-y: hidden;
-  background: url("https://images.unsplash.com/photo-1519120693210-d47b03b31d77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b8d462021896b6a8825629fb69a04b4&auto=format&fit=crop&w=937&q=80");
+  background: url("https://cdn.pixabay.com/photo/2017/01/03/16/36/sunrise-1949939_1280.jpg");
   background-size: cover;
 }
 
@@ -74,11 +74,9 @@ nav#horizontal li.nametag {
 }
 
 nav#horizontal li.nametag img#logo {
-  height: 250px;
   width: 255px;
   top: 0;
   padding-top: 65px;
-  border-radius: 100%;
 }
 
 nav#horizontal img.linksIcons {
@@ -183,6 +181,14 @@ nav#dropdown a {
 
 main {
   overflow: hidden;
+}
+
+main span.banner {
+  width: 70vw;
+  height: 40px;
+  background-color: #2e3538;
+  position: absolute;
+  margin-top: 100px;
 }
 
 main div {

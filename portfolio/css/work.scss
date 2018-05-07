@@ -15,7 +15,7 @@ html, body {
     background-color: $blueblack;
     padding: 0;
     margin: 0;
-    background: url('https://cdn.pixabay.com/photo/2018/05/01/07/53/flower-3364922_1280.jpg');
+    background-image: url('/img/flowers.jpg');
     background-size: cover;
 
 }
@@ -80,11 +80,9 @@ nav#horizontal {
         justify-content: center;
         align-items: center;
     img#logo{
-        height: 130px;
         width: 255px;
         top: 0;
         padding-top: 25px;
-        border-radius: 100%;
         
     }
 }
@@ -244,22 +242,21 @@ main {
 
 
 #skills {
-    background-color: $sky;
+    
     //padding: 100px 0 100px;
     width: 100%;
     h1 {
-        color: darken($black, 10%);
+        color: darken($white, 10%);
         font-family: 'Elsie';
         text-align: center;
         height: 100px;
         width: 100%;
-        text-shadow: 0px 1px 0px rgba(255,255,255,.5); 
         font-size: 8vh;
     }
 
     ul {
+    background-color: $sky;
     padding: 40px;
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     list-style-image: none;

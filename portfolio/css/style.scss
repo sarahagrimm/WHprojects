@@ -34,7 +34,7 @@ nav#horizontal {
     //background-color: $blueblack;
     width: 100vw;
     position: fixed;  
-    z-index: 9999;
+    z-index: 9998;
     top: 0;
     left:0;
     height: 50px;
@@ -79,13 +79,13 @@ nav#horizontal {
         }}
 
     li.nametag {
-        display: inline;
+        height: 100%;
     img#logo{
-        height: 220px;
+        // height: 100px;
         width: 255px;
         top: 0;
-        padding-top: 45px;
-        border-radius: 100%;
+        padding-top: 35px;
+        z-index: 9999;
         
     }
     
