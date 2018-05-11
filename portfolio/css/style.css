@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One|Lobster|Abril+Fatface|Luckiest+Guy|Chelsea+Market|Slackey|Sail|Ranchers|Elsie");
+@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oleo+Script|Yeseva+One|Lobster|Abril+Fatface|Luckiest+Guy|Chelsea+Market|Slackey|Sail|Ranchers|Elsie|Titan+One");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 html, body {
@@ -7,7 +7,6 @@ html, body {
   background-color: #e0ebe8;
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
 }
 
 html h1, body h1 {
@@ -15,130 +14,6 @@ html h1, body h1 {
   letter-spacing: 20px;
   text-align: center;
   font-family: 'Ribeye', cursive;
-}
-
-nav#horizontal {
-  width: 100vw;
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  left: 0;
-  height: 50px;
-  padding: 10px 40px 5px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav#horizontal ul.linksulName {
-  padding: 10px;
-}
-
-nav#horizontal ul.linksul {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  font-family: 'Oleo Script', sans-serif;
-  text-transform: lowercase;
-  padding: 0;
-  margin: 0;
-}
-
-nav#horizontal ul.linksul li.links {
-  list-style: none;
-  padding: 0;
-}
-
-nav#horizontal ul.linksul a {
-  text-decoration: none;
-  margin: 0 auto;
-  color: white;
-  font-family: 'Yeseva One';
-  text-transform: uppercase;
-  padding: 20px;
-}
-
-nav#horizontal ul.linksul a:hover {
-  background-color: #343f41;
-}
-
-nav#horizontal li.nametag {
-  height: 100%;
-}
-
-nav#horizontal li.nametag img#logo {
-  width: 255px;
-  top: 0;
-  padding-top: 35px;
-  z-index: 9999;
-}
-
-nav#horizontal img.linksIcons {
-  width: 30px;
-}
-
-nav#dropdown {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  padding-top: 10px;
-  padding-left: 250px;
-  display: none;
-  width: 100vw;
-}
-
-nav#dropdown ul {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-nav#dropdown ul.list {
-  position: absolute;
-  width: 100vw;
-  background-color: #293133;
-  display: flex;
-  left: 0;
-}
-
-nav#dropdown li.listLi:hover {
-  background-color: #343232;
-}
-
-nav#dropdown li.listLi {
-  display: none;
-  padding-top: 10px;
-  padding: 10px;
-  font-size: 15px;
-  border-right: 1.5px dashed #f2f2f2;
-}
-
-nav#dropdown li.listLi:last-child {
-  border: none;
-}
-
-nav#dropdown li.hamburgerLi i {
-  font-size: 30px;
-}
-
-nav#dropdown li.hamburgerLi:hover li.listLi {
-  display: block;
-}
-
-nav#dropdown li {
-  list-style: none;
-  display: block;
-}
-
-nav#dropdown a {
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 15px;
-  text-align: left;
-}
-
-nav#dropdown a a:hover {
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
 
 @media only screen and (max-width: 900px) {
@@ -193,38 +68,86 @@ nav#dropdown a a:hover {
   div#buttons {
     display: none;
   }
+  div.about {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    height: 100%;
+  }
+  html, body {
+    overflow: visible;
+  }
 }
 
 @media screen and (orientation: landscape) {
   .goldengate {
     display: block;
   }
-  html {
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
 }
 
 main {
-  width: 100vw;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: #e0ebe8;
+  overflow-y: hidden;
 }
 
 main div {
   display: flex;
   flex-direction: column;
   background-color: #e0ebe8;
-  width: 100vw;
+}
+
+main .fa {
+  font-family: 'Erica One';
+  font-family: 'Elsie';
+  letter-spacing: -5px;
+  font-size: 10vw;
+  text-shadow: 0 0 40px black;
+  opacity: 0;
+}
+
+main .fallingI {
+  animation: floatDown 1s ease 2s forwards;
+}
+
+main .fallingSymbol {
+  animation: floatDown 1s ease 2.5s forwards;
+}
+
+main .fallingM {
+  animation: floatDown 1s ease 2.9s forwards;
+}
+
+main .space {
+  margin-top: -50px;
+}
+
+main .fallingS {
+  animation: floatDown 1s ease 2.5s forwards;
+}
+
+main .fallingA {
+  animation: floatDown 1s ease 2.65s forwards;
+}
+
+main .fallingR {
+  animation: floatDown 1s ease 3s forwards;
+}
+
+main .fallingA2 {
+  animation: floatDown 1s ease 2.5s forwards;
+}
+
+main .fallingH {
+  animation: floatDown 1s ease 2.25s forwards;
 }
 
 main div.banner {
   top: 0;
-}
-
-main div.banner video {
-  width: 100vw;
-  z-index: 999;
+  overflow: hidden;
 }
 
 main div.banner img.forest {
@@ -274,49 +197,117 @@ main div.banner h2 {
   z-index: 9997;
 }
 
-.fa {
-  font-family: 'Erica One';
-  font-family: 'Elsie';
-  letter-spacing: -5px;
-  font-size: 10vw;
-  text-shadow: 0 0 40px black;
-  opacity: 0;
+main div.banner h4 {
+  text-align: center;
 }
 
-.fallingI {
-  animation: floatDown 1s ease 2s forwards;
+main div.banner h4 a {
+  color: #f2f2f2;
 }
 
-.fallingSymbol {
-  animation: floatDown 1s ease 2.5s forwards;
+span.banner {
+  width: 70vw;
+  height: 40px;
+  background-color: #2e3538;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 200px;
 }
 
-.fallingM {
-  animation: floatDown 1s ease 2.9s forwards;
+.aboutmeDiv {
+  background: url("https://cdn.pixabay.com/photo/2018/01/21/01/46/architecture-3095716_1280.jpg");
+  background-size: cover;
+  width: 100vw;
 }
 
-.space {
-  margin-top: -50px;
+div.about {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  width: 70vw;
+  margin-top: 100px;
+  height: 475px;
+  box-shadow: 0 0 50px black;
+  border-radius: 15px;
+  margin-left: 200px;
+  margin-bottom: 100px;
 }
 
-.fallingS {
-  animation: floatDown 1s ease 2.5s forwards;
+div.about div.aboutInfo {
+  width: 100%;
+  display: block;
 }
 
-.fallingA {
-  animation: floatDown 1s ease 2.65s forwards;
+div.about div.aboutInfo i {
+  font-size: 25px;
 }
 
-.fallingR {
-  animation: floatDown 1s ease 3s forwards;
+div.about div.aboutInfo img {
+  width: 40px;
 }
 
-.fallingA2 {
-  animation: floatDown 1s ease 2.5s forwards;
+div.about div.photo {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.fallingH {
-  animation: floatDown 1s ease 2.25s forwards;
+div.about div.photo div.facts {
+  text-align: center;
+  padding: 20px;
+}
+
+div.about div.photo div.facts h3 {
+  font-size: 100%;
+}
+
+div.about div.photo div.facts img.pin {
+  width: 25px;
+  height: 25px;
+}
+
+div.about div.photo img.headshot {
+  padding: 30px 0 0 20px;
+  width: 300px;
+  height: 301px;
+}
+
+div.about div.photo div.textBox {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: black;
+  font-size: 100%;
+  padding: 60px;
+  height: 100%;
+}
+
+div.about div.photo div.textBox span {
+  font-weight: bold;
+}
+
+div.about div.photo div.textBox .row {
+  display: flex;
+  flex-direction: row;
+}
+
+div.about div.photo div.textBox .row i {
+  font-size: 200%;
+  padding: 20px;
+}
+
+div.about div.photo span.passion {
+  color: red;
+}
+
+div.about div.photo span.love {
+  color: indigo;
 }
 
 footer {
@@ -360,13 +351,14 @@ footer i {
   color: #f2f2f2;
   padding-top: 6px;
   padding-left: 10px;
-  font-size: 80%;
+  font-size: 90%;
 }
 
 footer .fab:hover, footer .fas:hover {
   color: #403f3f;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -379,21 +371,12 @@ footer .fab:hover, footer .fas:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #4a0080;
+  background: #272626;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #4a0080;
-}
-
-@keyframes fillUp {
-  from {
-    background: none;
-  }
-  to {
-    transition: background-size 0.25s ease-in;
-  }
+  background: indigo;
 }
 
 @keyframes floatDown {
@@ -404,24 +387,6 @@ footer .fab:hover, footer .fas:hover {
   to {
     padding-top: 35vh;
     opacity: 1;
-  }
-}
-
-@keyframes floatUp {
-  from {
-    bottom: 0;
-  }
-  to {
-    top: 5vw;
-  }
-}
-
-@keyframes spinspin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
