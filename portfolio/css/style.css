@@ -210,14 +210,19 @@ span.banner {
   height: 40px;
   background-color: #2e3538;
   position: absolute;
-  margin-top: 70px;
+  margin-top: 150px;
   margin-left: 200px;
 }
 
 .aboutmeDiv {
-  background: url("https://cdn.pixabay.com/photo/2018/01/21/01/46/architecture-3095716_1280.jpg");
+  background: url("/img/architecture.jpg");
   background-size: cover;
   width: 100vw;
+}
+
+.aboutmeDiv img {
+  width: 250px;
+  margin-top: 20px;
 }
 
 div.about {
@@ -292,21 +297,11 @@ div.about div.photo div.textBox span {
   font-weight: bold;
 }
 
-div.about div.photo div.textBox .row {
-  display: flex;
-  flex-direction: row;
-}
-
-div.about div.photo div.textBox .row i {
-  font-size: 200%;
-  padding: 20px;
-}
-
-div.about div.photo span.passion {
+div.about div.photo div.textBox span span.passion {
   color: red;
 }
 
-div.about div.photo span.love {
+div.about div.photo div.textBox span span.love {
   color: indigo;
 }
 
