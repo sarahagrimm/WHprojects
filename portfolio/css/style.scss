@@ -29,146 +29,6 @@ html, body {
 }
 
 
-//Navigation
-// nav#horizontal {
-//     //background-color: $blueblack;
-//     width: 100vw;
-//     position: fixed;  
-//     z-index: 9998;
-//     top: 0;
-//     left:0;
-//     height: 50px;
-//     //box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
-//     padding: 10px 40px 5px 0;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-
-//     ul.linksulName {
-//         padding: 10px;
-//     }
-    
-
-//     ul.linksul{
-//         display: flex;
-//         justify-content: center;
-//         align-content: center;
-//         font-family: 'Oleo Script', sans-serif;
-//         text-transform: lowercase;
-//         padding: 0;
-//         margin: 0;
-
-//         li.links {
-//             list-style: none;
-//             padding: 0;
-//         }
-
-//         a {
-//             text-decoration: none;
-//             margin: 0 auto;
-//             color: white;
-
-//             text-transform: uppercase;
-//             padding: 15px;
-    
-//         }
-
-//         a:hover {
-//             background-color: lighten(#293133, 5%);
-
-//         }}
-
-//     li.nametag {
-//         height: 100%;
-//         font-family: 'Elsie';
-//         color: $white;
-//         font-size: 25px;
-//     img#logo{
-//         // height: 100px;
-//         width: 85px;
-//         top: 0;
-//         padding-top: 65px;
-//         z-index: 9999;
-        
-//     }
-    
-// }
-//             img.linksIcons {
-//               width: 60px;
-//             }
-// }
-
-// // dropdown
-
-//     nav#dropdown{
-//         //width: 100%;
-//         position: fixed;  
-//         z-index: 9999;
-//         top: 0;
-//         padding-top: 10px;
-//         padding-left: 250px;
-//         display: none;
-//         width: 100vw;
-
-//         ul {
-//             display: flex;
-//             justify-content: center;
-//             align-content: center;
-//         }
-
-//         ul.list {
-//             position: absolute;
-//             width: 100vw;
-//             background-color: #293133;
-//             display: flex;
-//             left: 0;
-//             //box-shadow: 0 20px $black;
-            
-//         }
-//         li.listLi:hover {
-//             background-color: lighten($black, 5%);
-//         }
-//         li.listLi{
-//             display: none;
-//             padding-top: 10px;
-//             padding: 10px;
-//             font-size: 15px;
-//             border-right: 1.5px dashed $white;
-            
-
-//             &:last-child {
-//                 border: none;
-//             }
-//         }
-
-//         li.hamburgerLi {
-//             i {
-//                 font-size: 30px;
-//             }
-//         }
-//         li.hamburgerLi:hover{
-
-//             li.listLi {
-//                 display: block;
-                
-//             }
-//         }
-//         li {
-//             list-style: none;
-//             display: block;
-//         }
-//         a {
-//             color: $white;
-//             text-decoration: none;
-//             font-size: 15px;
-//             text-align: left;
-//             a:hover {
-//                 transform: translateX(-50%) translateY(-50%) rotate(45deg);
-//             }
-//         } 
-
-//     }
-
     // MOBILE ONLY
     @media only screen and (max-width: 900px) {
         main{ width: 100%; background-color: $black;}
@@ -210,15 +70,10 @@ main {
     div {
         display: flex;
         flex-direction: column;
-        background-color: $sky;
-        // width: 100vw;        
     }   
 
     .fa {
-        //font-family: 'Peralta', cursive;
-        font-family: 'Erica One';
         font-family: 'Elsie';
-        //font-family: 'Abril Fatface';
         letter-spacing: -5px;
         font-size: 10vw;
         text-shadow: 0 0 40px black;
@@ -264,6 +119,7 @@ main {
 div.banner {
     top: 0;
     overflow: hidden;
+    height: 100vh;
 
     img.forest {
         width: 105vw;
@@ -278,6 +134,7 @@ div.banner {
         display: flex;
         justify-content: center;
         align-self: center;
+        filter: grayscale(60%);
     }
     span#textBanner {
         position: absolute;
@@ -297,7 +154,7 @@ div.banner {
         font-family: 'Elsie';
         padding-top: 58vh;
         z-index: 9997;
-        font-size: 100px; 
+        font-size: 35px; 
         // text-shadow: 0px 1px 0px rgba(255,255,255,.5); 
         text-shadow: 0 0 20px black;
 
@@ -319,36 +176,47 @@ div.banner {
 
     h4 {
         text-align: center;
+        font-family: 'Playfair Display';
+        text-shadow: 0 0 20px black;
 
         a{
         color: $white;
-    }}
-}}
-    span.banner {
-        width: 70vw;
-        height: 40px;
-        background-color: $blueblack;
-        position: absolute;
-        margin-top: 150px;
-        margin-left: 200px;
-      //   box-shadow: 0 0 20px black;
-  
+        text-decoration: none;
+        }
+        a:hover {
+            color: indigo;
+            text-shadow: 0 0 20px black;
+
+        }
     }
+}}
 
 
 
 .aboutmeDiv {
-
-    img {
-        width: 250px;
+    width: 100vw;
+    background: transparent;
+    background-color: white;
+    
+    img.background {
+        width: 100vw;
+    }
+    img#logo {
+        width: 220px;
         margin-top: 20px;
     }
-    background: url('/img/architecture.jpg');
-    background-size: cover;
-    width: 100vw;
-}
+        span.banner {
+            width: 70vw;
+            height: 40px;
+            background-color: $blueblack;
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 200px;
+        
+        }
 div.about {
-    // background-color: $sky;
+    // position: absolute;
+    background-color: $sky;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -363,19 +231,6 @@ div.about {
     margin-left: 200px;
     margin-bottom: 100px;
     
-    
-    div.aboutInfo{
-        
-        width: 100%;
-        display: block;
-        i {
-            font-size: 25px;
-        }
-        img {
-            width: 40px;
-
-        }
-    }
 div.photo {
     display: flex;
     flex-direction: column;
@@ -383,7 +238,7 @@ div.photo {
     align-self: center;
     justify-content: center;
     align-items: center;
-    //padding-top: 25px;
+}
     
     div.facts {
         text-align: center;
@@ -415,20 +270,132 @@ div.photo {
         
         span {
             font-weight: bold;
+        }
                     span.passion {
                         color: red;
                     }
                     span.love {
                         color: indigo;
                     }
+                
                 }
-                }}
+}}
 
+.socialMedia {
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
 
+    }
+    li {    
+        list-style: none;
+    }
+    i {
+        font-size: 200%;
+        padding: 10px;
 
-
-
+    }
+    h1 {
+        text-align: center;
+    }
 }
+
+.workPage {
+    background-image: url('/img/flowers.jpg');
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+
+
+.work {
+font-family: 'Playfair Display';
+font-size: 10px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+align-self: center;
+align-content: center;
+
+img {
+margin: 20px;
+padding: 10px 10px 70px;
+ width: 380px;
+ height: 250px;
+ cursor: pointer;
+ background-color: white;
+}
+
+.fas {
+    position: absolute;
+    font-size: 50px;
+    padding-top: 50px;
+    opacity: 1;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+li {
+    display: flex;
+    flex-direction: column;   
+ 
+}}
+
+// WORK
+
+
+#skills {
+
+//padding: 100px 0 100px;
+width: 100%;
+h1 {
+    color: darken($white, 10%);
+    font-family: 'Elsie';
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    font-size: 8vh;
+}
+
+ul {
+background-color: $sky;
+padding: 20px 0;
+display: flex;
+flex-wrap: wrap;
+list-style-image: none;
+list-style: none;
+// overflow-x: auto;
+
+li {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    float: left;
+
+    i {
+        font-size: 90px;
+        padding: 20px;
+        cursor: pointer;
+    }
+}}}}
+
+.footerTwo {
+    background-color: lighten($blueblack, 10%);
+    height: 200px;
+}
+
+
 footer {
     background-color: $blueblack;
     width: 100vw;
