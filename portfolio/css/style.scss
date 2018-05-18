@@ -14,17 +14,10 @@ $blueblack: hsl(200, 10%, 20%);
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: $sky;
+    background-color: $white;
     padding: 0;
     margin: 0;
     // overflow-y: hidden;
-
-    h1 {
-        color: darken($black, 10%);
-        letter-spacing: 20px;
-        text-align: center;
-        font-family: 'Ribeye', cursive;
-    }
 
 }
 
@@ -54,17 +47,81 @@ html, body {
         .goldengate { display: block; }
      }
 
+//Navigation
+nav#horizontal {
+    background-color: $blueblack;
+    width: 100vw;
+    position: fixed;  
+    z-index: 9999;
+    top: 0;
+    left:0;
+    height: 75px;
+    box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
+    // padding: 10px 40px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    ul.linksulName {
+        padding: 10px;
+    }
 
-    //   .spacingDiv {
-    //       height: 40px;
-    //   }
+    ul.linksul{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-family: 'Oleo Script', sans-serif;
+        text-transform: lowercase;
+        padding: 0;
+        margin: 0;
+
+        li.links {
+            list-style: none;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0 auto;
+            color: white;
+            font-family: 'Yeseva One';
+            text-transform: uppercase;
+            padding: 20px;
+    
+        }
+
+        a:hover {
+            background-color: lighten(#293133, 5%);
+            height: 100%;
+            //padding: 14px 25px;
+            //border-radius: 15px;
+
+        }}
+
+    li.nametag {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    img#logo{
+        width: 75px;
+        top: 0;
+        padding-top: 15px;
+        
+    }
+}
+            img.linksIcons {
+              width: 30px;
+            }
+}
 
 main {
     // width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: $sky;
+    background-color: $white;
     overflow-y: hidden;
     
     div {
@@ -74,10 +131,13 @@ main {
 
     .fa {
         font-family: 'Elsie';
-        letter-spacing: -5px;
+        font-family: 'Erica One';
+        text-transform: uppercase;
+        letter-spacing: 5px;
         font-size: 10vw;
         text-shadow: 0 0 40px black;
         opacity: 0;
+        
     }
 
     .fallingI {
@@ -119,196 +179,94 @@ main {
 div.banner {
     top: 0;
     overflow: hidden;
-    height: 100vh;
-
-    img.forest {
-        width: 105vw;
-        height: 105vh;
-        overflow: hidden;
-        display: none;
-    }
-
-    img.goldengate {
-        width: 105vw;
-        height: 105vh;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        filter: grayscale(60%);
-    }
-    span#textBanner {
-        position: absolute;
-        height: 10vh;
-        display: flex;
-        align-self: center;
-        flex-direction: column;
-        width: 100vw;
-        
-    }
-
-    h3 {
-        color: $white;
-        // letter-spacing: -3px;
-        margin: 0 auto;
-        font-family: 'Peralta';
-        font-family: 'Elsie';
-        padding-top: 58vh;
-        z-index: 9997;
-        font-size: 35px; 
-        // text-shadow: 0px 1px 0px rgba(255,255,255,.5); 
-        text-shadow: 0 0 20px black;
-
-
-    }
-
-
-    h2 {
-        color: $white;
-        font-size: 75px;
-        letter-spacing: 15px;
-        margin: 0 auto;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        z-index: 9997;
-    }
-
-    h4 {
-        text-align: center;
-        font-family: 'Playfair Display';
-        text-shadow: 0 0 20px black;
-
-        a{
-        color: $white;
-        text-decoration: none;
-        }
-        a:hover {
-            color: indigo;
-            text-shadow: 0 0 20px black;
-
-        }
-    }
-}}
-
-
-
-.aboutmeDiv {
+    height: 750px;
     width: 100vw;
-    background: transparent;
-    background-color: white;
-    
-    img.background {
-        width: 100vw;
-    }
-    img#logo {
-        width: 220px;
-        margin-top: 20px;
-    }
-        span.banner {
-            width: 70vw;
-            height: 40px;
-            background-color: $blueblack;
-            position: absolute;
-            margin-top: 150px;
-            margin-left: 200px;
-        
-        }
-div.about {
-    // position: absolute;
-    background-color: $sky;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Playfair Display', serif;
-    width: 70vw;
-    margin-top: 100px;
-    height: 475px;
-    box-shadow: 0 0 50px black;
-    border-radius: 15px;
-    margin-left: 200px;
-    margin-bottom: 100px;
-    
-div.photo {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-}
-    
-    div.facts {
-        text-align: center;
-        padding: 20px;
-        h3 {
-            font-size: 100%;
-        }
-        img.pin {
-            width: 25px;
-            height: 25px;
-        }
-    }
-    
-    img.headshot {
-        padding: 30px 0 0 20px;
-        width: 300px;
-        height: 301px;
-        
-    }
-    
-    div.textBox {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        color: black;
-        font-size: 100%;
-        padding: 60px;
-        height: 100%;
-        
-        span {
-            font-weight: bold;
-        }
-                    span.passion {
-                        color: red;
-                    }
-                    span.love {
-                        color: indigo;
-                    }
-                
-                }
-}}
 
-.socialMedia {
-    ul {
+    img.textMe {
+        width: 50vw;
+        padding-top: 75px;
+        height: 750px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(1, 199, 199);
+
+    }
+    .name {
+        position: absolute;
+        padding-top: 300px;
+        h1 {
+            transform: rotate(-7deg);
+            color: $white;
+            text-shadow: 0 0 20px black;
+            font-size: 120px;
+            font-family: 'Bowlby One';
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-left: 150px;
+
+        }
+        
+    }
+
+    div.textBox {
+        padding-top: 75px;
+        // padding-right: 50px;
+        padding-left: -30px;
+        float: right;
+        width: 50vw;
+        font-family: 'Playfair Display';
+        color: black;
+
+
+        span.one {
+            font-size: 30px;
+            background-color: rgb(1, 199, 199);
+            padding-left: 10px;
+
+        }
+    span.two{
+        background-color: $white;
+        padding-left: 10px;
+        margin: 10px;
+    }
+    }
+
+    i {
+        font-size: 30px;
+    }
+    ul.skillsStuff {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        margin: 0 auto;
+        justify-content: space-around;
+        li {
+            list-style: none;
+            padding-top: 20px;
+            i {
+                font-size: 50px;
+            }
+        }
+    }
 
-    }
-    li {    
-        list-style: none;
-    }
-    i {
-        font-size: 200%;
-        padding: 10px;
+}}
 
-    }
-    h1 {
-        text-align: center;
-    }
-}
+
+
+
 
 .workPage {
-    background-image: url('/img/flowers.jpg');
+    // background-image: url('/img/flowers.jpg');
+    background-color: $white;
     width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;   
 
+    img {
+        width: 200px;
+    }
 
 .work {
 font-family: 'Playfair Display';
@@ -326,7 +284,15 @@ padding: 10px 10px 70px;
  width: 380px;
  height: 250px;
  cursor: pointer;
+ box-shadow: 0 0 50px black;
+
  background-color: white;
+}
+
+img:hover {
+    width: 500px;
+    height: 350px;
+    transition-duration: .75s;
 }
 
 .fas {
@@ -350,45 +316,12 @@ li {
     display: flex;
     flex-direction: column;   
  
-}}
+}}}
 
 // WORK
 
 
-#skills {
 
-//padding: 100px 0 100px;
-width: 100%;
-h1 {
-    color: darken($white, 10%);
-    font-family: 'Elsie';
-    text-align: center;
-    height: 100px;
-    width: 100%;
-    font-size: 8vh;
-}
-
-ul {
-background-color: $sky;
-padding: 20px 0;
-display: flex;
-flex-wrap: wrap;
-list-style-image: none;
-list-style: none;
-// overflow-x: auto;
-
-li {
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    float: left;
-
-    i {
-        font-size: 90px;
-        padding: 20px;
-        cursor: pointer;
-    }
-}}}}
 
 .footerTwo {
     background-color: lighten($blueblack, 10%);
@@ -444,7 +377,6 @@ li{
     }}
 
     
-// 
 
 /* Scrollbar */
 
@@ -472,4 +404,5 @@ li{
     from { padding-top: 0; opacity: 0; }
     to { padding-top: 35vh; opacity: 1; }
 }
+
 

@@ -1,0 +1,214 @@
+img.forest {
+	width: 105vw;
+	height: 105vh;
+	overflow: hidden;
+	display: none;
+}
+
+img.goldengate {
+	width: 105vw;
+	height: 105vh;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	filter: grayscale(60%);
+}
+span#textBanner {
+	position: absolute;
+	height: 10vh;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	width: 100vw;
+	
+}
+
+
+h3 {
+	color: $white;
+	// letter-spacing: -3px;
+	margin: 0 auto;
+	font-family: 'Peralta';
+	font-family: 'Elsie';
+	padding-top: 58vh;
+	z-index: 9997;
+	font-size: 35px; 
+	// text-shadow: 0px 1px 0px rgba(255,255,255,.5); 
+	text-shadow: 0 0 20px black;
+
+
+}
+
+
+h2 {
+	color: $white;
+	font-size: 75px;
+	letter-spacing: 15px;
+	margin: 0 auto;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	z-index: 9997;
+}
+
+h4 {
+	text-align: center;
+	font-family: 'Playfair Display';
+	text-shadow: 0 0 20px black;
+
+	a{
+	color: $white;
+	text-decoration: none;
+	}
+	a:hover {
+		color: indigo;
+		text-shadow: 0 0 20px black;
+
+	}
+}
+
+.aboutmePage {
+    width: 100vw;
+    background: transparent;
+    background-color: $black;
+    
+    img.background {
+        width: 100vw;
+    }
+    img#logo {
+        width: 220px;
+        margin-top: 20px;
+    }
+        span.banner {
+            width: 70vw;
+            height: 40px;
+            background-color: $blueblack;
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 200px;
+        
+        }
+div.about {
+    // position: absolute;
+    background-color: $sky;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    width: 70vw;
+    margin-top: 100px;
+    height: 475px;
+    box-shadow: 0 0 50px black;
+    border-radius: 15px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    
+div.photo {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+    
+    div.facts {
+        text-align: center;
+        padding: 20px;
+        h3 {
+            font-size: 100%;
+        }
+        img.pin {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    
+    img.headshot {
+        padding: 30px 0 0 20px;
+        width: 300px;
+        height: 301px;
+        
+    }
+    
+//     div.textBox {
+//         display: flex;
+//         align-content: center;
+//         justify-content: center;
+//         color: black;
+//         font-size: 100%;
+//         padding: 60px;
+//         height: 100%;
+        
+//         span {
+//             font-weight: bold;
+//         }
+//                     span.passion {
+//                         color: red;
+//                     }
+//                     span.love {
+//                         color: indigo;
+//                     }
+                
+//                 }
+}
+}
+
+.socialMedia {
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+    li {    
+        list-style: none;
+    }
+    i {
+        font-size: 200%;
+        padding: 10px;
+
+    }
+    h1 {
+        text-align: center;
+    }
+}
+
+#skills {
+
+	//padding: 100px 0 100px;
+	width: 100%;
+	h1 {
+		color: darken($white, 10%);
+		font-family: 'Elsie';
+		text-align: center;
+		height: 100px;
+		width: 100%;
+		font-size: 8vh;
+	}
+	
+	ul {
+	background-color: $sky;
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-image: none;
+	list-style: none;
+	// overflow-x: auto;
+	
+	li {
+		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 20px;
+		float: left;
+	
+		i {
+			font-size: 90px;
+			padding: 20px;
+			cursor: pointer;
+		}
+	}}}

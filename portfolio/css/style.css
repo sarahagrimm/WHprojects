@@ -4,16 +4,9 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #e0ebe8;
+  background-color: #f2f2f2;
   padding: 0;
   margin: 0;
-}
-
-html h1, body h1 {
-  color: #0d0d0d;
-  letter-spacing: 20px;
-  text-align: center;
-  font-family: 'Ribeye', cursive;
 }
 
 @media only screen and (max-width: 900px) {
@@ -86,11 +79,75 @@ html h1, body h1 {
   }
 }
 
+nav#horizontal {
+  background-color: #2e3538;
+  width: 100vw;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 75px;
+  box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav#horizontal ul.linksulName {
+  padding: 10px;
+}
+
+nav#horizontal ul.linksul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0;
+}
+
+nav#horizontal ul.linksul li.links {
+  list-style: none;
+  padding: 0;
+}
+
+nav#horizontal ul.linksul a {
+  text-decoration: none;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Yeseva One';
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+nav#horizontal ul.linksul a:hover {
+  background-color: #343f41;
+  height: 100%;
+}
+
+nav#horizontal li.nametag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav#horizontal li.nametag img#logo {
+  width: 75px;
+  top: 0;
+  padding-top: 15px;
+}
+
+nav#horizontal img.linksIcons {
+  width: 30px;
+}
+
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #e0ebe8;
+  background-color: #f2f2f2;
   overflow-y: hidden;
 }
 
@@ -101,7 +158,9 @@ main div {
 
 main .fa {
   font-family: 'Elsie';
-  letter-spacing: -5px;
+  font-family: 'Erica One';
+  text-transform: uppercase;
+  letter-spacing: 5px;
   font-size: 10vw;
   text-shadow: 0 0 40px black;
   opacity: 0;
@@ -146,191 +205,88 @@ main .fallingH {
 main div.banner {
   top: 0;
   overflow: hidden;
-  height: 100vh;
-}
-
-main div.banner img.forest {
-  width: 105vw;
-  height: 105vh;
-  overflow: hidden;
-  display: none;
-}
-
-main div.banner img.goldengate {
-  width: 105vw;
-  height: 105vh;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  filter: grayscale(60%);
-}
-
-main div.banner span#textBanner {
-  position: absolute;
-  height: 10vh;
-  display: flex;
-  align-self: center;
-  flex-direction: column;
+  height: 750px;
   width: 100vw;
-}
-
-main div.banner h3 {
-  color: #f2f2f2;
-  margin: 0 auto;
-  font-family: 'Peralta';
-  font-family: 'Elsie';
-  padding-top: 58vh;
-  z-index: 9997;
-  font-size: 35px;
-  text-shadow: 0 0 20px black;
-}
-
-main div.banner h2 {
-  color: #f2f2f2;
-  font-size: 75px;
-  letter-spacing: 15px;
-  margin: 0 auto;
-  position: absolute;
   display: flex;
-  justify-content: center;
-  align-self: center;
-  z-index: 9997;
-}
-
-main div.banner h4 {
-  text-align: center;
-  font-family: 'Playfair Display';
-  text-shadow: 0 0 20px black;
-}
-
-main div.banner h4 a {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-main div.banner h4 a:hover {
-  color: indigo;
-  text-shadow: 0 0 20px black;
-}
-
-.aboutmeDiv {
-  width: 100vw;
-  background: transparent;
-  background-color: white;
-}
-
-.aboutmeDiv img.background {
-  width: 100vw;
-}
-
-.aboutmeDiv img#logo {
-  width: 220px;
-  margin-top: 20px;
-}
-
-.aboutmeDiv span.banner {
-  width: 70vw;
-  height: 40px;
-  background-color: #2e3538;
-  position: absolute;
-  margin-top: 150px;
-  margin-left: 200px;
-}
-
-.aboutmeDiv div.about {
-  background-color: #e0ebe8;
-  display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Playfair Display', serif;
-  width: 70vw;
-  margin-top: 100px;
-  height: 475px;
-  box-shadow: 0 0 50px black;
-  border-radius: 15px;
-  margin-left: 200px;
-  margin-bottom: 100px;
 }
 
-.aboutmeDiv div.about div.photo {
-  display: flex;
-  flex-direction: column;
+main div.banner img.textMe {
   width: 50vw;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutmeDiv div.about div.facts {
-  text-align: center;
-  padding: 20px;
-}
-
-.aboutmeDiv div.about div.facts h3 {
-  font-size: 100%;
-}
-
-.aboutmeDiv div.about div.facts img.pin {
-  width: 25px;
-  height: 25px;
-}
-
-.aboutmeDiv div.about img.headshot {
-  padding: 30px 0 0 20px;
-  width: 300px;
-  height: 301px;
-}
-
-.aboutmeDiv div.about div.textBox {
+  padding-top: 75px;
+  height: 750px;
   display: flex;
-  align-content: center;
   justify-content: center;
+  background-color: #01c7c7;
+}
+
+main div.banner .name {
+  position: absolute;
+  padding-top: 300px;
+}
+
+main div.banner .name h1 {
+  transform: rotate(-7deg);
+  color: #f2f2f2;
+  text-shadow: 0 0 20px black;
+  font-size: 120px;
+  font-family: 'Bowlby One';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 150px;
+}
+
+main div.banner div.textBox {
+  padding-top: 75px;
+  padding-left: -30px;
+  float: right;
+  width: 50vw;
+  font-family: 'Playfair Display';
   color: black;
-  font-size: 100%;
-  padding: 60px;
-  height: 100%;
 }
 
-.aboutmeDiv div.about div.textBox span {
-  font-weight: bold;
+main div.banner div.textBox span.one {
+  font-size: 30px;
+  background-color: #01c7c7;
+  padding-left: 10px;
 }
 
-.aboutmeDiv div.about div.textBox span.passion {
-  color: red;
+main div.banner div.textBox span.two {
+  background-color: #f2f2f2;
+  padding-left: 10px;
+  margin: 10px;
 }
 
-.aboutmeDiv div.about div.textBox span.love {
-  color: indigo;
+main div.banner i {
+  font-size: 30px;
 }
 
-.socialMedia ul {
+main div.banner ul.skillsStuff {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin: 0 auto;
+  justify-content: space-around;
 }
 
-.socialMedia li {
+main div.banner ul.skillsStuff li {
   list-style: none;
+  padding-top: 20px;
 }
 
-.socialMedia i {
-  font-size: 200%;
-  padding: 10px;
-}
-
-.socialMedia h1 {
-  text-align: center;
+main div.banner ul.skillsStuff li i {
+  font-size: 50px;
 }
 
 .workPage {
-  background-image: url("/img/flowers.jpg");
+  background-color: #f2f2f2;
   width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.workPage img {
+  width: 200px;
 }
 
 .workPage .work {
@@ -350,7 +306,14 @@ main div.banner h4 a:hover {
   width: 380px;
   height: 250px;
   cursor: pointer;
+  box-shadow: 0 0 50px black;
   background-color: white;
+}
+
+.workPage .work img:hover {
+  width: 500px;
+  height: 350px;
+  transition-duration: .75s;
 }
 
 .workPage .work .fas {
@@ -374,41 +337,6 @@ main div.banner h4 a:hover {
 .workPage .work li {
   display: flex;
   flex-direction: column;
-}
-
-.workPage #skills {
-  width: 100%;
-}
-
-.workPage #skills h1 {
-  color: #d9d9d9;
-  font-family: 'Elsie';
-  text-align: center;
-  height: 100px;
-  width: 100%;
-  font-size: 8vh;
-}
-
-.workPage #skills ul {
-  background-color: #e0ebe8;
-  padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-image: none;
-  list-style: none;
-}
-
-.workPage #skills ul li {
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  float: left;
-}
-
-.workPage #skills ul li i {
-  font-size: 90px;
-  padding: 20px;
-  cursor: pointer;
 }
 
 .footerTwo {
