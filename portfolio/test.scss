@@ -1,3 +1,8 @@
+$black: hsl(0, 1%, 15%);
+$white: hsl(0, 0%, 95%);
+$sky: hsl(165, 20%, 90%);
+$blueblack: hsl(200, 10%, 20%);
+
 img.forest {
 	width: 105vw;
 	height: 105vh;
@@ -212,3 +217,50 @@ div.photo {
 			cursor: pointer;
 		}
 	}}}
+
+	.fallingI {
+        animation: floatDown 1s ease 2s forwards;
+    }
+    
+    .fallingSymbol {
+        animation: floatDown 1s ease 2.5s forwards;
+    }
+    
+    .fallingM {
+        animation: floatDown 1s ease 2.9s forwards;
+    }
+    
+    .space {
+        margin-top: -50px;
+    }
+    
+    .fallingS {
+        animation: floatDown 1s ease 2.5s forwards;
+    }
+    
+    .fallingA {
+        animation: floatDown 1s ease 2.65s forwards;
+    }
+    
+    .fallingR {
+        animation: floatDown 1s ease 3s forwards;
+    }
+    
+    .fallingA2 {
+        animation: floatDown 1s ease 2.5s forwards;
+    }
+    
+    .fallingH {
+        animation: floatDown 1s ease 2.25s forwards;
+	}
+	
+	.fa {
+        font-family: 'Elsie';
+        font-family: 'Erica One';
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 10vw;
+        text-shadow: 0 0 40px black;
+        opacity: 0;
+        
+    }

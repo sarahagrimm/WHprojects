@@ -1,63 +1,235 @@
-body {
-  font: 400 1em/1.5 "Neuton";
-  background: #090d00;
-  color: rgba(255, 255, 255, 0.25);
-  text-align: center;
-  margin: 0;
+img.forest {
+  width: 105vw;
+  height: 105vh;
+  overflow: hidden;
+  display: none;
 }
 
-p {
-  text-transform: uppercase;
-  letter-spacing: .5em;
-  display: inline-block;
-  border: 4px double rgba(255, 255, 255, 0.25);
-  border-width: 4px 0;
-  padding: 1.5em 0em;
+img.goldengate {
+  width: 105vw;
+  height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  filter: grayscale(60%);
+}
+
+span#textBanner {
   position: absolute;
-  top: 18%;
-  left: 50%;
-  width: 40em;
-  margin: 0 0 0 -20em;
+  height: 10vh;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
-p span {
-  font: 700 4em/1 "Oswald", sans-serif;
-  letter-spacing: 0;
-  padding: .25em 0 .325em;
-  display: block;
+h3 {
+  color: #f2f2f2;
   margin: 0 auto;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-  /* Clip Background Image */
-  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
-  -webkit-background-clip: text;
-  background-clip: text;
-  /* Animate Background Image */
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
-  animation: aitf 80s linear infinite;
-  /* Activate hardware acceleration for smoother animations */
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  font-family: 'Peralta';
+  font-family: 'Elsie';
+  padding-top: 58vh;
+  z-index: 9997;
+  font-size: 35px;
+  text-shadow: 0 0 20px black;
 }
 
-/* Animate Background Image */
-@-webkit-keyframes aitf {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+h2 {
+  color: #f2f2f2;
+  font-size: 75px;
+  letter-spacing: 15px;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  z-index: 9997;
 }
 
-@keyframes aitf {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+h4 {
+  text-align: center;
+  font-family: 'Playfair Display';
+  text-shadow: 0 0 20px black;
+}
+
+h4 a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+h4 a:hover {
+  color: indigo;
+  text-shadow: 0 0 20px black;
+}
+
+.aboutmePage {
+  width: 100vw;
+  background: transparent;
+  background-color: #272626;
+}
+
+.aboutmePage img.background {
+  width: 100vw;
+}
+
+.aboutmePage img#logo {
+  width: 220px;
+  margin-top: 20px;
+}
+
+.aboutmePage span.banner {
+  width: 70vw;
+  height: 40px;
+  background-color: #2e3538;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+.aboutmePage div.about {
+  background-color: #e0ebe8;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  width: 70vw;
+  margin-top: 100px;
+  height: 475px;
+  box-shadow: 0 0 50px black;
+  border-radius: 15px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+
+.aboutmePage div.about div.photo {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutmePage div.about div.facts {
+  text-align: center;
+  padding: 20px;
+}
+
+.aboutmePage div.about div.facts h3 {
+  font-size: 100%;
+}
+
+.aboutmePage div.about div.facts img.pin {
+  width: 25px;
+  height: 25px;
+}
+
+.aboutmePage div.about img.headshot {
+  padding: 30px 0 0 20px;
+  width: 300px;
+  height: 301px;
+}
+
+.socialMedia ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.socialMedia li {
+  list-style: none;
+}
+
+.socialMedia i {
+  font-size: 200%;
+  padding: 10px;
+}
+
+.socialMedia h1 {
+  text-align: center;
+}
+
+#skills {
+  width: 100%;
+}
+
+#skills h1 {
+  color: #d9d9d9;
+  font-family: 'Elsie';
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  font-size: 8vh;
+}
+
+#skills ul {
+  background-color: #e0ebe8;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-image: none;
+  list-style: none;
+}
+
+#skills ul li {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  float: left;
+}
+
+#skills ul li i {
+  font-size: 90px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.fallingI {
+  animation: floatDown 1s ease 2s forwards;
+}
+
+.fallingSymbol {
+  animation: floatDown 1s ease 2.5s forwards;
+}
+
+.fallingM {
+  animation: floatDown 1s ease 2.9s forwards;
+}
+
+.space {
+  margin-top: -50px;
+}
+
+.fallingS {
+  animation: floatDown 1s ease 2.5s forwards;
+}
+
+.fallingA {
+  animation: floatDown 1s ease 2.65s forwards;
+}
+
+.fallingR {
+  animation: floatDown 1s ease 3s forwards;
+}
+
+.fallingA2 {
+  animation: floatDown 1s ease 2.5s forwards;
+}
+
+.fallingH {
+  animation: floatDown 1s ease 2.25s forwards;
+}
+
+.fa {
+  font-family: 'Elsie';
+  font-family: 'Erica One';
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 10vw;
+  text-shadow: 0 0 40px black;
+  opacity: 0;
 }
 /*# sourceMappingURL=test.css.map */
