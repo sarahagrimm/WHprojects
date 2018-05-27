@@ -5,23 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Grimm Pet Supply</title>
     <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <h1 id="shopName"><a href="#">grimm's petshop</a></h1>
-            <input type="search" id="searchbar" name="search" placeholder=" search" rel="search">
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">page2</a></li>
-                <li><a href="#">page3</a></li>
-                <li><a href="#">page4</a></li>
+            <li class="shop"><h1 id="shopName">grimm pet supply</h1></li>
+            </ul>
+            <ul>
+            <li><div class="input-group">
+            <input type="search" id="searchbar" name="search" placeholder=" search" rel="search">
+            <button id="button">search</button>
+            </div>
+        </li>
+            </ul>
+            <ul>
+                <li class="links"><a href="#">home</a></li>
+                <li class="links"><a href="#">Dog</a></li>
+                <li class="links"><a href="#">Cat</a></li>
+                <li class="links"><a href="#">Small Animal</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
     <!--slideshow-->
     <div class="slideshowContainer">
 
@@ -81,10 +91,10 @@
   <br>
 
     </div>
-
-    <footer>
+</main>
+    <!-- <footer>
         <h3>Created by: Sarah Grimm &copy;</h3>
-    </footer>
+    </footer> -->
     <script src="js/home.js"></script>
 </body>
 

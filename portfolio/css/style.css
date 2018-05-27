@@ -57,7 +57,7 @@ nav#horizontal ul.linksul {
   padding-right: 20px;
 }
 
-nav#horizontal ul.linksul li.links {
+nav#horizontal ul.linksul li.links-fb {
   list-style: none;
   padding: 24px 0;
   display: inline-block;
@@ -69,7 +69,7 @@ nav#horizontal ul.linksul li.links {
   transition-duration: 0.3s;
 }
 
-nav#horizontal ul.linksul .links:before {
+nav#horizontal ul.linksul .links-fb:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -77,7 +77,7 @@ nav#horizontal ul.linksul .links:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098D1;
+  background: #4367B0;
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition-property: transform;
@@ -85,11 +85,119 @@ nav#horizontal ul.linksul .links:before {
   transition-timing-function: ease-out;
 }
 
-nav#horizontal ul.linksul .links:hover, nav#horizontal ul.linksul .links:focus, nav#horizontal ul.linksul .hvr-sweep-to-right:active {
+nav#horizontal ul.linksul .links-fb:hover, nav#horizontal ul.linksul .links-fb:focus, nav#horizontal ul.linksul .links-fb:active {
   color: white;
 }
 
-nav#horizontal ul.linksul .links:hover:before, nav#horizontal ul.linksul .links:focus:before, nav#horizontal ul.linksul .links:active:before {
+nav#horizontal ul.linksul .links-fb:hover:before, nav#horizontal ul.linksul .links-fb:focus:before, nav#horizontal ul.linksul .links-fb:active:before {
+  transform: scaleX(1);
+}
+
+nav#horizontal ul.linksul li.links-mail {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+nav#horizontal ul.linksul .links-mail:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #C269A5;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+nav#horizontal ul.linksul .links-mail:hover, nav#horizontal ul.linksul .links-mail:focus, nav#horizontal ul.linksul .links-mail:active {
+  color: white;
+}
+
+nav#horizontal ul.linksul .links-mail:hover:before, nav#horizontal ul.linksul .links-mail:focus:before, nav#horizontal ul.linksul .links-mail:active:before {
+  transform: scaleX(1);
+}
+
+nav#horizontal ul.linksul li.links-linked {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+nav#horizontal ul.linksul .links-linked:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0577B4;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+nav#horizontal ul.linksul .links-linked:hover, nav#horizontal ul.linksul .links-linked:focus, nav#horizontal ul.linksul .links-linked:active {
+  color: white;
+}
+
+nav#horizontal ul.linksul .links-linked:hover:before, nav#horizontal ul.linksul .links-linked:focus:before, nav#horizontal ul.linksul .links-linked:active:before {
+  transform: scaleX(1);
+}
+
+nav#horizontal ul.linksul li.links-git {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+nav#horizontal ul.linksul .links-git:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #23292D;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+nav#horizontal ul.linksul .links-git:hover, nav#horizontal ul.linksul .links-git:focus, nav#horizontal ul.linksul .links-git:active {
+  color: white;
+}
+
+nav#horizontal ul.linksul .links-git:hover:before, nav#horizontal ul.linksul .links-git:focus:before, nav#horizontal ul.linksul .links-git:active:before {
   transform: scaleX(1);
 }
 
@@ -113,10 +221,6 @@ li.nametag img#logo {
   padding-top: 15px;
 }
 
-img.linksIcons {
-  width: 30px;
-}
-
 main {
   width: 100vw;
   display: flex;
@@ -126,9 +230,13 @@ main {
   overflow-y: hidden;
 }
 
+main div.spacingDiv {
+  height: 75px;
+}
+
 main div.parallax {
   height: 50vh;
-  background-image: url("https://cdn.pixabay.com/photo/2016/10/28/13/09/usa-1777986_1280.jpg");
+  background-image: url("/img/mushroom.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -137,35 +245,51 @@ main div.parallax {
 
 main .name {
   position: absolute;
-  margin-top: -150px;
+  margin-top: -250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 main .name h1 {
-  transform: rotate(-7deg);
   color: #f2f2f2;
   text-shadow: 0 0 20px black;
   font-size: 120px;
   font-family: 'Bowlby One';
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding-left: 500px;
   height: 100px;
+}
+
+main .name h1.symbol {
+  font-size: 75px;
+  padding: 20px;
+  margin-top: 50px;
 }
 
 main .name div.stuff {
   background-color: #403f3f;
-  opacity: .7;
-  height: 100px;
+  opacity: .5;
+  height: 150px;
+  margin-top: 50px;
+  width: 100vw;
+  z-index: 9997;
 }
 
-main .name div.stuff h2 {
-  width: 100vw;
+main .name h2 {
+  width: 60vw;
   color: #f2f2f2;
   text-align: center;
   font-family: 'Playfair Display';
   margin-top: 150px;
-  padding-top: 10px;
-  font-size: 50px;
+  font-size: 30px;
+  position: absolute;
+  opacity: 1;
+  z-index: 9998;
 }
 
 main img.meImg {
@@ -177,41 +301,105 @@ main img.meImg {
 }
 
 main div.textBox {
-  padding-left: -30px;
   width: 100vw;
   font-family: 'Playfair Display';
   color: black;
   padding-bottom: 50px;
-  padding: 30px;
+  height: 500px;
 }
 
-main div.textBox span.one {
-  font-size: 30px;
-  background-color: #01c7c7;
-  padding-left: 10px;
-  padding-right: 10px;
+main div.textBox h1 {
+  font-family: 'Bowlby One';
+  padding: 20px;
+  background-color: #2e3538;
+  color: #f2f2f2;
+  width: 100vw;
+  z-index: 9999;
+}
+
+main div.textBox div.aboutMe {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-main div.textBox span.two {
-  background-color: #f2f2f2;
-  padding-left: 10px;
-  margin: 10px;
-  display: none;
-  font-size: 20px;
+main div.textBox div.aboutMe div.school {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main div.textBox .one:hover + .two {
-  display: inline;
+main div.textBox div.aboutMe img.westhills {
+  width: 250px;
+  height: 55px;
 }
 
-main div.textBox #one:hover + .skillsStuff {
-  display: block;
+main div.textBox div.aboutMe img.geekwise {
+  width: 250px;
+  height: 150px;
+}
+
+main div.textBox div.aboutMe div.locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div.textBox div.aboutMe img.fresno {
+  width: 200px;
+  height: 100px;
+}
+
+main div.textBox div.aboutMe img.blackwhite {
+  width: 15vw;
+  height: 410px;
+  margin-top: -10px;
+}
+
+main div.textBox div.aboutMe p {
+  padding: 20px 50px;
+  width: 70vw;
+  font-weight: 600;
+}
+
+main div.textBox div.aboutMe p span {
+  font-weight: bold;
+}
+
+main div.textBox div.aboutMe p span.red {
+  color: red;
+}
+
+main div.textBox div.aboutMe p span.purple {
+  color: indigo;
+}
+
+main div.textBox div.aboutMe p span.blue {
+  color: blue;
 }
 
 main i {
   font-size: 30px;
+}
+
+main div.imageSection h1 {
+  font-family: 'Bowlby One';
+  padding: 20px;
+  background-color: #2e3538;
+  color: #f2f2f2;
+  width: 100vw;
+  z-index: 9999;
+}
+
+main div.imageSection .imageRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 600px;
+}
+
+main div.imageSection .instagram {
+  width: 400px;
 }
 
 main ul.skillsStuff {
@@ -235,79 +423,100 @@ main ul.skillsStuff i {
   font-size: 100px;
 }
 
+div.skills {
+  padding-bottom: 25px;
+  padding-right: 60px;
+}
+
 div.skills h1 {
-  font-family: 'Playfair Display';
-  padding-left: 20px;
-  padding-top: 20px;
+  font-family: 'Bowlby One';
+  padding: 20px;
+  background-color: #2e3538;
+  color: #f2f2f2;
+  width: 100vw;
 }
 
 .workPage {
   background-color: #f2f2f2;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .workPage h1 {
-  font-family: 'Playfair Display';
-  padding: 20px 0 0 20px;
+  font-family: 'Bowlby One';
+  padding: 20px;
+  background-color: #2e3538;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
 }
 
-.workPage img {
-  width: 200px;
+.workPage h1 a {
+  padding-right: 20px;
+  color: #c269a6;
 }
 
 .workPage .work {
   font-family: 'Playfair Display';
   font-size: 10px;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  align-content: center;
+  overflow-y: auto;
 }
 
 .workPage .work img {
   margin: 20px;
   width: 400px;
-  height: 250px;
+  height: 350px;
   cursor: pointer;
   box-shadow: 0 0 30px #a7a5a5;
-  background-color: white;
-  transition-duration: .75s;
+  background-color: #f2f2f2;
   padding: 10px 10px 70px;
 }
 
-.workPage .work p {
-  position: absolute;
-  margin-top: 230px;
-  margin-left: 40px;
+.workPage .work .container {
+  position: relative;
 }
 
-.workPage .work .fas {
-  position: absolute;
-  font-size: 50px;
-  padding-top: 50px;
+.workPage .work .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.workPage .work .overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.workPage .work .container:hover .overlay {
   opacity: 1;
 }
 
-.workPage .work ul {
-  padding: 0;
+.workPage .work .text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 20px black;
+}
+
+.workPage .work ul.workUl {
+  width: 100vw;
   display: flex;
-  justify-content: center;
   align-content: center;
   align-items: center;
   align-self: center;
-  overflow-y: auto;
   flex-direction: row;
-  width: 100vw;
 }
 
 .workPage .work li {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  list-style: none;
 }
 
 .footerTwo {
@@ -367,27 +576,6 @@ footer i {
 
 footer .fab:hover, footer .fas:hover {
   color: #403f3f;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #f2f2f2;
-  border-radius: 3px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #2e3538;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: indigo;
 }
 
 @keyframes floatDown {

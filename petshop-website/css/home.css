@@ -1,100 +1,100 @@
-@import url("https://fonts.googleapis.com/css?family=Bowlby+One|Anton|Oswald|IBM+Plex+Serif|Coda:800|Erica+One|Titan+One");
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One|Anton|Oswald|IBM+Plex+Serif|Coda:800|Erica+One|Titan+One|Playfair+Display");
 @import url("https://use.fontawesome.com/releases/v5.0.9/css/all.css");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css");
 body {
   padding: 0;
   margin: 0;
   background-color: black;
+  overflow: hidden;
 }
 
-header {
+nav {
   background-color: #4a0080;
   top: 0;
   left: 0;
-  height: 70px;
   position: fixed;
   width: 100vw;
   z-index: 9999;
-  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-header h1#shopName {
-  margin: 5px 0px 1px 30px;
-  display: inline;
-}
-
-header h1#shopName a {
-  text-decoration: none;
-  font-family: 'Bowlby One', cursive;
-  letter-spacing: 3px;
-  font-size: 40px;
-  color: white;
-  text-shadow: 5px 3px 4px black;
-  text-transform: Capitalize !important;
-  cursor: pointer;
-}
-
-header input#searchbar {
-  height: 30px;
-  width: 300px;
-  border-radius: 5px;
-  text-shadow: invert 5px 5px 5px black;
-  margin-top: 15px;
-  font-family: 'Anton', serif;
-  letter-spacing: 2px;
-}
-
-header nav {
-  top: 0;
   display: flex;
   justify-content: space-between;
-  padding-right: 70px;
-  height: 80px;
+  align-items: center;
 }
 
-header nav ul {
-  top: 0;
+li.shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1#shopName {
+  font-family: 'Bowlby One', cursive;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.input-group {
+  border: 1px solid black;
+}
+
+.input-group input#searchbar {
+  height: 30px;
+  width: 200px;
+  text-shadow: invert 5px 5px 5px black;
+  font-family: 'Playfair Display', serif;
+  padding: 0;
   margin: 0;
-  padding-top: 15px;
+  border: none;
 }
 
-header nav ul li {
+.input-group button#button {
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  font-size: 15px;
+  background-color: #2b2b2b;
+  color: white;
+  border: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+ul li.links {
+  display: inline-block;
   list-style: none;
-  display: inline;
   padding: 10px;
   font-size: 25px;
 }
 
-header nav ul li a {
+ul li.links a {
   text-decoration: none;
   color: white;
   font-family: 'Anton', serif;
   text-transform: lowercase;
 }
 
-header nav ul li a:hover {
+ul li.links a:hover {
   color: darkmagenta;
-  padding: 15px 0;
+  padding: 5px 0;
   border-bottom: 3px solid #1a1a1a;
 }
 
-footer {
-  color: white;
-  height: 30px;
-  font-size: 70%;
-  padding-left: 10px;
-  margin: 0 auto;
-}
-
 .slideshowContainer {
-  margin-top: 50px;
-  width: 100%;
+  margin-top: 70px;
+  width: 100vw;
   position: relative;
   z-index: 1;
+  height: 100vh;
 }
 
 .slideshowContainer img {
-  width: 100%;
-  height: 600px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .slideshowContainer h1.text {
@@ -102,8 +102,9 @@ footer {
   color: white;
   text-shadow: 7px 0px 10px black;
   font-size: 80px;
+  padding: 20px;
   font-family: 'titan one', cursive;
-  width: 100%;
+  width: 100vw;
 }
 
 .slides {
@@ -113,15 +114,6 @@ footer {
 .fade {
   animation-name: fade;
   animation-duration: 3.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @keyframes fade {
