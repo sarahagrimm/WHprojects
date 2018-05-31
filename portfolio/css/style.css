@@ -323,7 +323,7 @@ main div.spacingDiv {
 
 main div.parallax {
   height: 50vh;
-  background-image: url("/img/mushroom.jpg");
+  background-image: url("img/mushroom.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
