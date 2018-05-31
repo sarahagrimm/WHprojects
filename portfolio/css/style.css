@@ -323,6 +323,7 @@ main div.spacingDiv {
 
 main div.parallax {
   height: 50vh;
+  background-color: #272626;
   background-image: url("/img/Mushroom.jpg");
   background-attachment: fixed;
   background-position: center;
