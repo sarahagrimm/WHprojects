@@ -9,22 +9,23 @@ html, body {
   margin: 0;
 }
 
+* {
+  box-sizing: content-box;
+}
+
 @media only screen and (max-width: 600px) {
-  footer {
+  .name {
+    margin-top: -300px !important;
+  }
+  h1.sarah {
+    font-size: 30px !important;
+    width: 75vw;
+  }
+  ul.linksul {
+    display: none !important;
+  }
+  [class*="workImg"] {
     width: 100%;
-  }
-  div.banner {
-    flex-direction: column;
-  }
-  div.banner img.textMe {
-    width: 100vw !important;
-    padding-top: 0;
-  }
-  div.banner .name {
-    display: none;
-  }
-  img.me {
-    display: none;
   }
 }
 
@@ -90,6 +91,78 @@ nav#horizontal ul.linksul .links-fb:hover, nav#horizontal ul.linksul .links-fb:f
 }
 
 nav#horizontal ul.linksul .links-fb:hover:before, nav#horizontal ul.linksul .links-fb:focus:before, nav#horizontal ul.linksul .links-fb:active:before {
+  transform: scaleX(1);
+}
+
+nav#horizontal ul.linksul li.links-insta {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+nav#horizontal ul.linksul .links-insta:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #C130A0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+nav#horizontal ul.linksul .links-insta:hover, nav#horizontal ul.linksul .links-insta:focus, nav#horizontal ul.linksul .links-insta:active {
+  color: white;
+}
+
+nav#horizontal ul.linksul .links-insta:hover:before, nav#horizontal ul.linksul .links-insta:focus:before, nav#horizontal ul.linksul .links-insta:active:before {
+  transform: scaleX(1);
+}
+
+nav#horizontal ul.linksul li.links-twitter {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+nav#horizontal ul.linksul .links-twitter:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #21A1F0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+nav#horizontal ul.linksul .links-twitter:hover, nav#horizontal ul.linksul .links-twitter:focus, nav#horizontal ul.linksul .links-twitter:active {
+  color: white;
+}
+
+nav#horizontal ul.linksul .links-twitter:hover:before, nav#horizontal ul.linksul .links-twitter:focus:before, nav#horizontal ul.linksul .links-twitter:active:before {
   transform: scaleX(1);
 }
 
@@ -216,9 +289,23 @@ li.nametag {
 }
 
 li.nametag img#logo {
-  width: 75px;
+  width: 100px;
   top: 0;
   padding-top: 15px;
+}
+
+.up {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  color: #f2f2f2;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.up i {
+  font-size: 75px;
 }
 
 main {
@@ -245,7 +332,7 @@ main div.parallax {
 
 main .name {
   position: absolute;
-  margin-top: -250px;
+  margin-top: -350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,29 +342,32 @@ main .name {
   width: 100vw;
 }
 
-main .name h1 {
+main .name h1.sarah {
   color: #f2f2f2;
   text-shadow: 0 0 20px black;
-  font-size: 120px;
+  font-size: 450%;
   font-family: 'Bowlby One';
   text-transform: uppercase;
   letter-spacing: 2px;
   height: 100px;
+  text-align: center;
 }
 
 main .name h1.symbol {
   font-size: 75px;
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 250px;
+  color: #f2f2f2;
+  text-shadow: 0 0 20px black;
+  font-size: 120px;
+  font-family: 'Bowlby One';
 }
 
-main .name div.stuff {
-  background-color: #403f3f;
-  opacity: .5;
-  height: 150px;
-  margin-top: 50px;
-  width: 100vw;
-  z-index: 9997;
+main .name p {
+  color: #f2f2f2;
+  font-size: 20px;
+  font-family: 'Playfair Display';
+  text-shadow: 0 0 20px black;
 }
 
 main .name h2 {
@@ -305,7 +395,6 @@ main div.textBox {
   font-family: 'Playfair Display';
   color: black;
   padding-bottom: 50px;
-  height: 500px;
 }
 
 main div.textBox h1 {
@@ -321,12 +410,14 @@ main div.textBox div.aboutMe {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: url("/img/bw3.png") no-repeat center center fixed;
 }
 
 main div.textBox div.aboutMe div.school {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 
 main div.textBox div.aboutMe img.westhills {
@@ -336,30 +427,21 @@ main div.textBox div.aboutMe img.westhills {
 
 main div.textBox div.aboutMe img.geekwise {
   width: 250px;
-  height: 150px;
-}
-
-main div.textBox div.aboutMe div.locations {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main div.textBox div.aboutMe img.fresno {
-  width: 200px;
-  height: 100px;
+  height: 200px;
 }
 
 main div.textBox div.aboutMe img.blackwhite {
-  width: 15vw;
-  height: 410px;
-  margin-top: -10px;
+  width: 30vw;
+  height: 600px;
+  bottom: 0;
+  margin-top: -100px;
 }
 
 main div.textBox div.aboutMe p {
-  padding: 20px 50px;
-  width: 70vw;
-  font-weight: 600;
+  padding: 20px 30px;
+  width: 60vw;
+  font-weight: 500;
+  font-size: 19px;
 }
 
 main div.textBox div.aboutMe p span {
@@ -368,6 +450,16 @@ main div.textBox div.aboutMe p span {
 
 main div.textBox div.aboutMe p span.red {
   color: red;
+}
+
+main div.textBox div.aboutMe p span.red a {
+  color: red;
+  text-decoration: none;
+}
+
+main div.textBox div.aboutMe p span.red a:hover {
+  letter-spacing: .5px;
+  transition-duration: .5s;
 }
 
 main div.textBox div.aboutMe p span.purple {
@@ -380,26 +472,6 @@ main div.textBox div.aboutMe p span.blue {
 
 main i {
   font-size: 30px;
-}
-
-main div.imageSection h1 {
-  font-family: 'Bowlby One';
-  padding: 20px;
-  background-color: #2e3538;
-  color: #f2f2f2;
-  width: 100vw;
-  z-index: 9999;
-}
-
-main div.imageSection .imageRow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 600px;
-}
-
-main div.imageSection .instagram {
-  width: 400px;
 }
 
 main ul.skillsStuff {
@@ -428,6 +500,10 @@ div.skills {
   padding-right: 60px;
 }
 
+div.skills ul {
+  flex-wrap: wrap;
+}
+
 div.skills h1 {
   font-family: 'Bowlby One';
   padding: 20px;
@@ -437,7 +513,6 @@ div.skills h1 {
 }
 
 .workPage {
-  background-color: #f2f2f2;
   width: 100vw;
 }
 
@@ -455,68 +530,277 @@ div.skills h1 {
   color: #c269a6;
 }
 
-.workPage .work {
-  font-family: 'Playfair Display';
-  font-size: 10px;
-  width: 100vw;
-  overflow-y: auto;
+.workPage img {
+  height: 300px;
+  width: 510px;
 }
 
-.workPage .work img {
-  margin: 20px;
-  width: 400px;
-  height: 350px;
-  cursor: pointer;
-  box-shadow: 0 0 30px #a7a5a5;
-  background-color: #f2f2f2;
-  padding: 10px 10px 70px;
-}
-
-.workPage .work .container {
-  position: relative;
-}
-
-.workPage .work .image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.workPage .work .overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.workPage .work .container:hover .overlay {
-  opacity: 1;
-}
-
-.workPage .work .text {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  text-shadow: 0 0 20px black;
-}
-
-.workPage .work ul.workUl {
+.workPage ul.workUl {
   width: 100vw;
   display: flex;
-  align-content: center;
-  align-items: center;
-  align-self: center;
-  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 
-.workPage .work li {
-  position: relative;
+.workPage li {
   list-style: none;
+  float: left;
+}
+
+div.contact h1 {
+  font-family: 'Bowlby One';
+  padding: 20px;
+  background-color: #2e3538;
+  color: #f2f2f2;
+  width: 100vw;
+}
+
+div.contact ul.linksul2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: lowercase;
+  padding: 0;
+  margin-top: -9px;
+  margin-bottom: 0;
+  padding-right: 20px;
+  height: 300px;
+  width: 100vw;
+}
+
+div.contact ul.linksul2 li.links-fb {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+div.contact ul.linksul2 .links-fb:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4367B0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+div.contact ul.linksul2 .links-fb:hover, div.contact ul.linksul2 .links-fb:focus, div.contact ul.linksul2 .links-fb:active {
+  color: white;
+}
+
+div.contact ul.linksul2 .links-fb:hover:before, div.contact ul.linksul2 .links-fb:focus:before, div.contact ul.linksul2 .links-fb:active:before {
+  transform: scaleX(1);
+}
+
+div.contact ul.linksul2 li.links-insta {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+div.contact ul.linksul2 .links-insta:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #C130A0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+div.contact ul.linksul2 .links-insta:hover, div.contact ul.linksul2 .links-insta:focus, div.contact ul.linksul2 .links-insta:active {
+  color: white;
+}
+
+div.contact ul.linksul2 .links-insta:hover:before, div.contact ul.linksul2 .links-insta:focus:before, div.contact ul.linksul2 .links-insta:active:before {
+  transform: scaleX(1);
+}
+
+div.contact ul.linksul2 li.links-twitter {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+div.contact ul.linksul2 .links-twitter:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #21A1F0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+div.contact ul.linksul2 .links-twitter:hover, div.contact ul.linksul2 .links-twitter:focus, div.contact ul.linksul2 .links-twitter:active {
+  color: white;
+}
+
+div.contact ul.linksul2 .links-twitter:hover:before, div.contact ul.linksul2 .links-twitter:focus:before, div.contact ul.linksul2 .links-twitter:active:before {
+  transform: scaleX(1);
+}
+
+div.contact ul.linksul2 li.links-mail {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+div.contact ul.linksul2 .links-mail:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #C269A5;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+div.contact ul.linksul2 .links-mail:hover, div.contact ul.linksul2 .links-mail:focus, div.contact ul.linksul2 .links-mail:active {
+  color: white;
+}
+
+div.contact ul.linksul2 .links-mail:hover:before, div.contact ul.linksul2 .links-mail:focus:before, div.contact ul.linksul2 .links-mail:active:before {
+  transform: scaleX(1);
+}
+
+div.contact ul.linksul2 li.links-linked {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+div.contact ul.linksul2 .links-linked:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0577B4;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+div.contact ul.linksul2 .links-linked:hover, div.contact ul.linksul2 .links-linked:focus, div.contact ul.linksul2 .links-linked:active {
+  color: white;
+}
+
+div.contact ul.linksul2 .links-linked:hover:before, div.contact ul.linksul2 .links-linked:focus:before, div.contact ul.linksul2 .links-linked:active:before {
+  transform: scaleX(1);
+}
+
+div.contact ul.linksul2 li.links-git {
+  list-style: none;
+  padding: 24px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+div.contact ul.linksul2 .links-git:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #23292D;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+div.contact ul.linksul2 .links-git:hover, div.contact ul.linksul2 .links-git:focus, div.contact ul.linksul2 .links-git:active {
+  color: white;
+}
+
+div.contact ul.linksul2 .links-git:hover:before, div.contact ul.linksul2 .links-git:focus:before, div.contact ul.linksul2 .links-git:active:before {
+  transform: scaleX(1);
+}
+
+div.contact a {
+  text-decoration: none;
+  color: #2e3538;
+  padding: 100px;
+  font-size: 150px;
+}
+
+div.contact a:hover {
+  color: #f2f2f2;
+}
+
+div.contact i {
+  font-size: 50%;
 }
 
 .footerTwo {
